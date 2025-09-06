@@ -70,6 +70,13 @@ def index():
         html_content = f.read()
     return render_template_string(html_content)
 
+@app.route('/blank')
+def blank():
+    # Read the blank HTML file and serve it
+    with open('blank.html', 'r', encoding='utf-8') as f:
+        html_content = f.read()
+    return render_template_string(html_content)
+
 
 
 if __name__ == '__main__':
