@@ -411,10 +411,10 @@
     <div class="container">
         <form id="weatherForm">
             <label for="latitude">Latitude :</label>
-            <input type="number" id="latitude" name="latitude" step="any" value="45.48919" required>
+            <input type="number" id="latitude" name="latitude" step="any" value="48.8566" required>
 
             <label for="longitude">Longitude :</label>
-            <input type="number" id="longitude" name="longitude" step="any" value="-75.675031" required>
+            <input type="number" id="longitude" name="longitude" step="any" value="2.3522" required>
             <button type="button" id="geolocateBtn" style="margin-left: 10px; padding: 8px 12px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer;">📍 Utiliser ma position</button>
 
             <div style="margin-top: 20px; margin-bottom: 20px;">
@@ -559,8 +559,15 @@ document.getElementById("weatherForm").addEventListener("submit", async function
 	}
 
 	try {
+		console.log("Fetching weather data from:", apiUrl);
 		const response = await fetch(apiUrl);
+
+		if (!response.ok) {
+			throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+		}
+
 		const data = await response.json();
+		console.log("Weather data received:", data);
 
 		const times = data.hourly.time;
 
@@ -629,8 +636,20 @@ document.getElementById("weatherForm").addEventListener("submit", async function
 		// Display daily forecast
 		displayDailyForecast(data);
 	} catch (error) {
-		alert("Erreur lors de la récupération des données météo.");
-		console.error(error);
+		console.error("Weather API Error:", error);
+		let errorMessage = "Erreur lors de la récupération des données météo.";
+
+		if (error.message.includes("HTTP")) {
+			errorMessage += `\nDétails: ${error.message}`;
+		} else if (error.message.includes("fetch")) {
+			errorMessage += "\nVérifiez votre connexion internet.";
+		} else {
+			errorMessage += `\nDétails: ${error.message}`;
+		}
+
+		errorMessage += "\n\nVérifiez la console (F12) pour plus d'informations.";
+
+		alert(errorMessage);
 	}
 });
 
