@@ -267,6 +267,107 @@
             }
         }
 
+        /* Daily Forecast Cards */
+        .daily-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            min-width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .daily-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .daily-card .day-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .daily-card .date {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .daily-card .weather-icon {
+            font-size: 48px;
+            margin: 15px 0;
+        }
+
+        .daily-card .temp-range {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 15px 0;
+        }
+
+        .daily-card .temp-max {
+            color: #d32f2f;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .daily-card .temp-min {
+            color: #1976d2;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .daily-card .precipitation {
+            color: #666;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        .daily-card .sun-times {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+
+        .daily-card .sun-times div {
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .daily-card .sun-times .time {
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Frost indication in daily cards */
+        .frost-warning {
+            color: #d32f2f;
+            font-weight: bold;
+            background: #ffebee;
+            padding: 8px 12px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border: 2px solid #ffcdd2;
+            font-size: 14px;
+        }
+
+        .no-frost {
+            color: #388e3c;
+            font-weight: bold;
+            background: #e8f5e8;
+            padding: 8px 12px;
+            border-radius: 8px;
+            margin: 12px 0;
+            border: 2px solid #c8e6c9;
+            font-size: 14px;
+        }
+
 
     </style>
 </head>
@@ -301,12 +402,28 @@
                 <label><input type="checkbox" id="sunshine_duration" name="sunshine_duration"> Durée d'ensoleillement (h)</label>
             </div>
 
+            <div style="margin-top: 20px; margin-bottom: 20px;">
+                <label for="showDaily" style="display: block; margin-bottom: 10px; font-weight: bold;">Prévisions quotidiennes :</label>
+                <select id="showDaily" style="padding: 8px; width: 100%; border-radius: 5px; border: 1px solid #ccc; background: white;">
+                    <option value="false">Masquer les prévisions</option>
+                    <option value="true">Afficher 3 jours</option>
+                </select>
+            </div>
+
             <button type="submit">Obtenir la météo</button>
         </form>
 
         <div id="frostAlert" class="frost-alert">
             <h3>⚠️ Risque de gel détecté</h3>
             <p id="frostMessage"></p>
+        </div>
+
+        <!-- Daily Forecast Section -->
+        <div id="dailyForecast" style="margin-top: 30px; display: none;">
+            <h2 style="text-align: center; color: #333; margin-bottom: 20px;">Prévisions 3 jours</h2>
+            <div id="dailyCards" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <!-- Daily forecast cards will be inserted here -->
+            </div>
         </div>
 
 </div>
@@ -336,6 +453,19 @@
     </div>
 
    <script>
+// Load user preferences on page load
+document.addEventListener("DOMContentLoaded", function() {
+	const savedShowDaily = localStorage.getItem("weatherShowDaily");
+	if (savedShowDaily !== null) {
+		document.getElementById("showDaily").value = savedShowDaily;
+	}
+});
+
+// Save user preferences when selection changes
+document.getElementById("showDaily").addEventListener("change", function() {
+	localStorage.setItem("weatherShowDaily", this.value);
+});
+
 document.getElementById("weatherForm").addEventListener("submit", async function (e) {
 	e.preventDefault();
 
@@ -361,6 +491,9 @@ document.getElementById("weatherForm").addEventListener("submit", async function
 		return;
 	}
 
+	// Get user preference for daily forecast
+	const showDaily = document.getElementById("showDaily").value === "true";
+
 	// Build API URL conditionally based on checkboxes
 	let hourlyParams = [];
 	if (checkboxes.temperature_2m) hourlyParams.push("temperature_2m");
@@ -372,7 +505,12 @@ document.getElementById("weatherForm").addEventListener("submit", async function
 	if (checkboxes.soil_moisture_3_to_9cm) hourlyParams.push("soil_moisture_3_to_9cm");
 	if (checkboxes.sunshine_duration) hourlyParams.push("sunshine_duration");
 
-	const apiUrl = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&hourly=${hourlyParams.join(",")}&timezone=America%2FNew_York`;
+	// Build API URL with daily parameters if requested
+	let apiUrl = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&hourly=${hourlyParams.join(",")}&timezone=America%2FNew_York`;
+
+	if (showDaily) {
+		apiUrl += `&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,weather_code,sunrise,sunset`;
+	}
 
 	try {
 		const response = await fetch(apiUrl);
@@ -441,6 +579,9 @@ document.getElementById("weatherForm").addEventListener("submit", async function
 
 		// Apply weather background effects
 		applyWeatherBackground(weatherData, checkboxes, times);
+
+		// Display daily forecast
+		displayDailyForecast(data);
 	} catch (error) {
 		alert("Erreur lors de la récupération des données météo.");
 		console.error(error);
@@ -569,6 +710,124 @@ function createSnowEffect(container) {
 		flake.style.animationDuration = (Math.random() * 5 + 5) + "s";
 		container.appendChild(flake);
 	}
+}
+
+// Function to display daily forecast
+function displayDailyForecast(data) {
+	const dailyForecast = document.getElementById("dailyForecast");
+	const dailyCards = document.getElementById("dailyCards");
+	const showDaily = document.getElementById("showDaily").value === "true";
+
+	// Clear existing cards
+	dailyCards.innerHTML = "";
+
+	// Check if user wants to show daily forecast and if daily data exists
+	if (!showDaily || !data.daily || !data.daily.time) {
+		dailyForecast.style.display = "none";
+		return;
+	}
+
+	const days = data.daily.time;
+	const maxTemps = data.daily.temperature_2m_max;
+	const minTemps = data.daily.temperature_2m_min;
+	const precipitations = data.daily.precipitation_sum;
+	const weatherCodes = data.daily.weather_code;
+	const sunrises = data.daily.sunrise;
+	const sunsets = data.daily.sunset;
+
+	// Display up to 3 days
+	const maxDays = Math.min(3, days.length);
+
+	for (let i = 0; i < maxDays; i++) {
+		const card = document.createElement("div");
+		card.className = "daily-card";
+
+		const date = new Date(days[i]);
+		const dayName = getDayName(date);
+		const dateStr = date.toLocaleDateString('fr-FR', { day: 'numeric', month: 'short' });
+
+		const weatherIcon = getWeatherIcon(weatherCodes[i]);
+		const sunriseTime = formatTime(sunrises[i]);
+		const sunsetTime = formatTime(sunsets[i]);
+
+		// Check for frost risk for this day
+		const frostRisk = minTemps[i] <= 0 ? "Gel prévu ❄️" : "Gel non prévu 🌡️";
+		const frostClass = minTemps[i] <= 0 ? "frost-warning" : "no-frost";
+
+		card.innerHTML = `
+			<div class="day-name">${dayName}</div>
+			<div class="date">${dateStr}</div>
+			<div class="weather-icon">${weatherIcon}</div>
+			<div class="temp-range">
+				<span class="temp-max">${Math.round(maxTemps[i])}°</span>
+				<span class="temp-min">${Math.round(minTemps[i])}°</span>
+			</div>
+			<div class="${frostClass}">${frostRisk}</div>
+			<div class="precipitation">💧 ${precipitations[i].toFixed(1)} mm</div>
+			<div class="sun-times">
+				<div>
+					<div>🌅</div>
+					<div class="time">${sunriseTime}</div>
+				</div>
+				<div>
+					<div>🌇</div>
+					<div class="time">${sunsetTime}</div>
+				</div>
+			</div>
+		`;
+
+		dailyCards.appendChild(card);
+	}
+
+	// Show the forecast section
+	dailyForecast.style.display = "block";
+}
+
+// Helper function to get day name
+function getDayName(date) {
+	const days = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'];
+	const today = new Date();
+	const tomorrow = new Date(today);
+	tomorrow.setDate(today.getDate() + 1);
+	const dayAfter = new Date(today);
+	dayAfter.setDate(today.getDate() + 2);
+
+	if (date.toDateString() === today.toDateString()) {
+		return 'Aujourd\'hui';
+	} else if (date.toDateString() === tomorrow.toDateString()) {
+		return 'Demain';
+	} else if (date.toDateString() === dayAfter.toDateString()) {
+		return 'Après-demain';
+	} else {
+		return days[date.getDay()];
+	}
+}
+
+// Helper function to get weather icon
+function getWeatherIcon(code) {
+	// WMO Weather interpretation codes
+	if (code === 0) return "☀️"; // Clear sky
+	if (code === 1) return "🌤️"; // Mainly clear
+	if (code === 2) return "⛅"; // Partly cloudy
+	if (code === 3) return "☁️"; // Overcast
+	if (code >= 45 && code <= 48) return "🌫️"; // Fog
+	if (code >= 51 && code <= 55) return "🌦️"; // Drizzle
+	if (code >= 56 && code <= 57) return "🌨️"; // Freezing drizzle
+	if (code >= 61 && code <= 65) return "🌧️"; // Rain
+	if (code >= 66 && code <= 67) return "🌨️"; // Freezing rain
+	if (code >= 71 && code <= 75) return "❄️"; // Snow
+	if (code >= 77) return "🌨️"; // Snow grains
+	if (code >= 80 && code <= 82) return "🌦️"; // Rain showers
+	if (code >= 85 && code <= 86) return "🌨️"; // Snow showers
+	if (code >= 95) return "⛈️"; // Thunderstorm
+
+	return "☀️"; // Default
+}
+
+// Helper function to format time
+function formatTime(timestamp) {
+	const date = new Date(timestamp);
+	return date.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
 }
 
 

@@ -20,6 +20,7 @@ params = {
 	"latitude": 45.48919,
 	"longitude": -75.675031,
 	"hourly": ["temperature_2m", "relative_humidity_2m", "precipitation", "weather_code", "cloud_cover", "evapotranspiration", "soil_temperature_6cm", "soil_moisture_3_to_9cm", "sunshine_duration"],
+	"daily": ["temperature_2m_max", "temperature_2m_min", "precipitation_sum", "weather_code", "sunrise", "sunset"],
 	"timezone": "America/New_York",
 }
 responses = openmeteo.weather_api(url, params=params)
@@ -62,6 +63,32 @@ hourly_data["sunshine_duration"] = hourly_sunshine_duration
 
 hourly_dataframe = pd.DataFrame(data = hourly_data)
 print("\nHourly data\n", hourly_dataframe)
+
+# Process daily data
+daily = response.Daily()
+daily_temperature_2m_max = daily.Variables(0).ValuesAsNumpy()
+daily_temperature_2m_min = daily.Variables(1).ValuesAsNumpy()
+daily_precipitation_sum = daily.Variables(2).ValuesAsNumpy()
+daily_weather_code = daily.Variables(3).ValuesAsNumpy()
+daily_sunrise = daily.Variables(4).ValuesAsNumpy()
+daily_sunset = daily.Variables(5).ValuesAsNumpy()
+
+daily_data = {"date": pd.date_range(
+	start = pd.to_datetime(daily.Time(), unit = "s", utc = True),
+	end = pd.to_datetime(daily.TimeEnd(), unit = "s", utc = True),
+	freq = pd.Timedelta(seconds = daily.Interval()),
+	inclusive = "left"
+)}
+
+daily_data["temperature_2m_max"] = daily_temperature_2m_max
+daily_data["temperature_2m_min"] = daily_temperature_2m_min
+daily_data["precipitation_sum"] = daily_precipitation_sum
+daily_data["weather_code"] = daily_weather_code
+daily_data["sunrise"] = daily_sunrise
+daily_data["sunset"] = daily_sunset
+
+daily_dataframe = pd.DataFrame(data = daily_data)
+print("\nDaily data\n", daily_dataframe)
 
 @app.route('/')
 def index():
