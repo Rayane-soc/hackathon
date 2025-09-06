@@ -70,6 +70,27 @@
         th {
             background-color: #f0f0f0;
         }
+
+        .frost-alert {
+            background-color: #ffebee;
+            border: 2px solid #f44336;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+            display: none;
+        }
+
+        .frost-alert h3 {
+            color: #d32f2f;
+            margin: 0 0 10px 0;
+            font-size: 18px;
+        }
+
+        .frost-alert p {
+            color: #d32f2f;
+            margin: 5px 0;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -91,10 +112,16 @@
                 <label><input type="checkbox" id="evapotranspiration" name="evapotranspiration" checked> Évapotranspiration (mm)</label>
                 <label><input type="checkbox" id="soil_temperature_6cm" name="soil_temperature_6cm" checked> Température du sol (°C)</label>
                 <label><input type="checkbox" id="soil_moisture_3_to_9cm" name="soil_moisture_3_to_9cm"> Humidité du sol (m³/m³)</label>
+                <label><input type="checkbox" id="sunshine_duration" name="sunshine_duration"> Durée d'ensoleillement (h)</label>
             </div>
 
             <button type="submit">Obtenir la météo</button>
         </form>
+
+        <div id="frostAlert" class="frost-alert">
+            <h3>⚠️ Risque de gel détecté</h3>
+            <p id="frostMessage"></p>
+        </div>
 
 </div>
 
@@ -107,7 +134,7 @@
         <table id="weatherTable">
             <thead>
                 <tr>
-                    <th>Date</th>
+                    <th>Heure</th>
                     <th>Température (°C)</th>
                     <th>Humidité (%)</th>
                     <th>Précipitations (mm)</th>
@@ -137,8 +164,16 @@ document.getElementById("weatherForm").addEventListener("submit", async function
 		cloud_cover: document.getElementById("cloud_cover").checked,
 		evapotranspiration: document.getElementById("evapotranspiration").checked,
 		soil_temperature_6cm: document.getElementById("soil_temperature_6cm").checked,
-		soil_moisture_3_to_9cm: document.getElementById("soil_moisture_3_to_9cm").checked
+		soil_moisture_3_to_9cm: document.getElementById("soil_moisture_3_to_9cm").checked,
+		sunshine_duration: document.getElementById("sunshine_duration").checked
 	};
+
+	// Check if at least one checkbox is selected
+	const isAnyChecked = Object.values(checkboxes).some(checked => checked);
+	if (!isAnyChecked) {
+		alert("Veuillez sélectionner une case");
+		return;
+	}
 
 	// Build API URL conditionally based on checkboxes
 	let hourlyParams = [];
@@ -149,6 +184,7 @@ document.getElementById("weatherForm").addEventListener("submit", async function
 	if (checkboxes.evapotranspiration) hourlyParams.push("evapotranspiration");
 	if (checkboxes.soil_temperature_6cm) hourlyParams.push("soil_temperature_6cm");
 	if (checkboxes.soil_moisture_3_to_9cm) hourlyParams.push("soil_moisture_3_to_9cm");
+	if (checkboxes.sunshine_duration) hourlyParams.push("sunshine_duration");
 
 	const apiUrl = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&hourly=${hourlyParams.join(",")}&timezone=America%2FNew_York`;
 
@@ -167,9 +203,10 @@ document.getElementById("weatherForm").addEventListener("submit", async function
 		if (checkboxes.evapotranspiration) weatherData.evapotranspiration = data.hourly.evapotranspiration;
 		if (checkboxes.soil_temperature_6cm) weatherData.soilTemp = data.hourly.soil_temperature_6cm;
 		if (checkboxes.soil_moisture_3_to_9cm) weatherData.soilMoisture = data.hourly.soil_moisture_3_to_9cm;
+		if (checkboxes.sunshine_duration) weatherData.sunshineDuration = data.hourly.sunshine_duration.map(seconds => (seconds / 3600).toFixed(2));
 
-		// Update table header dynamically - always show Date column
-		let headerHTML = '<th>Date</th>';
+		// Update table header dynamically - always show Heure column
+		let headerHTML = '<th>Heure</th>';
 		if (checkboxes.temperature_2m) headerHTML += '<th>Température (°C)</th>';
 		if (checkboxes.relative_humidity_2m) headerHTML += '<th>Humidité (%)</th>';
 		if (checkboxes.precipitation) headerHTML += '<th>Précipitations (mm)</th>';
@@ -177,6 +214,7 @@ document.getElementById("weatherForm").addEventListener("submit", async function
 		if (checkboxes.evapotranspiration) headerHTML += '<th>Évapotranspiration (mm)</th>';
 		if (checkboxes.soil_temperature_6cm) headerHTML += '<th>Température du sol (°C)</th>';
 		if (checkboxes.soil_moisture_3_to_9cm) headerHTML += '<th>Humidité du sol (m³/m³)</th>';
+		if (checkboxes.sunshine_duration) headerHTML += '<th>Durée d\'ensoleillement (h)</th>';
 		document.querySelector("#weatherTable thead tr").innerHTML = headerHTML;
 		document.querySelector("#weatherTable thead").style.display = "table-header-group";
 
@@ -187,7 +225,7 @@ document.getElementById("weatherForm").addEventListener("submit", async function
 		for (let i = 0; i < 24; i++) {
 			const row = document.createElement("tr");
 
-			let rowHTML = `<td>${new Date(times[i]).toLocaleString()}</td>`;
+			let rowHTML = `<td>${new Date(times[i]).getHours()}h</td>`;
 			if (checkboxes.temperature_2m) rowHTML += `<td>${weatherData.temps[i]}</td>`;
 			if (checkboxes.relative_humidity_2m) rowHTML += `<td>${weatherData.humidity[i]}</td>`;
 			if (checkboxes.precipitation) rowHTML += `<td>${weatherData.precipitation[i]}</td>`;
@@ -195,15 +233,48 @@ document.getElementById("weatherForm").addEventListener("submit", async function
 			if (checkboxes.evapotranspiration) rowHTML += `<td>${weatherData.evapotranspiration[i]}</td>`;
 			if (checkboxes.soil_temperature_6cm) rowHTML += `<td>${weatherData.soilTemp[i]}</td>`;
 			if (checkboxes.soil_moisture_3_to_9cm) rowHTML += `<td>${weatherData.soilMoisture[i]}</td>`;
+			if (checkboxes.sunshine_duration) rowHTML += `<td>${weatherData.sunshineDuration[i]}</td>`;
 
 			row.innerHTML = rowHTML;
 			tbody.appendChild(row);
+		}
+
+		// Check for frost risk
+		if (checkboxes.temperature_2m && weatherData.temps) {
+			checkFrostRisk(weatherData.temps, times);
 		}
 	} catch (error) {
 		alert("Erreur lors de la récupération des données météo.");
 		console.error(error);
 	}
 });
+
+// Function to check for frost risk
+function checkFrostRisk(temperatures, times) {
+	const frostAlert = document.getElementById("frostAlert");
+	const frostMessage = document.getElementById("frostMessage");
+
+	// Find hours with temperature <= 0°C
+	const frostHours = [];
+	for (let i = 0; i < Math.min(temperatures.length, 24); i++) {
+		if (temperatures[i] <= 0) {
+			const hour = new Date(times[i]).getHours();
+			frostHours.push(hour);
+		}
+	}
+
+	if (frostHours.length > 0) {
+		// Show frost alert
+		const hourText = frostHours.length === 1 ? "heure" : "heures";
+		frostMessage.textContent = `Risque de gel détecté aux ${hourText} suivantes : ${frostHours.join(", ")}h`;
+		frostAlert.style.display = "block";
+	} else {
+		// Hide frost alert
+		frostAlert.style.display = "none";
+	}
+}
+
+
 </script>
 
 </body>

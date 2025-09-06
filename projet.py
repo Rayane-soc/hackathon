@@ -3,6 +3,10 @@ import openmeteo_requests
 import pandas as pd
 import requests_cache
 from retry_requests import retry
+from flask import Flask, render_template_string
+import os
+
+app = Flask(__name__)
 
 # Setup the Open-Meteo API client with cache and retry on error
 cache_session = requests_cache.CachedSession('.cache', expire_after = 3600)
@@ -15,7 +19,7 @@ url = "https://api.open-meteo.com/v1/forecast"
 params = {
 	"latitude": 45.48919,
 	"longitude": -75.675031,
-	"hourly": ["temperature_2m", "relative_humidity_2m", "precipitation", "weather_code", "cloud_cover", "evapotranspiration", "soil_temperature_6cm", "soil_moisture_3_to_9cm"],
+	"hourly": ["temperature_2m", "relative_humidity_2m", "precipitation", "weather_code", "cloud_cover", "evapotranspiration", "soil_temperature_6cm", "soil_moisture_3_to_9cm", "sunshine_duration"],
 	"timezone": "America/New_York",
 }
 responses = openmeteo.weather_api(url, params=params)
@@ -37,6 +41,7 @@ hourly_cloud_cover = hourly.Variables(4).ValuesAsNumpy()
 hourly_evapotranspiration = hourly.Variables(5).ValuesAsNumpy()
 hourly_soil_temperature_6cm = hourly.Variables(6).ValuesAsNumpy()
 hourly_soil_moisture_3_to_9cm = hourly.Variables(7).ValuesAsNumpy()
+hourly_sunshine_duration = hourly.Variables(8).ValuesAsNumpy()
 
 hourly_data = {"date": pd.date_range(
 	start = pd.to_datetime(hourly.Time(), unit = "s", utc = True),
@@ -53,7 +58,19 @@ hourly_data["cloud_cover"] = hourly_cloud_cover
 hourly_data["evapotranspiration"] = hourly_evapotranspiration
 hourly_data["soil_temperature_6cm"] = hourly_soil_temperature_6cm
 hourly_data["soil_moisture_3_to_9cm"] = hourly_soil_moisture_3_to_9cm
+hourly_data["sunshine_duration"] = hourly_sunshine_duration
 
 hourly_dataframe = pd.DataFrame(data = hourly_data)
 print("\nHourly data\n", hourly_dataframe)
 
+@app.route('/')
+def index():
+    # Read the HTML file and serve it
+    with open('index.html', 'r', encoding='utf-8') as f:
+        html_content = f.read()
+    return render_template_string(html_content)
+
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
