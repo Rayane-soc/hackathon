@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Application Météo de Rayane</title>
+    <title>Application Météo de Rayane work in progress</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -57,6 +57,10 @@
             border-collapse: collapse;
         }
 
+        thead {
+            display: none;
+        }
+
         th, td {
             padding: 8px;
             border-bottom: 1px solid #ddd;
@@ -69,7 +73,7 @@
     </style>
 </head>
 <body>
-    <h1>🌦️ Application Météo de Rayane</h1>
+    <h1>🌦️ Application Météo de Rayane work in progress</h1>
     <div class="container">
         <form id="weatherForm">
             <label for="latitude">Latitude :</label>
@@ -78,8 +82,27 @@
             <label for="longitude">Longitude :</label>
             <input type="number" id="longitude" name="longitude" step="any" value="-75.675031" required>
 
+            <div style="margin-top: 20px; margin-bottom: 20px;">
+                <h3>Sélectionnez les données à afficher :</h3>
+                <label><input type="checkbox" id="temperature_2m" name="temperature_2m" checked> Température (°C)</label>
+                <label><input type="checkbox" id="relative_humidity_2m" name="relative_humidity_2m" checked> Humidité (%)</label>
+                <label><input type="checkbox" id="precipitation" name="precipitation" checked> Précipitations (mm)</label>
+                <label><input type="checkbox" id="cloud_cover" name="cloud_cover" checked> Nuages (%)</label>
+                <label><input type="checkbox" id="evapotranspiration" name="evapotranspiration" checked> Évapotranspiration (mm)</label>
+                <label><input type="checkbox" id="soil_temperature_6cm" name="soil_temperature_6cm" checked> Température du sol (°C)</label>
+                <label><input type="checkbox" id="soil_moisture_3_to_9cm" name="soil_moisture_3_to_9cm"> Humidité du sol (m³/m³)</label>
+            </div>
+
             <button type="submit">Obtenir la météo</button>
         </form>
+
+</div>
+
+
+
+
+
+
 
         <table id="weatherTable">
             <thead>
@@ -106,21 +129,56 @@ document.getElementById("weatherForm").addEventListener("submit", async function
 	const lat = document.getElementById("latitude").value;
 	const lon = document.getElementById("longitude").value;
 
-	const apiUrl = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&hourly=temperature_2m,relative_humidity_2m,precipitation,weather_code,cloud_cover,evapotranspiration,soil_temperature_6cm,soil_moisture_3_to_9cm&timezone=America%2FNew_York`;
+	// Get checkbox states
+	const checkboxes = {
+		temperature_2m: document.getElementById("temperature_2m").checked,
+		relative_humidity_2m: document.getElementById("relative_humidity_2m").checked,
+		precipitation: document.getElementById("precipitation").checked,
+		cloud_cover: document.getElementById("cloud_cover").checked,
+		evapotranspiration: document.getElementById("evapotranspiration").checked,
+		soil_temperature_6cm: document.getElementById("soil_temperature_6cm").checked,
+		soil_moisture_3_to_9cm: document.getElementById("soil_moisture_3_to_9cm").checked
+	};
+
+	// Build API URL conditionally based on checkboxes
+	let hourlyParams = [];
+	if (checkboxes.temperature_2m) hourlyParams.push("temperature_2m");
+	if (checkboxes.relative_humidity_2m) hourlyParams.push("relative_humidity_2m");
+	if (checkboxes.precipitation) hourlyParams.push("precipitation");
+	if (checkboxes.cloud_cover) hourlyParams.push("cloud_cover");
+	if (checkboxes.evapotranspiration) hourlyParams.push("evapotranspiration");
+	if (checkboxes.soil_temperature_6cm) hourlyParams.push("soil_temperature_6cm");
+	if (checkboxes.soil_moisture_3_to_9cm) hourlyParams.push("soil_moisture_3_to_9cm");
+
+	const apiUrl = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&hourly=${hourlyParams.join(",")}&timezone=America%2FNew_York`;
 
 	try {
 		const response = await fetch(apiUrl);
 		const data = await response.json();
 
 		const times = data.hourly.time;
-		const temps = data.hourly.temperature_2m;
-		const humidity = data.hourly.relative_humidity_2m;
-		const precipitation = data.hourly.precipitation;
-		const weatherCode = data.hourly.weather_code;
-		const cloudCover = data.hourly.cloud_cover;
-        const evapotranspiration = data.hourly.evapotranspiration;
-        const soilTemp = data.hourly.soil_temperature_6cm;
-        const soilMoisture = data.hourly.soil_moisture_3_to_9cm;
+
+		// Get data conditionally
+		const weatherData = {};
+		if (checkboxes.temperature_2m) weatherData.temps = data.hourly.temperature_2m;
+		if (checkboxes.relative_humidity_2m) weatherData.humidity = data.hourly.relative_humidity_2m;
+		if (checkboxes.precipitation) weatherData.precipitation = data.hourly.precipitation;
+		if (checkboxes.cloud_cover) weatherData.cloudCover = data.hourly.cloud_cover;
+		if (checkboxes.evapotranspiration) weatherData.evapotranspiration = data.hourly.evapotranspiration;
+		if (checkboxes.soil_temperature_6cm) weatherData.soilTemp = data.hourly.soil_temperature_6cm;
+		if (checkboxes.soil_moisture_3_to_9cm) weatherData.soilMoisture = data.hourly.soil_moisture_3_to_9cm;
+
+		// Update table header dynamically - always show Date column
+		let headerHTML = '<th>Date</th>';
+		if (checkboxes.temperature_2m) headerHTML += '<th>Température (°C)</th>';
+		if (checkboxes.relative_humidity_2m) headerHTML += '<th>Humidité (%)</th>';
+		if (checkboxes.precipitation) headerHTML += '<th>Précipitations (mm)</th>';
+		if (checkboxes.cloud_cover) headerHTML += '<th>Nuages (%)</th>';
+		if (checkboxes.evapotranspiration) headerHTML += '<th>Évapotranspiration (mm)</th>';
+		if (checkboxes.soil_temperature_6cm) headerHTML += '<th>Température du sol (°C)</th>';
+		if (checkboxes.soil_moisture_3_to_9cm) headerHTML += '<th>Humidité du sol (m³/m³)</th>';
+		document.querySelector("#weatherTable thead tr").innerHTML = headerHTML;
+		document.querySelector("#weatherTable thead").style.display = "table-header-group";
 
 		const tbody = document.querySelector("#weatherTable tbody");
 		tbody.innerHTML = ""; // Clear existing table
@@ -129,17 +187,16 @@ document.getElementById("weatherForm").addEventListener("submit", async function
 		for (let i = 0; i < 24; i++) {
 			const row = document.createElement("tr");
 
-			row.innerHTML = `
-				<td>${new Date(times[i]).toLocaleString()}</td>
-				<td>${temps[i]}</td>
-				<td>${humidity[i]}</td>
-				<td>${precipitation[i]}</td>
-				<td>${cloudCover[i]}</td>
-                <td>${evapotranspiration[i]}</td>
-                <td>${soilTemp[i]}</td>
-                <td>${soilMoisture[i]}</td>
-			`;
+			let rowHTML = `<td>${new Date(times[i]).toLocaleString()}</td>`;
+			if (checkboxes.temperature_2m) rowHTML += `<td>${weatherData.temps[i]}</td>`;
+			if (checkboxes.relative_humidity_2m) rowHTML += `<td>${weatherData.humidity[i]}</td>`;
+			if (checkboxes.precipitation) rowHTML += `<td>${weatherData.precipitation[i]}</td>`;
+			if (checkboxes.cloud_cover) rowHTML += `<td>${weatherData.cloudCover[i]}</td>`;
+			if (checkboxes.evapotranspiration) rowHTML += `<td>${weatherData.evapotranspiration[i]}</td>`;
+			if (checkboxes.soil_temperature_6cm) rowHTML += `<td>${weatherData.soilTemp[i]}</td>`;
+			if (checkboxes.soil_moisture_3_to_9cm) rowHTML += `<td>${weatherData.soilMoisture[i]}</td>`;
 
+			row.innerHTML = rowHTML;
 			tbody.appendChild(row);
 		}
 	} catch (error) {
