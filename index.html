@@ -301,11 +301,88 @@
             min-width: 250px;
             text-align: center;
             transition: transform 0.3s ease;
+            flex-shrink: 0;
         }
 
         .daily-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        /* Compact cards for 7-day forecast */
+        .daily-card.compact {
+            padding: 12px;
+            min-width: 180px;
+            max-width: 200px;
+        }
+
+        .daily-card.compact .day-name {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .daily-card.compact .date {
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .daily-card.compact .weather-icon {
+            font-size: 36px;
+            margin: 8px 0;
+        }
+
+        .daily-card.compact .temp-range {
+            margin: 8px 0;
+        }
+
+        .daily-card.compact .temp-max,
+        .daily-card.compact .temp-min {
+            font-size: 16px;
+        }
+
+        .daily-card.compact .precipitation {
+            font-size: 12px;
+            margin: 5px 0;
+        }
+
+        .daily-card.compact .frost-warning,
+        .daily-card.compact .no-frost {
+            font-size: 11px;
+            padding: 4px 8px;
+            margin: 8px 0;
+        }
+
+        /* Hide sun times for compact cards */
+        .daily-card.compact .sun-times {
+            display: none;
+        }
+
+        /* Daily Cards Container - Scrollable for 7 days */
+        #dailyCards {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 10px 0;
+            scrollbar-width: thin;
+            scrollbar-color: #007BFF #f1f1f1;
+        }
+
+        #dailyCards::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        #dailyCards::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        #dailyCards::-webkit-scrollbar-thumb {
+            background: #007BFF;
+            border-radius: 4px;
+        }
+
+        #dailyCards::-webkit-scrollbar-thumb:hover {
+            background: #0056b3;
         }
 
         .daily-card .day-name {
@@ -394,6 +471,8 @@
         }
 
 
+
+
     </style>
 </head>
 <body>
@@ -408,13 +487,15 @@
         <button type="button" id="soundToggle" style="margin-left: auto; padding: 6px 10px; background-color: rgba(255,255,255,0.8); color: #333; border: 1px solid #ddd; border-radius: 4px; cursor: pointer; font-size: 14px; backdrop-filter: blur(10px);">🔊</button>
     </div>
 
+
+
     <div class="container">
         <form id="weatherForm">
             <label for="latitude">Latitude :</label>
-            <input type="number" id="latitude" name="latitude" step="any" value="48.8566" required>
+            <input type="number" id="latitude" name="latitude" step="any" value="0" required>
 
             <label for="longitude">Longitude :</label>
-            <input type="number" id="longitude" name="longitude" step="any" value="2.3522" required>
+            <input type="number" id="longitude" name="longitude" step="any" value="0" required>
             <button type="button" id="geolocateBtn" style="margin-left: 10px; padding: 8px 12px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer;">📍 Utiliser ma position</button>
 
             <div style="margin-top: 20px; margin-bottom: 20px;">
@@ -433,7 +514,8 @@
                 <label for="showDaily" style="display: block; margin-bottom: 10px; font-weight: bold;">Prévisions quotidiennes :</label>
                 <select id="showDaily" style="padding: 8px; width: 100%; border-radius: 5px; border: 1px solid #ccc; background: white;">
                     <option value="false">Masquer les prévisions</option>
-                    <option value="true">Afficher 3 jours</option>
+                    <option value="3">Afficher 3 jours</option>
+                    <option value="7">Afficher 7 jours</option>
                 </select>
             </div>
 
@@ -538,7 +620,7 @@ document.getElementById("weatherForm").addEventListener("submit", async function
 	}
 
 	// Get user preference for daily forecast
-	const showDaily = document.getElementById("showDaily").value === "true";
+	const showDaily = document.getElementById("showDaily").value;
 
 	// Build API URL conditionally based on checkboxes
 	let hourlyParams = [];
@@ -554,9 +636,14 @@ document.getElementById("weatherForm").addEventListener("submit", async function
 	// Build API URL with daily parameters if requested
 	let apiUrl = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&hourly=${hourlyParams.join(",")}&timezone=America%2FNew_York`;
 
-	if (showDaily) {
+	if (showDaily !== "false") {
 		apiUrl += `&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,weather_code,sunrise,sunset`;
+		if (showDaily === "7") {
+			apiUrl += `&forecast_days=7`;
+		}
 	}
+
+
 
 	try {
 		console.log("Fetching weather data from:", apiUrl);
@@ -799,13 +886,13 @@ function createSnowEffect(container) {
 function displayDailyForecast(data) {
 	const dailyForecast = document.getElementById("dailyForecast");
 	const dailyCards = document.getElementById("dailyCards");
-	const showDaily = document.getElementById("showDaily").value === "true";
+	const showDaily = document.getElementById("showDaily").value;
 
 	// Clear existing cards
 	dailyCards.innerHTML = "";
 
 	// Check if user wants to show daily forecast and if daily data exists
-	if (!showDaily || !data.daily || !data.daily.time) {
+	if (showDaily === "false" || !data.daily || !data.daily.time) {
 		dailyForecast.style.display = "none";
 		return;
 	}
@@ -818,12 +905,14 @@ function displayDailyForecast(data) {
 	const sunrises = data.daily.sunrise;
 	const sunsets = data.daily.sunset;
 
-	// Display up to 3 days
-	const maxDays = Math.min(3, days.length);
+	// Display based on user selection
+	const maxDays = Math.min(parseInt(showDaily), days.length);
 
 	for (let i = 0; i < maxDays; i++) {
 		const card = document.createElement("div");
-		card.className = "daily-card";
+		// Apply compact class for 7-day forecast
+		const isCompact = showDaily === "7";
+		card.className = isCompact ? "daily-card compact" : "daily-card";
 
 		const date = new Date(days[i]);
 		const dayName = getDayName(date);
@@ -862,6 +951,19 @@ function displayDailyForecast(data) {
 		dailyCards.appendChild(card);
 	}
 
+	// Update title based on selected days
+	const titleElement = dailyForecast.querySelector("h2");
+	if (titleElement) {
+		titleElement.textContent = `Prévisions ${maxDays} jours`;
+	}
+
+	// Adjust spacing for compact cards
+	if (showDaily === "7") {
+		dailyCards.style.gap = "15px";
+	} else {
+		dailyCards.style.gap = "20px";
+	}
+
 	// Show the forecast section
 	dailyForecast.style.display = "block";
 }
@@ -870,6 +972,8 @@ function displayDailyForecast(data) {
 function getDayName(date) {
 	const days = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'];
 	const today = new Date();
+	const yesterday = new Date(today);
+	yesterday.setDate(today.getDate() - 1);
 	const tomorrow = new Date(today);
 	tomorrow.setDate(today.getDate() + 1);
 	const dayAfter = new Date(today);
@@ -877,6 +981,8 @@ function getDayName(date) {
 
 	if (date.toDateString() === today.toDateString()) {
 		return 'Aujourd\'hui';
+	} else if (date.toDateString() === yesterday.toDateString()) {
+		return 'Hier';
 	} else if (date.toDateString() === tomorrow.toDateString()) {
 		return 'Demain';
 	} else if (date.toDateString() === dayAfter.toDateString()) {
@@ -1232,6 +1338,8 @@ function updateTimeBasedBackground() {
 		document.body.classList.remove("morning", "afternoon", "evening", "night");
 	}
 }
+
+
 
 // Initialize audio on first user interaction
 document.addEventListener("click", function initAudioOnce() {
