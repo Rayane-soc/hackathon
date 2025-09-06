@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Application Météo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to top, #87CEEB, #ffffff);
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        label, input {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            padding: 8px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <h1>🌦️ Application Météo</h1>
+    <div class="container">
+        <form id="weatherForm">
+            <label for="latitude">Latitude :</label>
+            <input type="number" id="latitude" name="latitude" step="any" value="45.48919" required>
+
+            <label for="longitude">Longitude :</label>
+            <input type="number" id="longitude" name="longitude" step="any" value="-75.675031" required>
+
+            <button type="submit">Obtenir la météo</button>
+        </form>
+
+        <table id="weatherTable">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Température (°C)</th>
+                    <th>Humidité (%)</th>
+                    <th>Précipitations (mm)</th>
+                    <th>Nuages (%)</th>
+                    <th>Évapotranspiration (mm)</th>
+                    <th>Température du sol (°C)</th>
+                    <th>Humidité du sol (m³/m³)</th>
+
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+   <script>
+document.getElementById("weatherForm").addEventListener("submit", async function (e) {
+	e.preventDefault();
+
+	const lat = document.getElementById("latitude").value;
+	const lon = document.getElementById("longitude").value;
+
+	const apiUrl = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&hourly=temperature_2m,relative_humidity_2m,precipitation,weather_code,cloud_cover,evapotranspiration,soil_temperature_6cm,soil_moisture_3_to_9cm&timezone=America%2FNew_York`;
+
+	try {
+		const response = await fetch(apiUrl);
+		const data = await response.json();
+
+		const times = data.hourly.time;
+		const temps = data.hourly.temperature_2m;
+		const humidity = data.hourly.relative_humidity_2m;
+		const precipitation = data.hourly.precipitation;
+		const weatherCode = data.hourly.weather_code;
+		const cloudCover = data.hourly.cloud_cover;
+        const evapotranspiration = data.hourly.evapotranspiration;
+        const soilTemp = data.hourly.soil_temperature_6cm;
+        const soilMoisture = data.hourly.soil_moisture_3_to_9cm;
+
+		const tbody = document.querySelector("#weatherTable tbody");
+		tbody.innerHTML = ""; // Clear existing table
+
+		// Display first 24 hours
+		for (let i = 0; i < 24; i++) {
+			const row = document.createElement("tr");
+
+			row.innerHTML = `
+				<td>${new Date(times[i]).toLocaleString()}</td>
+				<td>${temps[i]}</td>
+				<td>${humidity[i]}</td>
+				<td>${precipitation[i]}</td>
+				<td>${cloudCover[i]}</td>
+                <td>${evapotranspiration[i]}</td>
+                <td>${soilTemp[i]}</td>
+                <td>${soilMoisture[i]}</td>
+			`;
+
+			tbody.appendChild(row);
+		}
+	} catch (error) {
+		alert("Erreur lors de la récupération des données météo.");
+		console.error(error);
+	}
+});
+</script>
+
+</body>
+</html>
