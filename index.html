@@ -134,6 +134,31 @@
             color: #1565c0;
         }
 
+        /* Time-based Background */
+        body {
+            transition: background 2s ease;
+        }
+
+        /* Morning (6h-12h) - Warm, bright tones */
+        body.morning {
+            background: linear-gradient(135deg, #87CEEB 0%, #FFD700 30%, #FFA500 70%, #FF8C00 100%);
+        }
+
+        /* Afternoon (12h-18h) - Azure, energetic tones */
+        body.afternoon {
+            background: linear-gradient(135deg, #00BFFF 0%, #87CEEB 40%, #4682B4 80%, #1e90ff 100%);
+        }
+
+        /* Evening (18h-22h) - Orange, calming tones */
+        body.evening {
+            background: linear-gradient(135deg, #FF8C00 0%, #FF6347 40%, #8B4513 80%, #DC143C 100%);
+        }
+
+        /* Night (22h-6h) - Dark, starry tones */
+        body.night {
+            background: linear-gradient(135deg, #191970 0%, #000080 40%, #000000 80%, #2F4F4F 100%);
+        }
+
         /* Weather Background Effects */
         .weather-bg {
             position: fixed;
@@ -380,6 +405,7 @@
     <div class="nav-tabs">
         <a href="index.html" class="active">🌦️ Météo</a>
         <a href="blank.html">📄 Vierge</a>
+        <button type="button" id="soundToggle" style="margin-left: auto; padding: 6px 10px; background-color: rgba(255,255,255,0.8); color: #333; border: 1px solid #ddd; border-radius: 4px; cursor: pointer; font-size: 14px; backdrop-filter: blur(10px);">🔊</button>
     </div>
 
     <div class="container">
@@ -389,6 +415,7 @@
 
             <label for="longitude">Longitude :</label>
             <input type="number" id="longitude" name="longitude" step="any" value="-75.675031" required>
+            <button type="button" id="geolocateBtn" style="margin-left: 10px; padding: 8px 12px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer;">📍 Utiliser ma position</button>
 
             <div style="margin-top: 20px; margin-bottom: 20px;">
                 <h3>Sélectionnez les données à afficher :</h3>
@@ -409,6 +436,8 @@
                     <option value="true">Afficher 3 jours</option>
                 </select>
             </div>
+
+
 
             <button type="submit">Obtenir la météo</button>
         </form>
@@ -459,11 +488,28 @@ document.addEventListener("DOMContentLoaded", function() {
 	if (savedShowDaily !== null) {
 		document.getElementById("showDaily").value = savedShowDaily;
 	}
+
+	const savedEnableSound = localStorage.getItem("weatherEnableSound");
+	if (savedEnableSound !== null) {
+		const soundEnabled = savedEnableSound === "true";
+		updateSoundButton(soundEnabled);
+	}
+
+	// Initialize time-based background
+	updateTimeBasedBackground();
+
+	// Update background every minute
+	setInterval(updateTimeBasedBackground, 60000);
 });
 
 // Save user preferences when selection changes
 document.getElementById("showDaily").addEventListener("change", function() {
 	localStorage.setItem("weatherShowDaily", this.value);
+});
+
+// Sound toggle button functionality
+document.getElementById("soundToggle").addEventListener("click", function() {
+	toggleSound();
 });
 
 document.getElementById("weatherForm").addEventListener("submit", async function (e) {
@@ -641,6 +687,24 @@ function applyWeatherBackground(weatherData, checkboxes, times) {
 
 	// Apply weather class
 	weatherBg.classList.add(weatherType);
+
+	// Control sounds based on weather and time
+	const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+	const now = new Date();
+	const userTime = new Date(now.toLocaleString("en-US", {timeZone: userTimezone}));
+	const hour = userTime.getHours();
+	const isDaytime = hour >= 6 && hour < 22; // Daytime: 6h-22h
+
+	if (weatherType === "rain") {
+		playRainSound();
+		stopForestAmbience(); // Stop forest sounds when raining
+	} else if (weatherType === "sunny" && isDaytime) {
+		stopRainSound();
+		playForestAmbience(); // Play forest sounds on sunny days
+	} else {
+		stopRainSound();
+		stopForestAmbience();
+	}
 
 	// Create animated elements based on weather type
 	switch (weatherType) {
@@ -829,6 +893,334 @@ function formatTime(timestamp) {
 	const date = new Date(timestamp);
 	return date.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
 }
+
+// Web Audio API for sounds
+let audioContext = null;
+let rainSoundSource = null;
+let forestSoundSource = null;
+let isPlayingRainSound = false;
+let isPlayingForestSound = false;
+
+// Initialize Web Audio API
+function initAudio() {
+	try {
+		audioContext = new (window.AudioContext || window.webkitAudioContext)();
+	} catch (e) {
+		console.warn("Web Audio API not supported:", e);
+	}
+}
+
+// Generate rain sound using Web Audio API
+function createRainSound() {
+	if (!audioContext) return null;
+
+	const bufferSize = audioContext.sampleRate * 2; // 2 seconds
+	const buffer = audioContext.createBuffer(1, bufferSize, audioContext.sampleRate);
+	const data = buffer.getChannelData(0);
+
+	// Generate rain-like noise
+	for (let i = 0; i < bufferSize; i++) {
+		// White noise with some filtering for rain-like sound
+		const whiteNoise = Math.random() * 2 - 1;
+		const filteredNoise = whiteNoise * (0.5 + 0.5 * Math.sin(i * 0.001));
+
+		// Add some drops with varying intensity
+		const dropFrequency = Math.sin(i * 0.01) * Math.sin(i * 0.003);
+		const rainDrops = dropFrequency * 0.3;
+
+		data[i] = (filteredNoise * 0.7 + rainDrops * 0.3) * 0.1; // Lower volume
+	}
+
+	return buffer;
+}
+
+// Generate forest ambience using Web Audio API
+function createForestAmbience() {
+	if (!audioContext) return null;
+
+	const bufferSize = audioContext.sampleRate * 4; // 4 seconds for more variety
+	const buffer = audioContext.createBuffer(1, bufferSize, audioContext.sampleRate);
+	const data = buffer.getChannelData(0);
+
+	// Generate forest-like ambience
+	for (let i = 0; i < bufferSize; i++) {
+		let sample = 0;
+
+		// Add bird chirps at random intervals
+		if (Math.random() < 0.001) { // Rare bird chirps
+			const chirpLength = Math.floor(audioContext.sampleRate * 0.1); // 0.1 second chirp
+			const chirpStart = Math.min(i, bufferSize - chirpLength);
+
+			for (let j = 0; j < chirpLength && chirpStart + j < bufferSize; j++) {
+				const t = j / audioContext.sampleRate;
+				const frequency = 2000 + Math.sin(t * 50) * 500; // Varying frequency
+				const chirp = Math.sin(2 * Math.PI * frequency * t) * Math.exp(-t * 10); // Decaying chirp
+				data[chirpStart + j] += chirp * 0.05;
+			}
+		}
+
+		// Add gentle wind/leaf rustling
+		const windNoise = (Math.random() * 2 - 1) * 0.02;
+		const windModulation = 0.5 + 0.5 * Math.sin(i * 0.0005); // Slow modulation
+		sample += windNoise * windModulation;
+
+		// Add distant bird calls occasionally
+		if (Math.random() < 0.0003) { // Very rare distant calls
+			const callLength = Math.floor(audioContext.sampleRate * 0.3); // 0.3 second call
+			const callStart = Math.min(i, bufferSize - callLength);
+
+			for (let j = 0; j < callLength && callStart + j < bufferSize; j++) {
+				const t = j / audioContext.sampleRate;
+				const frequency = 800 + Math.sin(t * 20) * 200; // Lower frequency for distance
+				const distantCall = Math.sin(2 * Math.PI * frequency * t) * Math.exp(-t * 5) * 0.03;
+				data[callStart + j] += distantCall;
+			}
+		}
+
+		// Add subtle insect sounds
+		if (Math.random() < 0.01) {
+			const insectFrequency = 300 + Math.random() * 200;
+			sample += Math.sin(2 * Math.PI * insectFrequency * i / audioContext.sampleRate) * 0.01;
+		}
+
+		data[i] += sample * 0.1; // Overall volume control
+	}
+
+	return buffer;
+}
+
+// Function to toggle sound on/off
+function toggleSound() {
+	const currentState = localStorage.getItem("weatherEnableSound") === "true";
+	const newState = !currentState;
+
+	// Update localStorage
+	localStorage.setItem("weatherEnableSound", newState);
+
+	// Update button appearance
+	updateSoundButton(newState);
+
+	// Stop sounds if disabled
+	if (!newState) {
+		if (isPlayingRainSound) {
+			stopRainSound();
+		}
+		if (isPlayingForestSound) {
+			stopForestAmbience();
+		}
+	}
+
+	console.log(`Sound ${newState ? 'enabled' : 'disabled'}`);
+}
+
+// Function to update sound button appearance
+function updateSoundButton(enabled) {
+	const button = document.getElementById("soundToggle");
+	if (enabled) {
+		button.textContent = "🔊";
+		button.style.backgroundColor = "rgba(40, 167, 69, 0.8)"; // Semi-transparent green
+	} else {
+		button.textContent = "🔇";
+		button.style.backgroundColor = "rgba(220, 53, 69, 0.8)"; // Semi-transparent red
+	}
+}
+
+// Play rain sound
+function playRainSound() {
+	if (!audioContext || isPlayingRainSound) return;
+
+	const enableSound = localStorage.getItem("weatherEnableSound") === "true";
+	if (!enableSound) return;
+
+	try {
+		const buffer = createRainSound();
+		if (!buffer) return;
+
+		rainSoundSource = audioContext.createBufferSource();
+		rainSoundSource.buffer = buffer;
+		rainSoundSource.loop = true;
+
+		// Create gain node for volume control
+		const gainNode = audioContext.createGain();
+		gainNode.gain.value = 0.2; // Low volume
+
+		// Connect nodes
+		rainSoundSource.connect(gainNode);
+		gainNode.connect(audioContext.destination);
+
+		rainSoundSource.start();
+		isPlayingRainSound = true;
+
+		console.log("Rain sound started");
+	} catch (e) {
+		console.warn("Error playing rain sound:", e);
+	}
+}
+
+// Stop rain sound
+function stopRainSound() {
+	if (rainSoundSource && isPlayingRainSound) {
+		try {
+			rainSoundSource.stop();
+			rainSoundSource = null;
+			isPlayingRainSound = false;
+			console.log("Rain sound stopped");
+		} catch (e) {
+			console.warn("Error stopping rain sound:", e);
+		}
+	}
+}
+
+// Play forest ambience
+function playForestAmbience() {
+	if (!audioContext || isPlayingForestSound) return;
+
+	const enableSound = localStorage.getItem("weatherEnableSound") === "true";
+	if (!enableSound) return;
+
+	try {
+		const buffer = createForestAmbience();
+		if (!buffer) return;
+
+		forestSoundSource = audioContext.createBufferSource();
+		forestSoundSource.buffer = buffer;
+		forestSoundSource.loop = true;
+
+		// Create gain node for volume control
+		const gainNode = audioContext.createGain();
+		gainNode.gain.value = 0.15; // Very low volume for ambience
+
+		// Connect nodes
+		forestSoundSource.connect(gainNode);
+		gainNode.connect(audioContext.destination);
+
+		forestSoundSource.start();
+		isPlayingForestSound = true;
+
+		console.log("Forest ambience started");
+	} catch (e) {
+		console.warn("Error playing forest ambience:", e);
+	}
+}
+
+// Stop forest ambience
+function stopForestAmbience() {
+	if (forestSoundSource && isPlayingForestSound) {
+		try {
+			forestSoundSource.stop();
+			forestSoundSource = null;
+			isPlayingForestSound = false;
+			console.log("Forest ambience stopped");
+		} catch (e) {
+			console.warn("Error stopping forest ambience:", e);
+		}
+	}
+}
+
+// Geolocation function
+function getUserLocation() {
+	if (!navigator.geolocation) {
+		alert("La géolocalisation n'est pas supportée par ce navigateur.");
+		return;
+	}
+
+	const btn = document.getElementById("geolocateBtn");
+	btn.textContent = "⏳ Localisation...";
+	btn.disabled = true;
+
+	navigator.geolocation.getCurrentPosition(
+		(position) => {
+			// Success
+			const lat = position.coords.latitude.toFixed(6);
+			const lon = position.coords.longitude.toFixed(6);
+
+			document.getElementById("latitude").value = lat;
+			document.getElementById("longitude").value = lon;
+
+			btn.textContent = "✅ Position trouvée";
+			setTimeout(() => {
+				btn.textContent = "📍 Utiliser ma position";
+				btn.disabled = false;
+			}, 2000);
+		},
+		(error) => {
+			// Error
+			let message = "Erreur de géolocalisation : ";
+			switch(error.code) {
+				case error.PERMISSION_DENIED:
+					message += "Permission refusée par l'utilisateur.";
+					break;
+				case error.POSITION_UNAVAILABLE:
+					message += "Position indisponible.";
+					break;
+				case error.TIMEOUT:
+					message += "Délai d'attente dépassé.";
+					break;
+				default:
+					message += "Erreur inconnue.";
+			}
+			alert(message);
+			btn.textContent = "❌ Erreur";
+			setTimeout(() => {
+				btn.textContent = "📍 Utiliser ma position";
+				btn.disabled = false;
+			}, 2000);
+		},
+		{
+			enableHighAccuracy: true,
+			timeout: 10000,
+			maximumAge: 300000 // 5 minutes
+		}
+	);
+}
+
+// Add event listener for geolocation button
+document.getElementById("geolocateBtn").addEventListener("click", getUserLocation);
+
+// Function to update time-based background
+function updateTimeBasedBackground() {
+	try {
+		// Get user's timezone
+		const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+		// Get current time in user's timezone
+		const now = new Date();
+		const userTime = new Date(now.toLocaleString("en-US", {timeZone: userTimezone}));
+		const hour = userTime.getHours();
+
+		// Determine time period
+		let timePeriod;
+		if (hour >= 6 && hour < 12) {
+			timePeriod = "morning";
+		} else if (hour >= 12 && hour < 18) {
+			timePeriod = "afternoon";
+		} else if (hour >= 18 && hour < 22) {
+			timePeriod = "evening";
+		} else {
+			timePeriod = "night";
+		}
+
+		// Remove existing time classes
+		document.body.classList.remove("morning", "afternoon", "evening", "night");
+
+		// Apply new time class
+		document.body.classList.add(timePeriod);
+
+		console.log(`Background updated: ${timePeriod} (${hour}h in ${userTimezone})`);
+	} catch (error) {
+		console.warn("Error updating time-based background:", error);
+		// Fallback to default background
+		document.body.classList.remove("morning", "afternoon", "evening", "night");
+	}
+}
+
+// Initialize audio on first user interaction
+document.addEventListener("click", function initAudioOnce() {
+	if (!audioContext) {
+		initAudio();
+	}
+	document.removeEventListener("click", initAudioOnce);
+});
 
 
 </script>
