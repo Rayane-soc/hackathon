@@ -2,71 +2,1604 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Page Vierge - Application Météo</title>
+    <title>🌱 Guide des Plantes - Application Météo</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to top, #87CEEB, #ffffff);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e8f5e8 0%, #f0f8f0 50%, #e8f5e8 100%);
             margin: 0;
             padding: 20px;
+            min-height: 100vh;
         }
 
         .nav-tabs {
             display: flex;
-            background: white;
-            border-radius: 10px 10px 0 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            border-radius: 15px 15px 0 0;
+            box-shadow: 0 4px 20px rgba(76, 175, 80, 0.3);
             margin-bottom: 0;
             overflow: hidden;
         }
 
         .nav-tabs a {
             flex: 1;
-            padding: 15px 20px;
+            padding: 18px 25px;
             text-decoration: none;
-            color: #666;
+            color: white;
             text-align: center;
             border-bottom: 3px solid transparent;
             transition: all 0.3s ease;
+            font-weight: 600;
+            position: relative;
         }
 
         .nav-tabs a:hover {
-            background-color: #f8f9fa;
-            color: #007BFF;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #e8f5e8;
+            transform: translateY(-2px);
         }
 
         .nav-tabs a.active {
-            color: #007BFF;
-            border-bottom-color: #007BFF;
-            background-color: #f8f9fa;
+            background: linear-gradient(135deg, #66BB6A, #4CAF50);
+            color: white;
+            border-bottom-color: #81C784;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .nav-tabs a.active::after {
+            content: '🌱';
+            position: absolute;
+            top: -5px;
+            right: 10px;
+            font-size: 16px;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 50%, #81C784 100%);
+            border-radius: 0 0 20px 20px;
+            padding: 40px 30px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 8px 32px rgba(76, 175, 80, 0.3);
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            margin: 0 0 15px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            margin: 0;
+            opacity: 0.9;
+            position: relative;
+            z-index: 2;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
-            background: white;
-            padding: 30px;
-            border-radius: 0 0 10px 10px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
-            min-height: 400px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(76, 175, 80, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
-        h1 {
+        .plants-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .plant-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8fdf9 100%);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.1);
+            border: 2px solid rgba(76, 175, 80, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .plant-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #4CAF50, #66BB6A, #81C784);
+        }
+
+        .plant-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(76, 175, 80, 0.2);
+            border-color: rgba(76, 175, 80, 0.3);
+        }
+
+        .add-to-library-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: linear-gradient(135deg, #FF9800, #FFC107);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255, 152, 0, 0.3);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+        }
+
+        .add-to-library-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(255, 152, 0, 0.4);
+            background: linear-gradient(135deg, #FFC107, #FF9800);
+        }
+
+        .add-to-library-btn:active {
+            transform: scale(0.95);
+        }
+
+        .plant-icon {
+            font-size: 4rem;
             text-align: center;
-            color: #333;
+            margin-bottom: 20px;
+            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1));
+        }
+
+        .plant-name {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2E7D32;
+            text-align: center;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .plant-info {
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            padding: 8px 12px;
+            background: rgba(76, 175, 80, 0.05);
+            border-radius: 8px;
+            border-left: 3px solid #4CAF50;
+        }
+
+        .info-icon {
+            font-size: 1.2rem;
+            margin-right: 12px;
+            color: #4CAF50;
+            min-width: 25px;
+        }
+
+        .info-text {
+            color: #424242;
+            font-weight: 500;
+        }
+
+        .care-tips {
+            background: linear-gradient(135deg, #E8F5E8, #F1F8E9);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+            border: 1px solid rgba(76, 175, 80, 0.2);
+        }
+
+        .care-tips h4 {
+            color: #2E7D32;
+            margin: 0 0 15px 0;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .care-tips h4::before {
+            content: '💡';
+            margin-right: 8px;
+        }
+
+        .care-tips ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .care-tips li {
+            color: #424242;
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .weather-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #4CAF50, #66BB6A);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+        }
+
+        .weather-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+            background: linear-gradient(135deg, #66BB6A, #4CAF50);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #2E7D32;
+            margin: 50px 0 30px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .intro-section {
+            background: linear-gradient(135deg, #F1F8E9, #E8F5E8);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+            border: 2px solid rgba(76, 175, 80, 0.1);
+            text-align: center;
+        }
+
+        .intro-section h2 {
+            color: #2E7D32;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .intro-section p {
+            color: #424242;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+
+            .plants-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .plant-card {
+                padding: 20px;
+            }
+        }
+
+        /* Content Tabs */
+        .content-tabs {
+            display: flex;
+            background: rgba(76, 175, 80, 0.1);
+            border-radius: 15px;
+            padding: 5px;
             margin-bottom: 30px;
+            border: 2px solid rgba(76, 175, 80, 0.2);
+        }
+
+        .tab-button {
+            flex: 1;
+            padding: 15px 25px;
+            background: transparent;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #666;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .tab-button.active {
+            background: linear-gradient(135deg, #4CAF50, #66BB6A);
+            color: white;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+        }
+
+        .tab-button:hover:not(.active) {
+            background: rgba(76, 175, 80, 0.1);
+            color: #4CAF50;
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Add Plant Form */
+        .add-plant-section {
+            background: linear-gradient(135deg, #E8F5E8, #F1F8E9);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 40px;
+            border: 2px solid rgba(76, 175, 80, 0.2);
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.1);
+        }
+
+        .add-plant-form {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            color: #2E7D32;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .form-group label::before {
+            content: '🌱';
+            margin-right: 8px;
+            font-size: 1.2rem;
+        }
+
+        .form-input {
+            padding: 12px 15px;
+            border: 2px solid rgba(76, 175, 80, 0.2);
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #4CAF50;
+            box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+        }
+
+        .add-plant-btn {
+            background: linear-gradient(135deg, #4CAF50, #66BB6A);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+            margin-top: 20px;
+        }
+
+        .add-plant-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+        }
+
+        /* Personal Plant Cards */
+        .personal-plant-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f0f8f0 100%);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.1);
+            border: 2px solid rgba(76, 175, 80, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .personal-plant-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #FF9800, #FFC107, #FFEB3B);
+        }
+
+        .personal-plant-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(76, 175, 80, 0.15);
+        }
+
+        .personal-plant-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .personal-plant-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .action-btn {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .edit-btn {
+            background: #2196F3;
+            color: white;
+        }
+
+        .edit-btn:hover {
+            background: #1976D2;
+            transform: scale(1.05);
+        }
+
+        .delete-btn {
+            background: #F44336;
+            color: white;
+        }
+
+        .delete-btn:hover {
+            background: #D32F2F;
+            transform: scale(1.05);
+        }
+
+        .water-btn {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .water-btn:hover {
+            background: #388E3C;
+            transform: scale(1.05);
+        }
+
+        .plant-date {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .empty-library {
+            text-align: center;
+            padding: 60px 20px;
+            color: #666;
+        }
+
+        .empty-library h3 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .empty-library p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #E8F5E8;
+        }
+
+        .modal-title {
+            color: #2E7D32;
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #666;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .close-btn:hover {
+            color: #F44336;
+        }
+
+        /* Category Tabs */
+        .category-tabs {
+            display: flex;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 15px;
+            padding: 8px;
+            margin-bottom: 30px;
+            border: 2px solid rgba(76, 175, 80, 0.2);
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.1);
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .category-tab {
+            flex: 1;
+            min-width: 120px;
+            padding: 12px 16px;
+            background: transparent;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #666;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            position: relative;
+        }
+
+        .category-tab:hover:not(.active) {
+            background: rgba(76, 175, 80, 0.1);
+            color: #4CAF50;
+            transform: translateY(-2px);
+        }
+
+        .category-tab.active {
+            background: linear-gradient(135deg, #4CAF50, #66BB6A);
+            color: white;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .tab-icon {
+            font-size: 1.2rem;
+        }
+
+        .tab-text {
+            font-weight: 600;
+        }
+
+        .tab-count {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 2px 6px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .category-tab.active .tab-count {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Category Badges */
+        .category-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: white;
+            z-index: 5;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .category-badge.flowers {
+            background: linear-gradient(135deg, #FFB3BA, #FF91A4);
+        }
+
+        .category-badge.trees {
+            background: linear-gradient(135deg, #4CAF50, #388E3C);
+        }
+
+        .category-badge.fruits {
+            background: linear-gradient(135deg, #FF9800, #F57C00);
+        }
+
+        .category-badge.vegetables {
+            background: linear-gradient(135deg, #9C27B0, #7B1FA2);
+        }
+
+        /* Plant Card Filtering */
+        .plant-card.hidden {
+            display: none;
+        }
+
+        .plant-card.fade-in {
+            animation: fadeInCard 0.5s ease forwards;
+        }
+
+        @keyframes fadeInCard {
+            from {
+                opacity: 0;
+                transform: translateY(20px) scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* Decorative elements */
+        .leaf-decoration {
+            position: absolute;
+            font-size: 3rem;
+            opacity: 0.1;
+            pointer-events: none;
+        }
+
+        .leaf-decoration.top-left {
+            top: 20px;
+            left: 20px;
+            transform: rotate(-15deg);
+        }
+
+        .leaf-decoration.top-right {
+            top: 20px;
+            right: 20px;
+            transform: rotate(15deg);
+        }
+
+        .leaf-decoration.bottom-left {
+            bottom: 20px;
+            left: 20px;
+            transform: rotate(15deg);
+        }
+
+        .leaf-decoration.bottom-right {
+            bottom: 20px;
+            right: 20px;
+            transform: rotate(-15deg);
+        }
+
+        /* Responsive Category Tabs */
+        @media (max-width: 768px) {
+            .category-tabs {
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            .category-tab {
+                min-width: auto;
+                width: 100%;
+            }
+
+            .tab-text {
+                flex: 1;
+            }
+
+            .tab-count {
+                margin-left: auto;
+            }
         }
     </style>
 </head>
 <body>
     <div class="nav-tabs">
         <a href="index.html">🌦️ Météo</a>
-        <a href="blank.html" class="active">📄 Vierge</a>
+        <a href="blank.html" class="active">🌱 Plantes</a>
+    </div>
+
+    <div class="hero-section">
+        <h1>🌿 Guide des Plantes</h1>
+        <p>Découvrez les plantes adaptées à votre climat et apprenez à prendre soin d'elles</p>
     </div>
 
     <div class="container">
-        <h1>Page Vierge</h1>
-        <!-- Cette page est complètement vide et prête pour votre contenu -->
+        <div class="intro-section">
+            <h2>🌱 Votre Jardin Intelligent</h2>
+            <p>Utilisez les données météorologiques pour choisir les plantes parfaites pour votre région.
+            Découvrez leurs besoins en eau, température idéale et conseils d'entretien personnalisés.</p>
+        </div>
+
+        <h2 class="section-title">🍃 Plantes Recommandées</h2>
+
+        <!-- Category Filter Tabs -->
+        <div class="category-tabs">
+            <button class="category-tab active" data-category="all">
+                <span class="tab-icon">🌱</span>
+                <span class="tab-text">Toutes</span>
+                <span class="tab-count">(6)</span>
+            </button>
+            <button class="category-tab" data-category="flowers">
+                <span class="tab-icon">🌸</span>
+                <span class="tab-text">Fleurs</span>
+                <span class="tab-count">(3)</span>
+            </button>
+            <button class="category-tab" data-category="trees">
+                <span class="tab-icon">🌳</span>
+                <span class="tab-text">Arbres</span>
+                <span class="tab-count">(1)</span>
+            </button>
+            <button class="category-tab" data-category="fruits">
+                <span class="tab-icon">🍎</span>
+                <span class="tab-text">Fruits</span>
+                <span class="tab-count">(1)</span>
+            </button>
+            <button class="category-tab" data-category="vegetables">
+                <span class="tab-icon">🥕</span>
+                <span class="tab-text">Légumes</span>
+                <span class="tab-count">(1)</span>
+            </button>
+        </div>
+
+        <div class="plants-grid">
+            <div class="plant-card" data-category="flowers">
+                <div class="category-badge flowers">🌸 Fleur</div>
+                <button class="add-to-library-btn" onclick="addRecommendedPlant('Rose', '🌹', '15-25°C', 'Modéré (2x/semaine)', 'Soleil direct', 'Plante d\'ornement élégante')">+</button>
+                <div class="plant-icon">🌹</div>
+                <h3 class="plant-name">Rose</h3>
+                <div class="plant-info">
+                    <div class="info-item">
+                        <span class="info-icon">🌡️</span>
+                        <span class="info-text">Température idéale: 15-25°C</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">💧</span>
+                        <span class="info-text">Arrosage: Modéré (2x/semaine)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">☀️</span>
+                        <span class="info-text">Exposition: Soleil direct</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🌱</span>
+                        <span class="info-text">Saison: Printemps-Été</span>
+                    </div>
+                </div>
+                <div class="care-tips">
+                    <h4>Conseils d'entretien</h4>
+                    <ul>
+                        <li>Taillez les fleurs fanées régulièrement</li>
+                        <li>Surveillez les maladies fongiques en cas d'humidité</li>
+                        <li>Utilisez un engrais équilibré au printemps</li>
+                        <li>Protégez du gel hivernal</li>
+                    </ul>
+                </div>
+                <a href="index.html" class="weather-link">📊 Vérifier la météo</a>
+            </div>
+
+            <div class="plant-card" data-category="flowers">
+                <div class="category-badge flowers">🌸 Fleur</div>
+                <button class="add-to-library-btn" onclick="addRecommendedPlant('Tournesol', '🌻', '20-30°C', 'Faible (1x/semaine)', 'Plein soleil', 'Grande fleur jaune qui suit le soleil')">+</button>
+                <div class="plant-icon">🌻</div>
+                <h3 class="plant-name">Tournesol</h3>
+                <div class="plant-info">
+                    <div class="info-item">
+                        <span class="info-icon">🌡️</span>
+                        <span class="info-text">Température idéale: 20-30°C</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">💧</span>
+                        <span class="info-text">Arrosage: Faible (1x/semaine)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">☀️</span>
+                        <span class="info-text">Exposition: Plein soleil</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🌱</span>
+                        <span class="info-text">Saison: Été</span>
+                    </div>
+                </div>
+                <div class="care-tips">
+                    <h4>Conseils d'entretien</h4>
+                    <ul>
+                        <li>Besoin de beaucoup de lumière solaire</li>
+                        <li>Plantez en sol bien drainé</li>
+                        <li>Attire les pollinisateurs</li>
+                        <li>Résiste bien à la sécheresse</li>
+                    </ul>
+                </div>
+                <a href="index.html" class="weather-link">📊 Vérifier la météo</a>
+            </div>
+
+            <div class="plant-card" data-category="flowers">
+                <div class="category-badge flowers">🌸 Fleur</div>
+                <button class="add-to-library-btn" onclick="addRecommendedPlant('Lavande', '🌿', '15-25°C', 'Faible (1x/semaine)', 'Soleil direct', 'Parfum naturel répulsif contre les moustiques')">+</button>
+                <div class="plant-icon">🌿</div>
+                <h3 class="plant-name">Lavande</h3>
+                <div class="plant-info">
+                    <div class="info-item">
+                        <span class="info-icon">🌡️</span>
+                        <span class="info-text">Température idéale: 15-25°C</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">💧</span>
+                        <span class="info-text">Arrosage: Faible (1x/semaine)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">☀️</span>
+                        <span class="info-text">Exposition: Soleil direct</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🌱</span>
+                        <span class="info-text">Saison: Printemps-Été</span>
+                    </div>
+                </div>
+                <div class="care-tips">
+                    <h4>Conseils d'entretien</h4>
+                    <ul>
+                        <li>Résiste à la sécheresse une fois établie</li>
+                        <li>Taillez après la floraison</li>
+                        <li>Attire les abeilles et papillons</li>
+                        <li>Parfum naturel répulsif contre les moustiques</li>
+                    </ul>
+                </div>
+                <a href="index.html" class="weather-link">📊 Vérifier la météo</a>
+            </div>
+
+            <div class="plant-card" data-category="trees">
+                <div class="category-badge trees">🌳 Arbre</div>
+                <button class="add-to-library-btn" onclick="addRecommendedPlant('Olivier', '🌳', '15-25°C', 'Très faible', 'Soleil intense', 'Arbre méditerranéen produisant des olives')">+</button>
+                <div class="plant-icon">🌳</div>
+                <h3 class="plant-name">Olivier</h3>
+                <div class="plant-info">
+                    <div class="info-item">
+                        <span class="info-icon">🌡️</span>
+                        <span class="info-text">Température idéale: 15-25°C</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">💧</span>
+                        <span class="info-text">Arrosage: Très faible</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">☀️</span>
+                        <span class="info-text">Exposition: Soleil intense</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🌱</span>
+                        <span class="info-text">Saison: Toute l'année</span>
+                    </div>
+                </div>
+                <div class="care-tips">
+                    <h4>Conseils d'entretien</h4>
+                    <ul>
+                        <li>Supporte les sols pauvres et secs</li>
+                        <li>Protégez du gel en hiver</li>
+                        <li>Taillez légèrement au printemps</li>
+                        <li>Production d'huile d'olive</li>
+                    </ul>
+                </div>
+                <a href="index.html" class="weather-link">📊 Vérifier la météo</a>
+            </div>
+
+            <div class="plant-card" data-category="vegetables">
+                <div class="category-badge vegetables">🥕 Légume</div>
+                <button class="add-to-library-btn" onclick="addRecommendedPlant('Carotte', '🥕', '15-20°C', 'Régulier (3x/semaine)', 'Soleil partiel', 'Légume racine facile à cultiver')">+</button>
+                <div class="plant-icon">🥕</div>
+                <h3 class="plant-name">Carotte</h3>
+                <div class="plant-info">
+                    <div class="info-item">
+                        <span class="info-icon">🌡️</span>
+                        <span class="info-text">Température idéale: 15-20°C</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">💧</span>
+                        <span class="info-text">Arrosage: Régulier (3x/semaine)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">☀️</span>
+                        <span class="info-text">Exposition: Soleil partiel</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🌱</span>
+                        <span class="info-text">Saison: Printemps-Automne</span>
+                    </div>
+                </div>
+                <div class="care-tips">
+                    <h4>Conseils d'entretien</h4>
+                    <ul>
+                        <li>Sol profond et meuble nécessaire</li>
+                        <li>Éclaircissez les jeunes plants</li>
+                        <li>Arrosez régulièrement pour éviter le bois</li>
+                        <li>Récoltez quand les fanes sont épaisses</li>
+                    </ul>
+                </div>
+                <a href="index.html" class="weather-link">📊 Vérifier la météo</a>
+            </div>
+
+            <div class="plant-card" data-category="fruits">
+                <div class="category-badge fruits">🍎 Fruit</div>
+                <button class="add-to-library-btn" onclick="addRecommendedPlant('Tomate', '🍅', '20-25°C', 'Régulier (quotidien)', 'Soleil direct', 'Fruit rouge savoureux, riche en vitamines')">+</button>
+                <div class="plant-icon">🍅</div>
+                <h3 class="plant-name">Tomate</h3>
+                <div class="plant-info">
+                    <div class="info-item">
+                        <span class="info-icon">🌡️</span>
+                        <span class="info-text">Température idéale: 20-25°C</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">💧</span>
+                        <span class="info-text">Arrosage: Régulier (quotidien)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">☀️</span>
+                        <span class="info-text">Exposition: Soleil direct</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🌱</span>
+                        <span class="info-text">Saison: Été</span>
+                    </div>
+                </div>
+                <div class="care-tips">
+                    <h4>Conseils d'entretien</h4>
+                    <ul>
+                        <li>Besoin de tuteurage</li>
+                        <li>Taillez les gourmands</li>
+                        <li>Surveillez les maladies (mildiou)</li>
+                        <li>Récoltez à maturité complète</li>
+                    </ul>
+                </div>
+                <a href="index.html" class="weather-link">📊 Vérifier la météo</a>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="leaf-decoration top-left">🌿</div>
+        <div class="leaf-decoration top-right">🌿</div>
+        <div class="leaf-decoration bottom-left">🌿</div>
+        <div class="leaf-decoration bottom-right">🌿</div>
     </div>
+
+    <script>
+        // APIs Gratuites pour les Plantes (100% gratuites)
+        class PlantAPIs {
+            constructor() {
+                this.cache = new Map();
+            }
+
+            // Cache pour éviter les requêtes répétées
+            getCached(key) {
+                return this.cache.get(key);
+            }
+
+            setCached(key, data) {
+                this.cache.set(key, data);
+                // Garder le cache limité
+                if (this.cache.size > 50) {
+                    const firstKey = this.cache.keys().next().value;
+                    this.cache.delete(firstKey);
+                }
+            }
+
+            // API OpenPlantBook (100% gratuite)
+            async getOpenPlantBookData(plantName) {
+                const cacheKey = `opb_${plantName}`;
+                const cached = this.getCached(cacheKey);
+                if (cached) return cached;
+
+                try {
+                    const response = await fetch(
+                        `https://openplantbook.org/api/plants/${encodeURIComponent(plantName)}`
+                    );
+
+                    if (!response.ok) {
+                        throw new Error('Plante non trouvée');
+                    }
+
+                    const data = await response.json();
+                    this.setCached(cacheKey, data);
+                    return data;
+                } catch (error) {
+                    console.log('OpenPlantBook non disponible:', error.message);
+                    return null;
+                }
+            }
+
+            // API Wikipedia (100% gratuite)
+            async getWikipediaData(plantName) {
+                const cacheKey = `wiki_${plantName}`;
+                const cached = this.getCached(cacheKey);
+                if (cached) return cached;
+
+                try {
+                    const response = await fetch(
+                        `https://fr.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(plantName)}`
+                    );
+
+                    if (!response.ok) {
+                        throw new Error('Article non trouvé');
+                    }
+
+                    const data = await response.json();
+                    this.setCached(cacheKey, data);
+                    return data;
+                } catch (error) {
+                    console.log('Wikipedia non disponible:', error.message);
+                    return null;
+                }
+            }
+
+            // API PlantNet (gratuite avec limite)
+            async identifyPlantWithPlantNet(imageFile) {
+                try {
+                    const formData = new FormData();
+                    formData.append('images', imageFile);
+                    formData.append('modifiers', '["crops", "similar_images"]');
+                    formData.append('project', 'all');
+
+                    const response = await fetch(
+                        'https://my-api.plantnet.org/v1/identify/all?include-related-images=true&no-reject=false&lang=fr',
+                        {
+                            method: 'POST',
+                            body: formData
+                        }
+                    );
+
+                    if (!response.ok) {
+                        throw new Error('Erreur identification');
+                    }
+
+                    const data = await response.json();
+                    return data;
+                } catch (error) {
+                    console.log('PlantNet non disponible:', error.message);
+                    return null;
+                }
+            }
+
+            // Recherche hybride intelligente
+            async getCompletePlantInfo(plantName) {
+                const result = {
+                    basic: null,
+                    detailed: null,
+                    wikipedia: null,
+                    sources: []
+                };
+
+                // 1. Données de base depuis OpenPlantBook
+                result.basic = await this.getOpenPlantBookData(plantName);
+                if (result.basic) {
+                    result.sources.push('OpenPlantBook');
+                }
+
+                // 2. Informations détaillées depuis Wikipedia
+                result.wikipedia = await this.getWikipediaData(plantName);
+                if (result.wikipedia) {
+                    result.sources.push('Wikipedia');
+                }
+
+                return result;
+            }
+        }
+
+        // Instance globale des APIs
+        const plantAPIs = new PlantAPIs();
+
+        // Fonction pour enrichir une carte plante avec des données API
+        async function enrichPlantCard(plantCard, plantName) {
+            try {
+                const plantData = await plantAPIs.getCompletePlantInfo(plantName);
+
+                if (plantData.basic) {
+                    // Ajouter les données OpenPlantBook
+                    addOpenPlantBookInfo(plantCard, plantData.basic);
+                }
+
+                if (plantData.wikipedia) {
+                    // Ajouter les données Wikipedia
+                    addWikipediaInfo(plantCard, plantData.wikipedia);
+                }
+
+                // Marquer la carte comme enrichie
+                plantCard.classList.add('enriched');
+
+            } catch (error) {
+                console.log('Erreur enrichissement carte:', error);
+            }
+        }
+
+        // Ajouter les informations OpenPlantBook à une carte
+        function addOpenPlantBookInfo(plantCard, data) {
+            const infoContainer = plantCard.querySelector('.plant-info');
+
+            // Créer une section pour les données API
+            const apiSection = document.createElement('div');
+            apiSection.className = 'api-info-section';
+            apiSection.innerHTML = `
+                <div class="api-badge">📊 OpenPlantBook</div>
+                ${data.temperature_max && data.temperature_min ?
+                    `<div class="info-item">
+                        <span class="info-icon">🌡️</span>
+                        <span class="info-text">Température: ${data.temperature_min}°C - ${data.temperature_max}°C</span>
+                    </div>` : ''}
+                ${data.humidite_sol_max && data.humidite_sol_min ?
+                    `<div class="info-item">
+                        <span class="info-icon">💧</span>
+                        <span class="info-text">Humidité sol: ${data.humidite_sol_min}% - ${data.humidite_sol_max}%</span>
+                    </div>` : ''}
+                ${data.luminosite_max && data.luminosite_min ?
+                    `<div class="info-item">
+                        <span class="info-icon">☀️</span>
+                        <span class="info-text">Luminosité: ${data.luminosite_min} - ${data.luminosite_max} lux</span>
+                    </div>` : ''}
+            `;
+
+            infoContainer.appendChild(apiSection);
+        }
+
+        // Ajouter les informations Wikipedia à une carte
+        function addWikipediaInfo(plantCard, data) {
+            if (!data.extract || data.extract.length < 50) return;
+
+            const careTips = plantCard.querySelector('.care-tips ul');
+
+            // Créer un élément pour les infos Wikipedia
+            const wikiItem = document.createElement('li');
+            wikiItem.innerHTML = `<strong>🌿 Selon Wikipedia:</strong> ${data.extract.substring(0, 200)}...`;
+            wikiItem.style.cssText = `
+                background: rgba(76, 175, 80, 0.05);
+                padding: 10px;
+                border-radius: 8px;
+                margin: 8px 0;
+                border-left: 3px solid #4CAF50;
+            `;
+
+            careTips.appendChild(wikiItem);
+        }
+
+        // Fonction d'identification de plante par photo
+        async function identifyPlantFromPhoto() {
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = 'image/*';
+            input.onchange = async (e) => {
+                const file = e.target.files[0];
+                if (!file) return;
+
+                showNotification('🔍 Analyse de l\'image en cours...', 'info');
+
+                try {
+                    const result = await plantAPIs.identifyPlantWithPlantNet(file);
+
+                    if (result && result.results && result.results.length > 0) {
+                        const bestMatch = result.results[0];
+                        const plantName = bestMatch.species.scientificNameWithoutAuthor;
+                        const confidence = Math.round(bestMatch.score * 100);
+
+                        showNotification(
+                            `🌱 Identifiée: ${plantName} (${confidence}% de certitude)`,
+                            'success'
+                        );
+
+                        // Ouvrir une recherche pour cette plante
+                        setTimeout(() => {
+                            if (confirm(`Voulez-vous voir les informations détaillées sur "${plantName}" ?`)) {
+                                searchPlantDetails(plantName);
+                            }
+                        }, 2000);
+
+                    } else {
+                        showNotification('❌ Aucune plante identifiée dans l\'image', 'warning');
+                    }
+
+                } catch (error) {
+                    showNotification('❌ Erreur lors de l\'identification', 'warning');
+                    console.error('Erreur PlantNet:', error);
+                }
+            };
+
+            input.click();
+        }
+
+        // Fonction de recherche détaillée
+        async function searchPlantDetails(plantName) {
+            showNotification(`🔍 Recherche d'informations sur "${plantName}"...`, 'info');
+
+            try {
+                const plantData = await plantAPIs.getCompletePlantInfo(plantName);
+
+                if (plantData.basic || plantData.wikipedia) {
+                    showPlantDetailsModal(plantName, plantData);
+                } else {
+                    showNotification('❌ Aucune information trouvée pour cette plante', 'warning');
+                }
+
+            } catch (error) {
+                showNotification('❌ Erreur lors de la recherche', 'warning');
+                console.error('Erreur recherche:', error);
+            }
+        }
+
+        // Modal pour afficher les détails d'une plante
+        function showPlantDetailsModal(plantName, plantData) {
+            const modal = document.createElement('div');
+            modal.className = 'modal';
+            modal.innerHTML = `
+                <div class="modal-content" style="max-width: 600px;">
+                    <div class="modal-header">
+                        <h3 class="modal-title">🌿 ${plantName}</h3>
+                        <span class="close-btn" onclick="this.closest('.modal').remove()">×</span>
+                    </div>
+                    <div class="modal-body">
+                        ${plantData.basic ? `
+                            <div class="plant-details-section">
+                                <h4>📊 Données techniques (OpenPlantBook)</h4>
+                                ${plantData.basic.temperature_max ? `<p><strong>Température:</strong> ${plantData.basic.temperature_min}°C - ${plantData.basic.temperature_max}°C</p>` : ''}
+                                ${plantData.basic.humidite_sol_max ? `<p><strong>Humidité du sol:</strong> ${plantData.basic.humidite_sol_min}% - ${plantData.basic.humidite_sol_max}%</p>` : ''}
+                                ${plantData.basic.luminosite_max ? `<p><strong>Luminosité:</strong> ${plantData.basic.luminosite_min} - ${plantData.basic.luminosite_max} lux</p>` : ''}
+                            </div>
+                        ` : ''}
+
+                        ${plantData.wikipedia ? `
+                            <div class="plant-details-section">
+                                <h4>📖 Informations générales (Wikipedia)</h4>
+                                <p>${plantData.wikipedia.extract}</p>
+                                ${plantData.wikipedia.content_urls?.desktop?.page ?
+                                    `<p><a href="${plantData.wikipedia.content_urls.desktop.page}" target="_blank">Lire l'article complet →</a></p>` : ''}
+                            </div>
+                        ` : ''}
+
+                        <div class="plant-details-actions">
+                            <button onclick="addRecommendedPlant('${plantName}', '🌱', 'À vérifier', 'À vérifier', 'À vérifier', 'Plante découverte via API')" class="add-plant-btn">
+                                ➕ Ajouter à ma bibliothèque
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            document.body.appendChild(modal);
+        }
+
+        // Show notification
+        function showNotification(message, type = 'info') {
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: ${type === 'success' ? '#4CAF50' : type === 'warning' ? '#FF9800' : '#2196F3'};
+                color: white;
+                padding: 15px 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                z-index: 1001;
+                font-weight: 600;
+                animation: slideIn 0.3s ease;
+            `;
+            notification.textContent = message;
+
+            document.body.appendChild(notification);
+
+            // Remove after 3 seconds
+            setTimeout(() => {
+                notification.style.animation = 'slideOut 0.3s ease';
+                setTimeout(() => {
+                    if (notification.parentNode) {
+                        notification.parentNode.removeChild(notification);
+                    }
+                }, 300);
+            }, 3000);
+        }
+
+        // Add notification animations
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideIn {
+                from { transform: translateX(100%); opacity: 0; }
+                to { transform: translateX(0); opacity: 1; }
+            }
+            @keyframes slideOut {
+                from { transform: translateX(0); opacity: 1; }
+                to { transform: translateX(100%); opacity: 0; }
+            }
+
+            .api-info-section {
+                margin-top: 15px;
+                padding: 12px;
+                background: linear-gradient(135deg, #E8F5E8, #F1F8E9);
+                border-radius: 8px;
+                border: 1px solid rgba(76, 175, 80, 0.2);
+            }
+
+            .api-badge {
+                background: linear-gradient(135deg, #4CAF50, #66BB6A);
+                color: white;
+                padding: 4px 8px;
+                border-radius: 12px;
+                font-size: 11px;
+                font-weight: 600;
+                display: inline-block;
+                margin-bottom: 8px;
+            }
+
+            .plant-details-section {
+                margin: 20px 0;
+                padding: 15px;
+                background: #f8f9fa;
+                border-radius: 8px;
+                border-left: 4px solid #4CAF50;
+            }
+
+            .plant-details-section h4 {
+                margin: 0 0 10px 0;
+                color: #2E7D32;
+            }
+
+            .plant-details-actions {
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            .add-plant-btn {
+                background: linear-gradient(135deg, #4CAF50, #66BB6A);
+                color: white;
+                border: none;
+                padding: 12px 24px;
+                border-radius: 25px;
+                font-size: 14px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+            }
+
+            .add-plant-btn:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Add recommended plant to library
+        function addRecommendedPlant(name, icon, temperature, watering, sunlight, notes) {
+            console.log('addRecommendedPlant called with:', name);
+
+            // Create new plant object
+            const newPlant = {
+                id: Date.now().toString(),
+                name: name,
+                icon: icon,
+                temperature: temperature,
+                watering: watering,
+                sunlight: sunlight,
+                notes: notes,
+                dateAdded: new Date().toLocaleDateString('fr-FR'),
+                lastWatered: null
+            };
+
+            console.log('New plant object:', newPlant);
+
+            // Get existing plants from localStorage
+            let personalPlants = JSON.parse(localStorage.getItem('personalPlants')) || [];
+
+            // Add to personal plants array
+            personalPlants.push(newPlant);
+            console.log('Plants array length:', personalPlants.length);
+
+            // Save to localStorage
+            localStorage.setItem('personalPlants', JSON.stringify(personalPlants));
+            console.log('Plants saved to localStorage');
+
+            // Show success notification
+            showNotification(`"${name}" ajoutée à votre bibliothèque ! 🌱`, 'success');
+            console.log('Success notification shown');
+        }
+
+        // Système de filtrage par catégories
+        class CategoryFilter {
+            constructor() {
+                this.plantCards = document.querySelectorAll('.plant-card');
+                this.categoryTabs = document.querySelectorAll('.category-tab');
+                this.init();
+            }
+
+            init() {
+                // Ajouter les écouteurs d'événements aux onglets
+                this.categoryTabs.forEach(tab => {
+                    tab.addEventListener('click', () => {
+                        const category = tab.dataset.category;
+                        this.filterPlants(category);
+                        this.updateActiveTab(tab);
+                    });
+                });
+
+                // Calculer et mettre à jour les compteurs
+                this.updateCounters();
+            }
+
+            filterPlants(category) {
+                this.plantCards.forEach(card => {
+                    const cardCategory = card.dataset.category;
+
+                    if (category === 'all' || cardCategory === category) {
+                        card.classList.remove('hidden');
+                        card.classList.add('fade-in');
+                    } else {
+                        card.classList.add('hidden');
+                        card.classList.remove('fade-in');
+                    }
+                });
+
+                // Animation fluide
+                setTimeout(() => {
+                    this.plantCards.forEach(card => {
+                        if (!card.classList.contains('hidden')) {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }
+                    });
+                }, 50);
+            }
+
+            updateActiveTab(activeTab) {
+                // Retirer la classe active de tous les onglets
+                this.categoryTabs.forEach(tab => {
+                    tab.classList.remove('active');
+                });
+
+                // Ajouter la classe active à l'onglet cliqué
+                activeTab.classList.add('active');
+            }
+
+            updateCounters() {
+                const categories = {
+                    all: this.plantCards.length,
+                    flowers: 0,
+                    trees: 0,
+                    fruits: 0,
+                    vegetables: 0
+                };
+
+                // Compter les plantes par catégorie
+                this.plantCards.forEach(card => {
+                    const category = card.dataset.category;
+                    if (categories.hasOwnProperty(category)) {
+                        categories[category]++;
+                    }
+                });
+
+                // Mettre à jour les compteurs dans l'interface
+                this.categoryTabs.forEach(tab => {
+                    const category = tab.dataset.category;
+                    const countElement = tab.querySelector('.tab-count');
+                    if (countElement && categories[category] !== undefined) {
+                        countElement.textContent = `(${categories[category]})`;
+                    }
+                });
+            }
+        }
+
+        // Initialisation au chargement de la page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialiser le système de filtrage par catégories
+            const categoryFilter = new CategoryFilter();
+
+            // Ajouter un bouton d'identification par photo
+            const container = document.querySelector('.container');
+            const identifyBtn = document.createElement('div');
+            identifyBtn.innerHTML = `
+                <div style="text-align: center; margin: 30px 0;">
+                    <button onclick="identifyPlantFromPhoto()" style="
+                        background: linear-gradient(135deg, #FF9800, #FFC107);
+                        color: white;
+                        border: none;
+                        padding: 15px 30px;
+                        border-radius: 25px;
+                        font-size: 16px;
+                        font-weight: 600;
+                        cursor: pointer;
+                        box-shadow: 0 4px 15px rgba(255, 152, 0, 0.3);
+                        transition: all 0.3s ease;
+                    ">
+                        📷 Identifier une plante par photo
+                    </button>
+                    <p style="color: #666; font-size: 14px; margin-top: 10px;">
+                        Utilise PlantNet API (500 identifications gratuites/jour)
+                    </p>
+                </div>
+            `;
+            container.insertBefore(identifyBtn, container.querySelector('.plants-grid'));
+
+            // Enrichir automatiquement les cartes de plantes avec les APIs
+            setTimeout(() => {
+                const plantCards = document.querySelectorAll('.plant-card');
+                plantCards.forEach((card, index) => {
+                    const plantName = card.querySelector('.plant-name').textContent;
+                    // Enrichir seulement quelques cartes pour éviter trop de requêtes
+                    if (index < 3) {
+                        enrichPlantCard(card, plantName);
+                    }
+                });
+            }, 2000);
+        });
+    </script>
 </body>
 </html>
