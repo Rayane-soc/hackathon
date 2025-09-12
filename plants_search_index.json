@@ -1,0 +1,608 @@
+{
+  "scientific_names": {
+    "abies alba": [
+      36
+    ],
+    "abies nordmanniana": [
+      37
+    ],
+    "acer palmatum": [
+      27
+    ],
+    "acer pseudoplatanus": [
+      28
+    ],
+    "acer saccharum": [
+      26
+    ],
+    "allium cepa": [
+      45
+    ],
+    "allium porrum": [
+      47
+    ],
+    "allium sativum": [
+      46
+    ],
+    "beta vulgaris": [
+      51
+    ],
+    "betula pendula": [
+      29
+    ],
+    "betula pubescens": [
+      30
+    ],
+    "brassica napus": [
+      53
+    ],
+    "brassica oleracea": [
+      52
+    ],
+    "brassica rapa": [
+      54
+    ],
+    "citrus limon": [
+      68
+    ],
+    "citrus reticulata": [
+      70
+    ],
+    "citrus sinensis": [
+      69
+    ],
+    "coriandrum sativum": [
+      83
+    ],
+    "cucumis melo": [
+      56
+    ],
+    "cucumis sativus": [
+      55
+    ],
+    "cucurbita maxima": [
+      58
+    ],
+    "cucurbita pepo": [
+      57
+    ],
+    "daucus carota": [
+      43
+    ],
+    "daucus carota subsp. sativus": [
+      44
+    ],
+    "dianthus barbatus": [
+      20
+    ],
+    "dianthus caryophyllus": [
+      19
+    ],
+    "fagus grandifolia": [
+      32
+    ],
+    "fagus sylvatica": [
+      31
+    ],
+    "fragaria × ananassa": [
+      71
+    ],
+    "iris germanica": [
+      16
+    ],
+    "iris pseudacorus": [
+      18
+    ],
+    "iris sibirica": [
+      17
+    ],
+    "lactuca sativa": [
+      48
+    ],
+    "lactuca serriola": [
+      49
+    ],
+    "lilium candidum": [
+      13
+    ],
+    "lilium japonicum": [
+      15
+    ],
+    "lilium longiflorum": [
+      14
+    ],
+    "malus domestica": [
+      59
+    ],
+    "malus sylvestris": [
+      60
+    ],
+    "mentha piperita": [
+      74
+    ],
+    "mentha spicata": [
+      75
+    ],
+    "mentha × piperita": [
+      76
+    ],
+    "ocimum basilicum": [
+      80
+    ],
+    "ocimum tenuiflorum": [
+      81
+    ],
+    "origanum majorana": [
+      87
+    ],
+    "origanum vulgare": [
+      86
+    ],
+    "petroselinum crispum": [
+      82
+    ],
+    "picea abies": [
+      38
+    ],
+    "picea pungens": [
+      39
+    ],
+    "pinus halepensis": [
+      35
+    ],
+    "pinus nigra": [
+      34
+    ],
+    "pinus sylvestris": [
+      33
+    ],
+    "prunus avium": [
+      65
+    ],
+    "prunus domestica": [
+      63
+    ],
+    "prunus persica": [
+      64
+    ],
+    "pyrus communis": [
+      61
+    ],
+    "pyrus pyrifolia": [
+      62
+    ],
+    "quercus ilex": [
+      25
+    ],
+    "quercus petraea": [
+      24
+    ],
+    "quercus robur": [
+      23
+    ],
+    "rosa centifolia": [
+      9
+    ],
+    "rosa damascena": [
+      7
+    ],
+    "rosa gallica": [
+      8
+    ],
+    "rosa rugosa": [
+      6
+    ],
+    "rosmarinus officinalis": [
+      77
+    ],
+    "rubus fruticosus": [
+      73
+    ],
+    "rubus idaeus": [
+      72
+    ],
+    "salvia officinalis": [
+      84
+    ],
+    "salvia sclarea": [
+      85
+    ],
+    "solanum lycopersicum": [
+      40
+    ],
+    "solanum melongena": [
+      41
+    ],
+    "solanum tuberosum": [
+      42
+    ],
+    "spinacia oleracea": [
+      50
+    ],
+    "thymus serpyllum": [
+      79
+    ],
+    "thymus vulgaris": [
+      78
+    ],
+    "tulipa clusiana": [
+      11
+    ],
+    "tulipa gesneriana": [
+      10
+    ],
+    "tulipa tarda": [
+      12
+    ],
+    "viola odorata": [
+      22
+    ],
+    "viola tricolor": [
+      21
+    ],
+    "vitis labrusca": [
+      67
+    ],
+    "vitis vinifera": [
+      66
+    ]
+  },
+  "common_names": {
+    "rose": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "tulipe": [
+      10,
+      11,
+      12
+    ],
+    "lys": [
+      13,
+      14,
+      15
+    ],
+    "iris": [
+      16,
+      17,
+      18
+    ],
+    "dianthus (nom commun inconnu)": [
+      19,
+      20
+    ],
+    "viola (nom commun inconnu)": [
+      21,
+      22
+    ],
+    "chêne": [
+      23,
+      24,
+      25
+    ],
+    "érable": [
+      26,
+      27,
+      28
+    ],
+    "betula (nom commun inconnu)": [
+      29,
+      30
+    ],
+    "fagus (nom commun inconnu)": [
+      31,
+      32
+    ],
+    "pin": [
+      33,
+      34,
+      35
+    ],
+    "abies (nom commun inconnu)": [
+      36,
+      37
+    ],
+    "picea (nom commun inconnu)": [
+      38,
+      39
+    ],
+    "tomate": [
+      40,
+      41,
+      42
+    ],
+    "carotte": [
+      43,
+      44
+    ],
+    "allium (nom commun inconnu)": [
+      45,
+      46,
+      47
+    ],
+    "lactuca (nom commun inconnu)": [
+      48,
+      49
+    ],
+    "spinacia (nom commun inconnu)": [
+      50
+    ],
+    "beta (nom commun inconnu)": [
+      51
+    ],
+    "brassica (nom commun inconnu)": [
+      52,
+      53,
+      54
+    ],
+    "cucumis (nom commun inconnu)": [
+      55,
+      56
+    ],
+    "cucurbita (nom commun inconnu)": [
+      57,
+      58
+    ],
+    "malus (nom commun inconnu)": [
+      59,
+      60
+    ],
+    "pyrus (nom commun inconnu)": [
+      61,
+      62
+    ],
+    "prunus (nom commun inconnu)": [
+      63,
+      64,
+      65
+    ],
+    "vitis (nom commun inconnu)": [
+      66,
+      67
+    ],
+    "citrus (nom commun inconnu)": [
+      68,
+      69,
+      70
+    ],
+    "fragaria (nom commun inconnu)": [
+      71
+    ],
+    "rubus (nom commun inconnu)": [
+      72,
+      73
+    ],
+    "menthe": [
+      74,
+      75,
+      76
+    ],
+    "romarin": [
+      77
+    ],
+    "thym": [
+      78,
+      79
+    ],
+    "ocimum (nom commun inconnu)": [
+      80,
+      81
+    ],
+    "petroselinum (nom commun inconnu)": [
+      82
+    ],
+    "coriandrum (nom commun inconnu)": [
+      83
+    ],
+    "salvia (nom commun inconnu)": [
+      84,
+      85
+    ],
+    "origanum (nom commun inconnu)": [
+      86,
+      87
+    ]
+  },
+  "families": {
+    "rosaceae": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "liliaceae": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "iridaceae": [
+      16,
+      17,
+      18
+    ],
+    "famille inconnue": [
+      19,
+      20,
+      21,
+      22,
+      29,
+      30,
+      31,
+      32,
+      36,
+      37,
+      38,
+      39,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87
+    ],
+    "fagaceae": [
+      23,
+      24,
+      25
+    ],
+    "sapindaceae": [
+      26,
+      27,
+      28
+    ],
+    "pinaceae": [
+      33,
+      34,
+      35
+    ],
+    "solanaceae": [
+      40,
+      41,
+      42
+    ],
+    "apiaceae": [
+      43,
+      44
+    ],
+    "lamiaceae": [
+      74,
+      75,
+      76,
+      77,
+      78,
+      79
+    ]
+  },
+  "categories": {
+    "fleurs": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "divers": [
+      19,
+      20,
+      21,
+      22,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87
+    ],
+    "arbres": [
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "fruits": [
+      40,
+      41,
+      42
+    ],
+    "legumes": [
+      43,
+      44
+    ],
+    "aromates": [
+      74,
+      75,
+      76,
+      77,
+      78,
+      79
+    ]
+  }
+}

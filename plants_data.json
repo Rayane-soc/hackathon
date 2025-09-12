@@ -1,0 +1,4356 @@
+{
+  "metadata": {
+    "total_plants": 82,
+    "generated_at": "2025-09-09T18:21:25.646131",
+    "version": "1.0"
+  },
+  "categories": {
+    "divers": 41,
+    "arbres": 17,
+    "fleurs": 13,
+    "aromates": 6,
+    "fruits": 3,
+    "legumes": 2
+  },
+  "plants": [
+    {
+      "id": 36,
+      "scientific_name": "Abies alba",
+      "common_names": [
+        "Abies (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Abies",
+      "species": null,
+      "description": "Abies alba, the European silver fir or silver fir, is a fir native to the mountains of Europe, from the Pyrenees north to Normandy, east to the Alps and the Carpathians, Slovakia, Slovenia, Croatia, Bosnia and Herzegovina, Montenegro, Serbia, and south to Italy, Bulgaria, Kosovo, Albania and northern Greece.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:44.324389"
+        },
+        "wikipedia": {
+          "title": "Abies alba",
+          "url": "https://en.wikipedia.org/wiki/Abies_alba",
+          "collected_at": "2025-09-09T18:13:44.390891"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:44.391228"
+        },
+        "openplantbook": {
+          "pid": "abies_alba",
+          "collected_at": "2025-09-09T18:13:44.391432"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Abies_alba_Wis%C5%82a_1.jpg/330px-Abies_alba_Wis%C5%82a_1.jpg"
+      ],
+      "categories": [
+        "arbres:conifères"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 37,
+      "scientific_name": "Abies nordmanniana",
+      "common_names": [
+        "Abies (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Abies",
+      "species": null,
+      "description": "Abies nordmanniana, the Nordmann fir or Caucasian fir, is a fir indigenous to the mountains south and east of the Black Sea, in Turkey, Georgia and the Russian Caucasus. It occurs at altitudes of 900–2,200 m on mountains with precipitation of over 1,000 mm.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:45.920288"
+        },
+        "wikipedia": {
+          "title": "Abies nordmanniana",
+          "url": "https://en.wikipedia.org/wiki/Abies_nordmanniana",
+          "collected_at": "2025-09-09T18:13:45.998369"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:45.998642"
+        },
+        "openplantbook": {
+          "pid": "abies_nordmanniana",
+          "collected_at": "2025-09-09T18:13:45.998852"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/%C3%96r%C3%BCmcek_Orman%C4%B1_G%C3%B6knar%C4%B1_2_Tabiat_An%C4%B1t%C4%B1.jpg/330px-%C3%96r%C3%BCmcek_Orman%C4%B1_G%C3%B6knar%C4%B1_2_Tabiat_An%C4%B1t%C4%B1.jpg"
+      ],
+      "categories": [
+        "arbres:conifères"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 27,
+      "scientific_name": "Acer palmatum",
+      "common_names": [
+        "Érable"
+      ],
+      "family": "Sapindaceae",
+      "genus": "Acer",
+      "species": null,
+      "description": "Acer palmatum, commonly known as Japanese maple, palmate maple, or smooth Japanese maple, is a species of woody plant native to Korea, Japan, China, eastern Mongolia, and southeast Russia. Many different cultivars of this maple have been selected and they are grown worldwide for their large variety of attractive forms, leaf shapes, and spectacular colors.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:24.463730"
+        },
+        "wikipedia": {
+          "title": "Acer palmatum",
+          "url": "https://en.wikipedia.org/wiki/Acer_palmatum",
+          "collected_at": "2025-09-09T18:13:24.526940"
+        },
+        "plantnet": {
+          "family": "Sapindaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:24.527179"
+        },
+        "openplantbook": {
+          "pid": "acer_palmatum",
+          "collected_at": "2025-09-09T18:13:24.527307"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Acer_palmatum0.jpg/330px-Acer_palmatum0.jpg"
+      ],
+      "categories": [
+        "arbres:feuillus"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 28,
+      "scientific_name": "Acer pseudoplatanus",
+      "common_names": [
+        "Érable"
+      ],
+      "family": "Sapindaceae",
+      "genus": "Acer",
+      "species": null,
+      "description": "Acer pseudoplatanus, known as the sycamore in the British Isles and as the sycamore maple in the United States, is a species of maple native to Central Europe and Western Asia. It is a large deciduous, broad-leaved tree, tolerant of wind and coastal exposure.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:25.541585"
+        },
+        "wikipedia": {
+          "title": "Acer pseudoplatanus",
+          "url": "https://en.wikipedia.org/wiki/Acer_pseudoplatanus",
+          "collected_at": "2025-09-09T18:13:25.605094"
+        },
+        "plantnet": {
+          "family": "Sapindaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:25.605468"
+        },
+        "openplantbook": {
+          "pid": "acer_pseudoplatanus",
+          "collected_at": "2025-09-09T18:13:25.605712"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Acer_pseudoplatanus_005.jpg/330px-Acer_pseudoplatanus_005.jpg"
+      ],
+      "categories": [
+        "arbres:feuillus"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 26,
+      "scientific_name": "Acer saccharum",
+      "common_names": [
+        "Érable"
+      ],
+      "family": "Sapindaceae",
+      "genus": "Acer",
+      "species": null,
+      "description": "Acer saccharum, the sugar maple, is a species of flowering plant in the soapberry and lychee family Sapindaceae. It is native to the hardwood forests of eastern Canada and the eastern United States. Sugar maple is best known for being the primary source of maple syrup and for its brightly colored fall foliage. It may also be called \"rock maple,\" \"sugar tree,\" \"sweet maple,\" or, particularly in reference to the wood, \"hard maple,\" \"birds-eye maple,\" or \"curly maple,\" the last two being specially figured lumber.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:23.380764"
+        },
+        "wikipedia": {
+          "title": "Acer saccharum",
+          "url": "https://en.wikipedia.org/wiki/Acer_saccharum",
+          "collected_at": "2025-09-09T18:13:23.445190"
+        },
+        "plantnet": {
+          "family": "Sapindaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:23.445484"
+        },
+        "openplantbook": {
+          "pid": "acer_saccharum",
+          "collected_at": "2025-09-09T18:13:23.445699"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Acer_saccharum_1-jgreenlee_%285098070608%29.jpg/330px-Acer_saccharum_1-jgreenlee_%285098070608%29.jpg"
+      ],
+      "categories": [
+        "arbres:feuillus"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 45,
+      "scientific_name": "Allium cepa",
+      "common_names": [
+        "Allium (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Allium",
+      "species": null,
+      "description": "The onion, also known as the bulb onion or common onion, is a vegetable that is the most widely cultivated species of the genus Allium. The shallot is a botanical variety of the onion which was classified as a separate species until 2011. The onion's close relatives include garlic, scallion, leek, and chives.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:59.656971"
+        },
+        "wikipedia": {
+          "title": "Onion",
+          "url": "https://en.wikipedia.org/wiki/Onion",
+          "collected_at": "2025-09-09T18:13:59.721071"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:59.721389"
+        },
+        "openplantbook": {
+          "pid": "allium_cepa",
+          "collected_at": "2025-09-09T18:13:59.721553"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Mixed_onions.jpg/330px-Mixed_onions.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 47,
+      "scientific_name": "Allium porrum",
+      "common_names": [
+        "Allium (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Allium",
+      "species": null,
+      "description": "A leek is a vegetable, a cultivar of Allium ampeloprasum, the broadleaf wild leek. The edible part of the plant is a bundle of leaf sheaths that is sometimes colloquially called a \"stem\" or \"stalk\".",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:14:06.826980"
+        },
+        "wikipedia": {
+          "title": "Leek",
+          "url": "https://en.wikipedia.org/wiki/Leek",
+          "collected_at": "2025-09-09T18:14:06.891709"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:14:06.892070"
+        },
+        "openplantbook": {
+          "pid": "allium_porrum",
+          "collected_at": "2025-09-09T18:14:06.892278"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Leek_on_white_background_-_0947.jpg/330px-Leek_on_white_background_-_0947.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 46,
+      "scientific_name": "Allium sativum",
+      "common_names": [
+        "Allium (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Allium",
+      "species": null,
+      "description": "Garlic is a species of bulbous flowering plants in the genus Allium. Its close relatives include the onion, shallot, leek, chives, Welsh onion, and Chinese onion. Garlic is native to central and south Asia, stretching from the Black Sea through the southern Caucasus, northeastern Iran, and the Hindu Kush; it also grows wild in parts of Mediterranean Europe. There are two subspecies and hundreds of varieties of garlic.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:14:05.738975"
+        },
+        "wikipedia": {
+          "title": "Garlic",
+          "url": "https://en.wikipedia.org/wiki/Garlic",
+          "collected_at": "2025-09-09T18:14:05.805569"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:14:05.805831"
+        },
+        "openplantbook": {
+          "pid": "allium_sativum",
+          "collected_at": "2025-09-09T18:14:05.806031"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/3/39/Allium_sativum_Woodwill_1793.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 51,
+      "scientific_name": "Beta vulgaris",
+      "common_names": [
+        "Beta (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Beta",
+      "species": null,
+      "description": "Beta vulgaris (beet) is a species of flowering plant in the subfamily Betoideae of the family Amaranthaceae.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:14:16.294898"
+        },
+        "wikipedia": {
+          "title": "Beta vulgaris",
+          "url": "https://en.wikipedia.org/wiki/Beta_vulgaris",
+          "collected_at": "2025-09-09T18:14:16.364437"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:14:16.364790"
+        },
+        "openplantbook": {
+          "pid": "beta_vulgaris",
+          "collected_at": "2025-09-09T18:14:16.364972"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Beta_vulgaris_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-167.jpg/330px-Beta_vulgaris_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-167.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 29,
+      "scientific_name": "Betula pendula",
+      "common_names": [
+        "Betula (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Betula",
+      "species": null,
+      "description": "Betula pendula, commonly known as silver birch, warty birch, European white birch, or East Asian white birch, is a species of tree in the family Betulaceae, native to Europe and parts of Asia, though in southern Europe, it is only found at higher altitudes. Its range extends into Siberia, China, and southwest Asia in the mountains of northern Turkey, the Caucasus, and northern Iran. It has been introduced into North America, where it is known as the European white birch or weeping birch and is considered invasive in some states in the United States and parts of Canada.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:26.628626"
+        },
+        "wikipedia": {
+          "title": "Betula pendula",
+          "url": "https://en.wikipedia.org/wiki/Betula_pendula",
+          "collected_at": "2025-09-09T18:13:26.692728"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:26.693030"
+        },
+        "openplantbook": {
+          "pid": "betula_pendula",
+          "collected_at": "2025-09-09T18:13:26.693242"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Betula_pendula_Finland.jpg/330px-Betula_pendula_Finland.jpg"
+      ],
+      "categories": [
+        "arbres:feuillus"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 30,
+      "scientific_name": "Betula pubescens",
+      "common_names": [
+        "Betula (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Betula",
+      "species": null,
+      "description": "Betula pubescens, commonly known as downy birch and also as moor birch, white birch, European white birch or hairy birch, is a species of deciduous tree, native and abundant throughout northern Europe and northern Asia, growing further north than any other broadleaf tree. It is closely related to, and often confused with, the silver birch, but grows in wetter places with heavier soils and poorer drainage; smaller trees can also be confused with the dwarf birch.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:27.713469"
+        },
+        "wikipedia": {
+          "title": "Betula pubescens",
+          "url": "https://en.wikipedia.org/wiki/Betula_pubescens",
+          "collected_at": "2025-09-09T18:13:27.785494"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:27.785853"
+        },
+        "openplantbook": {
+          "pid": "betula_pubescens",
+          "collected_at": "2025-09-09T18:13:27.786271"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Betula_pubescens_-_Burgwald_002.jpg/330px-Betula_pubescens_-_Burgwald_002.jpg"
+      ],
+      "categories": [
+        "arbres:feuillus"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 53,
+      "scientific_name": "Brassica napus",
+      "common_names": [
+        "Brassica (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Brassica",
+      "species": null,
+      "description": "Rapeseed, also known as rape and oilseed rape and canola, is a bright-yellow flowering member of the family Brassicaceae, cultivated mainly for its oil-rich seed, which naturally contains appreciable amounts of mildly toxic erucic acid. The term \"canola\" denotes a group of rapeseed cultivars that were bred to have very low levels of erucic acid and which are especially prized for use as human and animal food. Rapeseed is the third-largest source of vegetable oil and the second-largest source of protein meal in the world.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:14:18.598384"
+        },
+        "wikipedia": {
+          "title": "Rapeseed",
+          "url": "https://en.wikipedia.org/wiki/Rapeseed",
+          "collected_at": "2025-09-09T18:14:18.663709"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:14:18.664012"
+        },
+        "openplantbook": {
+          "pid": "brassica_napus",
+          "collected_at": "2025-09-09T18:14:18.664317"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Brassica_napus_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-169.jpg/330px-Brassica_napus_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-169.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 52,
+      "scientific_name": "Brassica oleracea",
+      "common_names": [
+        "Brassica (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Brassica",
+      "species": null,
+      "description": "Brassica oleracea, also known as wild cabbage in its uncultivated form, is a plant of the family Brassicaceae. The species originated from feral populations of related plants in the Eastern Mediterranean, where it was most likely first cultivated. It has many common cultivars used as vegetables, including cabbage, broccoli, cauliflower, kale, Brussels sprout, collard, Savoy cabbage, kohlrabi, and gai lan.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:14:17.394216"
+        },
+        "wikipedia": {
+          "title": "Brassica oleracea",
+          "url": "https://en.wikipedia.org/wiki/Brassica_oleracea",
+          "collected_at": "2025-09-09T18:14:17.461958"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:14:17.462345"
+        },
+        "openplantbook": {
+          "pid": "brassica_oleracea",
+          "collected_at": "2025-09-09T18:14:17.462655"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Brassica_oleracea0.jpg/330px-Brassica_oleracea0.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 54,
+      "scientific_name": "Brassica rapa",
+      "common_names": [
+        "Brassica (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Brassica",
+      "species": null,
+      "description": "Brassica rapa is a plant species that has been widely cultivated into many forms, including the turnip, komatsuna, napa cabbage, bomdong, bok choy, and rapini.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:14:19.685711"
+        },
+        "wikipedia": {
+          "title": "Brassica rapa",
+          "url": "https://en.wikipedia.org/wiki/Brassica_rapa",
+          "collected_at": "2025-09-09T18:14:19.753199"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:14:19.753550"
+        },
+        "openplantbook": {
+          "pid": "brassica_rapa",
+          "collected_at": "2025-09-09T18:14:19.753853"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Brassica_rapa_plant.jpg/330px-Brassica_rapa_plant.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 68,
+      "scientific_name": "Citrus limon",
+      "common_names": [
+        "Citrus (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Citrus",
+      "species": null,
+      "description": "The lemon is a species of small evergreen tree in the Citrus genus of the flowering plant family Rutaceae. A true lemon is a hybrid of the citron and the bitter orange. Its origins are uncertain, but some evidence suggests lemons originated during the 1st millennium BC in what is now northeastern India. Some other citrus fruits are called lemon.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:14:50.203685"
+        },
+        "wikipedia": {
+          "title": "Lemon",
+          "url": "https://en.wikipedia.org/wiki/Lemon",
+          "collected_at": "2025-09-09T18:14:50.273486"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:14:50.273822"
+        },
+        "openplantbook": {
+          "pid": "citrus_limon",
+          "collected_at": "2025-09-09T18:14:50.274464"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/P1030323.JPG/330px-P1030323.JPG"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 70,
+      "scientific_name": "Citrus reticulata",
+      "common_names": [
+        "Citrus (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Citrus",
+      "species": null,
+      "description": "A mandarin orange, often simply called mandarin, is a small, rounded citrus tree fruit. Treated as a distinct species of orange, it is usually eaten plain or in fruit salads. The mandarin is small and oblate, unlike the roughly spherical sweet orange. The taste is sweeter and stronger than the common orange. A ripe mandarin orange is firm to slightly soft, heavy for its size, and pebbly-skinned. The peel is thin and loose, with little white mesocarp, so they are usually easier to peel and to split into segments. Hybrids have these traits to lesser degrees. The mandarin orange is tender and is damaged easily by cold. It can be grown in tropical and subtropical areas.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:14:52.376230"
+        },
+        "wikipedia": {
+          "title": "Mandarin orange",
+          "url": "https://en.wikipedia.org/wiki/Mandarin_orange",
+          "collected_at": "2025-09-09T18:14:52.438504"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:14:52.438762"
+        },
+        "openplantbook": {
+          "pid": "citrus_reticulata",
+          "collected_at": "2025-09-09T18:14:52.438948"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Citrus_reticulata_April_2013_Nordbaden.JPG/330px-Citrus_reticulata_April_2013_Nordbaden.JPG"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 69,
+      "scientific_name": "Citrus sinensis",
+      "common_names": [
+        "Citrus (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Citrus",
+      "species": null,
+      "description": "Citrus × sinensis, a hybrid between pomelo and mandarin, also known as the sweet oranges, is a commonly cultivated species of orange that includes Valencia oranges, blood oranges and navel oranges.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:14:51.296334"
+        },
+        "wikipedia": {
+          "title": "Citrus × sinensis",
+          "url": "https://en.wikipedia.org/wiki/Citrus_%C3%97_sinensis",
+          "collected_at": "2025-09-09T18:14:51.357870"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:14:51.358182"
+        },
+        "openplantbook": {
+          "pid": "citrus_sinensis",
+          "collected_at": "2025-09-09T18:14:51.358397"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/OrangeBloss_wb.jpg/330px-OrangeBloss_wb.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 83,
+      "scientific_name": "Coriandrum sativum",
+      "common_names": [
+        "Coriandrum (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Coriandrum",
+      "species": null,
+      "description": "Coriander, whose leaves are known as cilantro is an annual herb in the family Apiaceae.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:15:22.983684"
+        },
+        "wikipedia": {
+          "title": "Coriander",
+          "url": "https://en.wikipedia.org/wiki/Coriander",
+          "collected_at": "2025-09-09T18:15:23.191945"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:15:23.192198"
+        },
+        "openplantbook": {
+          "pid": "coriandrum_sativum",
+          "collected_at": "2025-09-09T18:15:23.192358"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg/330px-Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 56,
+      "scientific_name": "Cucumis melo",
+      "common_names": [
+        "Cucumis (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Cucumis",
+      "species": null,
+      "description": "Cucumis melo, also known as melon, is a species of Cucumis that has been developed into many cultivated varieties. The fruit is a pepo. The flesh is either sweet or bland, with or without an aroma, and the rind can be smooth, ribbed, wrinkled, or netted. The species is sometimes referred to as muskmelon. However, there is no consensus about the usage of this term, as it can also be used as a specific name for the musky netted-rind American cantaloupe, or as a generic name for any sweet-flesh variety such the inodorous smooth-rind honeydew melon.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:14:26.859196"
+        },
+        "wikipedia": {
+          "title": "Cucumis melo",
+          "url": "https://en.wikipedia.org/wiki/Cucumis_melo",
+          "collected_at": "2025-09-09T18:14:26.927976"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:14:26.928282"
+        },
+        "openplantbook": {
+          "pid": "cucumis_melo",
+          "collected_at": "2025-09-09T18:14:26.928442"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Muskmelon.jpg/330px-Muskmelon.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 55,
+      "scientific_name": "Cucumis sativus",
+      "common_names": [
+        "Cucumis (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Cucumis",
+      "species": null,
+      "description": "The cucumber is a widely-cultivated creeping vine plant in the family Cucurbitaceae that bears cylindrical to spherical fruits, which are used as culinary vegetables. Considered an annual plant, there are three main types of cucumber—slicing, pickling, and seedless—within which several cultivars have been created. The cucumber originates in Asia extending from India, Nepal, Bangladesh, China, and Northern Thailand, but now grows on most continents, and many different types of cucumber are grown commercially and traded on the global market. In North America, the term wild cucumber refers to plants in the genera Echinocystis and Marah, though the two are not closely related.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:14:20.773831"
+        },
+        "wikipedia": {
+          "title": "Cucumber",
+          "url": "https://en.wikipedia.org/wiki/Cucumber",
+          "collected_at": "2025-09-09T18:14:20.839434"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:14:20.839736"
+        },
+        "openplantbook": {
+          "pid": "cucumis_sativus",
+          "collected_at": "2025-09-09T18:14:20.839950"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/ARS_cucumber.jpg/330px-ARS_cucumber.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 58,
+      "scientific_name": "Cucurbita maxima",
+      "common_names": [
+        "Cucurbita (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Cucurbita",
+      "species": null,
+      "description": "Cucurbita maxima, one of at least five species of cultivated squash, is one of the most diverse domesticated species. This species originated in South America from the wild subspecies Cucurbita maxima subsp. andreana over 4,000 years ago. Cucurbita maxima, known for modern varieties as Hubbard, Delicious, Marblehead, Boston Marrow, and Turks Turban, originated in northern Argentina near the Andes or in certain Andean valleys. Secondary centers of diversity include India, Bangladesh, Myanmar, and the southern Appalachians.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:14:29.139251"
+        },
+        "wikipedia": {
+          "title": "Cucurbita maxima",
+          "url": "https://en.wikipedia.org/wiki/Cucurbita_maxima",
+          "collected_at": "2025-09-09T18:14:29.260110"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:14:29.260388"
+        },
+        "openplantbook": {
+          "pid": "cucurbita_maxima",
+          "collected_at": "2025-09-09T18:14:29.260583"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cucurbita_maxima_Blanco2.320.png/330px-Cucurbita_maxima_Blanco2.320.png"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 57,
+      "scientific_name": "Cucurbita pepo",
+      "common_names": [
+        "Cucurbita (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Cucurbita",
+      "species": null,
+      "description": "Cucurbita pepo is a cultivated plant of the genus Cucurbita. It yields varieties of winter squash and pumpkin, but the most widespread varieties belong to the subspecies Cucurbita pepo subsp. pepo, called summer squash.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:14:27.946873"
+        },
+        "wikipedia": {
+          "title": "Cucurbita pepo",
+          "url": "https://en.wikipedia.org/wiki/Cucurbita_pepo",
+          "collected_at": "2025-09-09T18:14:28.112864"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:14:28.113138"
+        },
+        "openplantbook": {
+          "pid": "cucurbita_pepo",
+          "collected_at": "2025-09-09T18:14:28.113370"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Cucurbita_pepo_collage_1.png/330px-Cucurbita_pepo_collage_1.png"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 43,
+      "scientific_name": "Daucus carota",
+      "common_names": [
+        "Carotte"
+      ],
+      "family": "Apiaceae",
+      "genus": "Daucus",
+      "species": null,
+      "description": "Daucus carota, whose common names include wild carrot, European wild carrot, bird's nest, bishop's lace, carrot flower, and Queen Anne's lace, is a flowering plant in the family Apiaceae. It is native to temperate regions of the Old World and is naturalised widely elsewhere. Carrots cultivated as a food crop are cultivars of one of the subspecies, Daucus carota subsp. sativus.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:57.478610"
+        },
+        "wikipedia": {
+          "title": "Daucus carota",
+          "url": "https://en.wikipedia.org/wiki/Daucus_carota",
+          "collected_at": "2025-09-09T18:13:57.542067"
+        },
+        "plantnet": {
+          "family": "Apiaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:57.542403"
+        },
+        "openplantbook": {
+          "pid": "daucus_carota",
+          "collected_at": "2025-09-09T18:13:57.542737"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Daucus_carota_May_2008-1_edit.jpg/330px-Daucus_carota_May_2008-1_edit.jpg"
+      ],
+      "categories": [
+        "legumes:racines"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 44,
+      "scientific_name": "Daucus carota subsp. sativus",
+      "common_names": [
+        "Carotte"
+      ],
+      "family": "Apiaceae",
+      "genus": "Daucus",
+      "species": null,
+      "description": "The carrot is a root vegetable, typically orange in colour, though heirloom variants including purple, black, red, white, and yellow cultivars exist, all of which are domesticated forms of the wild carrot, Daucus carota, native to Europe and Southwestern Asia. The plant probably originated in Iran and was originally cultivated for its leaves and seeds.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:58.571680"
+        },
+        "wikipedia": {
+          "title": "Carrot",
+          "url": "https://en.wikipedia.org/wiki/Carrot",
+          "collected_at": "2025-09-09T18:13:58.636844"
+        },
+        "plantnet": {
+          "family": "Apiaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:58.637611"
+        },
+        "openplantbook": {
+          "pid": "daucus_carota_subsp._sativus",
+          "collected_at": "2025-09-09T18:13:58.638123"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Vegetable-Carrot-Bundle-wStalks.jpg/330px-Vegetable-Carrot-Bundle-wStalks.jpg"
+      ],
+      "categories": [
+        "legumes:racines"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 20,
+      "scientific_name": "Dianthus barbatus",
+      "common_names": [
+        "Dianthus (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Dianthus",
+      "species": null,
+      "description": "Dianthus barbatus, the sweet William, is a species of flowering plant in the family Caryophyllaceae, native to southern Europe and parts of Asia. It has become a popular ornamental garden plant. It is a herbaceous biennial or short-lived perennial plant growing to 13–92 cm tall, with flowers in a dense cluster of up to 30 at the top of the stems. Each flower is 2–3 cm diameter with five petals displaying serrated edges. Wild plants produce red flowers with a white base, but colours in cultivars range from white, pink, red, and purple to variegated patterns. The exact origin of its English common name is unknown but first appears in 1596 in botanist John Gerard's garden catalogue. The flowers are edible and may have medicinal properties. Sweet William attracts bees, birds, and butterflies.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:06.825934"
+        },
+        "wikipedia": {
+          "title": "Dianthus barbatus",
+          "url": "https://en.wikipedia.org/wiki/Dianthus_barbatus",
+          "collected_at": "2025-09-09T18:13:06.889741"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:06.890064"
+        },
+        "openplantbook": {
+          "pid": "dianthus_barbatus",
+          "collected_at": "2025-09-09T18:13:06.890354"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Dianthus_barbatus_flowers_01.jpg/330px-Dianthus_barbatus_flowers_01.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 19,
+      "scientific_name": "Dianthus caryophyllus",
+      "common_names": [
+        "Dianthus (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Dianthus",
+      "species": null,
+      "description": "Dianthus caryophyllus, commonly known as carnation or clove pink, is a species of Dianthus native to the Mediterranean region. Its exact natural range is uncertain due to extensive cultivation over the last 2,000 years. Carnations are prized for their vibrant colors, delicate fringed petals, and fragrance.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:05.706870"
+        },
+        "wikipedia": {
+          "title": "Dianthus caryophyllus",
+          "url": "https://en.wikipedia.org/wiki/Dianthus_caryophyllus",
+          "collected_at": "2025-09-09T18:13:05.768621"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:05.769026"
+        },
+        "openplantbook": {
+          "pid": "dianthus_caryophyllus",
+          "collected_at": "2025-09-09T18:13:05.769484"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/W_carnation4051.jpg/330px-W_carnation4051.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 32,
+      "scientific_name": "Fagus grandifolia",
+      "common_names": [
+        "Fagus (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Fagus",
+      "species": null,
+      "description": "Fagus grandifolia, the American beech or North American beech, is a species of tree growing to 16–35 metres tall. It is the only beech native to North America. It flourished over most of the continent prior to the last ice age, but is now limited to the east. The tree is shade tolerant and found in forests in the final stage of succession.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:34.940936"
+        },
+        "wikipedia": {
+          "title": "Fagus grandifolia",
+          "url": "https://en.wikipedia.org/wiki/Fagus_grandifolia",
+          "collected_at": "2025-09-09T18:13:35.005107"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:35.005401"
+        },
+        "openplantbook": {
+          "pid": "fagus_grandifolia",
+          "collected_at": "2025-09-09T18:13:35.005614"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Beech_with_Branches.jpg/330px-Beech_with_Branches.jpg"
+      ],
+      "categories": [
+        "arbres:feuillus"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 31,
+      "scientific_name": "Fagus sylvatica",
+      "common_names": [
+        "Fagus (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Fagus",
+      "species": null,
+      "description": "Fagus sylvatica, the European beech or common beech, is a large, graceful deciduous tree in the beech family with smooth silvery-grey bark, large leaf area, and a short trunk with low branches. It is native to much of Europe, growing in humid climates.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:33.839853"
+        },
+        "wikipedia": {
+          "title": "Fagus sylvatica",
+          "url": "https://en.wikipedia.org/wiki/Fagus_sylvatica",
+          "collected_at": "2025-09-09T18:13:33.905134"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:33.905432"
+        },
+        "openplantbook": {
+          "pid": "fagus_sylvatica",
+          "collected_at": "2025-09-09T18:13:33.905617"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Fagus-sylvatica-cansiglio-forest-italy.jpg/330px-Fagus-sylvatica-cansiglio-forest-italy.jpg"
+      ],
+      "categories": [
+        "arbres:feuillus"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 71,
+      "scientific_name": "Fragaria × ananassa",
+      "common_names": [
+        "Fragaria (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Fragaria",
+      "species": null,
+      "description": "The garden strawberry is a widely grown hybrid plant cultivated worldwide for its fruit. The genus Fragaria, the strawberries, is in the rose family, Rosaceae. The fruit is appreciated for its aroma, bright red colour, juicy texture, and sweetness. It is eaten either fresh or in prepared foods such as jam, ice cream, and chocolates. Artificial strawberry flavourings and aromas are widely used in commercial products. Botanically, the strawberry is not a berry, but an aggregate accessory fruit. Each apparent 'seed' on the outside of the strawberry is actually an achene, a botanical fruit with a seed inside it.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:14:58.458079"
+        },
+        "wikipedia": {
+          "title": "Strawberry",
+          "url": "https://en.wikipedia.org/wiki/Strawberry",
+          "collected_at": "2025-09-09T18:14:58.527776"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:14:58.528018"
+        },
+        "openplantbook": {
+          "pid": "fragaria_×_ananassa",
+          "collected_at": "2025-09-09T18:14:58.528168"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg/330px-Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 16,
+      "scientific_name": "Iris germanica",
+      "common_names": [
+        "Iris"
+      ],
+      "family": "Iridaceae",
+      "genus": "Iris",
+      "species": null,
+      "description": "Iris × germanica is the accepted name for a species of flowering plants in the family Iridaceae commonly known as the bearded iris or the German bearded iris. It is of hybrid origin. Varieties include I. × g. var. florentina.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:02.014073"
+        },
+        "wikipedia": {
+          "title": "Iris × germanica",
+          "url": "https://en.wikipedia.org/wiki/Iris_%C3%97_germanica",
+          "collected_at": "2025-09-09T18:13:02.079941"
+        },
+        "plantnet": {
+          "family": "Iridaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:02.080183"
+        },
+        "openplantbook": {
+          "pid": "iris_germanica",
+          "collected_at": "2025-09-09T18:13:02.080371"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Iris_Germanica_2012-2.jpg/330px-Iris_Germanica_2012-2.jpg"
+      ],
+      "categories": [
+        "fleurs:fleurs à bulbe"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 18,
+      "scientific_name": "Iris pseudacorus",
+      "common_names": [
+        "Iris"
+      ],
+      "family": "Iridaceae",
+      "genus": "Iris",
+      "species": null,
+      "description": "Iris pseudacorus, the yellow flag, yellow iris, or water flag, is a species of flowering plant in the family Iridaceae. It is native to Europe, western Asia and northwest Africa. Its specific epithet pseudacorus means \"false acorus\", referring to the similarity of its leaves to those of Acorus calamus, as they have a prominently veined mid-rib and sword-like shape. However, the two plants are not closely related.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:04.624017"
+        },
+        "wikipedia": {
+          "title": "Iris pseudacorus",
+          "url": "https://en.wikipedia.org/wiki/Iris_pseudacorus",
+          "collected_at": "2025-09-09T18:13:04.691131"
+        },
+        "plantnet": {
+          "family": "Iridaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:04.691381"
+        },
+        "openplantbook": {
+          "pid": "iris_pseudacorus",
+          "collected_at": "2025-09-09T18:13:04.691522"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Iris_pseudacorus_iris_des_marais.jpg/330px-Iris_pseudacorus_iris_des_marais.jpg"
+      ],
+      "categories": [
+        "fleurs:fleurs à bulbe"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 17,
+      "scientific_name": "Iris sibirica",
+      "common_names": [
+        "Iris"
+      ],
+      "family": "Iridaceae",
+      "genus": "Iris",
+      "species": null,
+      "description": "Iris sibirica, commonly known as Siberian iris or Siberian flag, is a species of flowering plant in the family Iridaceae. It is a rhizomatous herbaceous perennial, from Europe and Central Asia. It has long green grass-like leaves, tall stem, 2–5 violet-blue, to blue, and occasionally white flowers. It is cultivated as an ornamental plant in temperate regions.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:03.092426"
+        },
+        "wikipedia": {
+          "title": "Iris sibirica",
+          "url": "https://en.wikipedia.org/wiki/Iris_sibirica",
+          "collected_at": "2025-09-09T18:13:03.154127"
+        },
+        "plantnet": {
+          "family": "Iridaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:03.154419"
+        },
+        "openplantbook": {
+          "pid": "iris_sibirica",
+          "collected_at": "2025-09-09T18:13:03.154631"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Sibirische_Schwertlilie%2C_Iris_sibirica_06.JPG/330px-Sibirische_Schwertlilie%2C_Iris_sibirica_06.JPG"
+      ],
+      "categories": [
+        "fleurs:fleurs à bulbe"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 48,
+      "scientific_name": "Lactuca sativa",
+      "common_names": [
+        "Lactuca (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Lactuca",
+      "species": null,
+      "description": "Lettuce is an annual plant of the family Asteraceae mostly grown as a leaf vegetable. The leaves are most often used raw in green salads, although lettuce is also seen in other kinds of food, such as sandwiches, wraps and soups; it can also be grilled. Its stem and seeds are sometimes used; celtuce is one variety grown for its stems, which are eaten either raw or cooked. In addition to its main use as a leafy green, it has also gathered religious and medicinal significance over centuries of human consumption. Europe and North America originally dominated the market for lettuce, but by the late 20th century the consumption of lettuce had spread throughout the world. In 2023, world production of lettuce was 28 million tonnes, led by China with 53% of the total.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:14:07.911633"
+        },
+        "wikipedia": {
+          "title": "Lettuce",
+          "url": "https://en.wikipedia.org/wiki/Lettuce",
+          "collected_at": "2025-09-09T18:14:07.976800"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:14:07.977134"
+        },
+        "openplantbook": {
+          "pid": "lactuca_sativa",
+          "collected_at": "2025-09-09T18:14:07.977396"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Iceberg_lettuce_in_SB.jpg/330px-Iceberg_lettuce_in_SB.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 49,
+      "scientific_name": "Lactuca serriola",
+      "common_names": [
+        "Lactuca (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Lactuca",
+      "species": null,
+      "description": "Lactuca serriola, also called prickly lettuce, milk thistle, compass plant, and scarole, is an annual or biennial plant in the tribe Cichorieae within the family Asteraceae. It has a slightly fetid odor and is commonly considered a weed of orchards, roadsides and field crops. It is the closest wild relative of cultivated lettuce.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:14:08.995490"
+        },
+        "wikipedia": {
+          "title": "Lactuca serriola",
+          "url": "https://en.wikipedia.org/wiki/Lactuca_serriola",
+          "collected_at": "2025-09-09T18:14:09.192767"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:14:09.193075"
+        },
+        "openplantbook": {
+          "pid": "lactuca_serriola",
+          "collected_at": "2025-09-09T18:14:09.193274"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Lactucaserriola2web.jpg/330px-Lactucaserriola2web.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 13,
+      "scientific_name": "Lilium candidum",
+      "common_names": [
+        "Lys"
+      ],
+      "family": "Liliaceae",
+      "genus": "Lilium",
+      "species": null,
+      "description": "Lilium candidum, the Madonna lily or white lily, is a plant in the true lily family. It is native to the Balkans and Middle East, and naturalized in other parts of Europe, including France, Italy, and Ukraine, and in North Africa, the Canary Islands, Mexico, and other regions. It has been cultivated since antiquity, for at least 3,000 years, and has great symbolic value since then for many cultures. It is susceptible to several virus diseases common to lilies, and especially to Botrytis fungus. One technique to avoid problems with viruses is to grow plants from seed instead of bulblets.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:12:52.822539"
+        },
+        "wikipedia": {
+          "title": "Lilium candidum",
+          "url": "https://en.wikipedia.org/wiki/Lilium_candidum",
+          "collected_at": "2025-09-09T18:12:52.887071"
+        },
+        "plantnet": {
+          "family": "Liliaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:12:52.888187"
+        },
+        "openplantbook": {
+          "pid": "lilium_candidum",
+          "collected_at": "2025-09-09T18:12:52.888924"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/ShoshanTzachor-2-wiki-Zachi-Evenor.jpg/330px-ShoshanTzachor-2-wiki-Zachi-Evenor.jpg"
+      ],
+      "categories": [
+        "fleurs:fleurs à bulbe"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 15,
+      "scientific_name": "Lilium japonicum",
+      "common_names": [
+        "Lys"
+      ],
+      "family": "Liliaceae",
+      "genus": "Lilium",
+      "species": null,
+      "description": "Plante Lilium japonicum - Données PlantNet",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:12:55.508527"
+        },
+        "plantnet": {
+          "family": "Liliaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:12:55.996108"
+        },
+        "openplantbook": {
+          "pid": "lilium_japonicum",
+          "collected_at": "2025-09-09T18:12:55.996328"
+        }
+      },
+      "image_urls": [],
+      "categories": [
+        "fleurs:fleurs à bulbe"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 14,
+      "scientific_name": "Lilium longiflorum",
+      "common_names": [
+        "Lys"
+      ],
+      "family": "Liliaceae",
+      "genus": "Lilium",
+      "species": null,
+      "description": "Lilium longiflorum, often called the Easter lily, is a species of plant endemic to both Taiwan and Ryukyu Islands (Japan). Lilium formosanum, a closely related species from Taiwan, has been treated as a variety of Easter lily in the past. It is a stem rooting lily, growing up to 1 m high. It bears a number of trumpet-shaped, white, fragrant, and outward-facing flowers. This species, along with most other true lilies, are highly toxic to cats.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:12:54.258169"
+        },
+        "wikipedia": {
+          "title": "Lilium longiflorum",
+          "url": "https://en.wikipedia.org/wiki/Lilium_longiflorum",
+          "collected_at": "2025-09-09T18:12:54.359000"
+        },
+        "plantnet": {
+          "family": "Liliaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:12:54.360079"
+        },
+        "openplantbook": {
+          "pid": "lilium_longiflorum",
+          "collected_at": "2025-09-09T18:12:54.360647"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Lilium_longiflorum_%28Easter_Lily%29.JPG/330px-Lilium_longiflorum_%28Easter_Lily%29.JPG"
+      ],
+      "categories": [
+        "fleurs:fleurs à bulbe"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 59,
+      "scientific_name": "Malus domestica",
+      "common_names": [
+        "Malus (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Malus",
+      "species": null,
+      "description": "An apple is the round, edible fruit of an apple tree. Fruit trees of the orchard or domestic apple, the most widely grown in the genus, are cultivated worldwide. The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found. Apples have been grown for thousands of years in Eurasia before they were introduced to North America by European colonists. Apples have cultural significance in many mythologies and religions.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:14:30.316194"
+        },
+        "wikipedia": {
+          "title": "Apple",
+          "url": "https://en.wikipedia.org/wiki/Apple",
+          "collected_at": "2025-09-09T18:14:30.394421"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:14:30.395924"
+        },
+        "openplantbook": {
+          "pid": "malus_domestica",
+          "collected_at": "2025-09-09T18:14:30.397448"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Pink_lady_and_cross_section.jpg/330px-Pink_lady_and_cross_section.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 60,
+      "scientific_name": "Malus sylvestris",
+      "common_names": [
+        "Malus (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Malus",
+      "species": null,
+      "description": "Malus sylvestris, the European crab apple, also known as the European wild apple or simply the crab apple, is a species of the genus Malus. Its scientific name means \"forest apple\", reflecting its habitat. It is native to western Eurasia.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:14:31.425066"
+        },
+        "wikipedia": {
+          "title": "Malus sylvestris",
+          "url": "https://en.wikipedia.org/wiki/Malus_sylvestris",
+          "collected_at": "2025-09-09T18:14:31.491493"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:14:31.492074"
+        },
+        "openplantbook": {
+          "pid": "malus_sylvestris",
+          "collected_at": "2025-09-09T18:14:31.492384"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Malus_sylvestris_005.JPG/330px-Malus_sylvestris_005.JPG"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 74,
+      "scientific_name": "Mentha piperita",
+      "common_names": [
+        "Menthe"
+      ],
+      "family": "Lamiaceae",
+      "genus": "Mentha",
+      "species": null,
+      "description": "Peppermint is a hybrid species of mint, a cross between watermint and spearmint. Indigenous to Europe and the Middle East, the plant is now widely spread and cultivated in many regions of the world. It is occasionally found in the wild with its parent species.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:15:01.718645"
+        },
+        "wikipedia": {
+          "title": "Peppermint",
+          "url": "https://en.wikipedia.org/wiki/Peppermint",
+          "collected_at": "2025-09-09T18:15:01.773006"
+        },
+        "plantnet": {
+          "family": "Lamiaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:15:01.773273"
+        },
+        "openplantbook": {
+          "pid": "mentha_piperita",
+          "collected_at": "2025-09-09T18:15:01.773474"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Pfefferminze_natur_peppermint.jpg/330px-Pfefferminze_natur_peppermint.jpg"
+      ],
+      "categories": [
+        "aromates:fines herbes"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 75,
+      "scientific_name": "Mentha spicata",
+      "common_names": [
+        "Menthe"
+      ],
+      "family": "Lamiaceae",
+      "genus": "Mentha",
+      "species": null,
+      "description": "Spearmint, also known as garden mint, common mint, lamb mint and mackerel mint, is native to Europe and southern temperate Asia, extending from Ireland in the west to southern China in the east. It is naturalized in many other temperate parts of the world, including northern and southern Africa, North America, and South America. It is used as a flavouring in food and herbal teas. The aromatic oil, called oil of spearmint, is also used as a flavoring and sometimes as a scent.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:15:02.794826"
+        },
+        "wikipedia": {
+          "title": "Spearmint",
+          "url": "https://en.wikipedia.org/wiki/Spearmint",
+          "collected_at": "2025-09-09T18:15:02.855498"
+        },
+        "plantnet": {
+          "family": "Lamiaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:15:02.855826"
+        },
+        "openplantbook": {
+          "pid": "mentha_spicata",
+          "collected_at": "2025-09-09T18:15:02.856042"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Minze.jpg/330px-Minze.jpg"
+      ],
+      "categories": [
+        "aromates:fines herbes"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 76,
+      "scientific_name": "Mentha × piperita",
+      "common_names": [
+        "Menthe"
+      ],
+      "family": "Lamiaceae",
+      "genus": "Mentha",
+      "species": null,
+      "description": "Peppermint is a hybrid species of mint, a cross between watermint and spearmint. Indigenous to Europe and the Middle East, the plant is now widely spread and cultivated in many regions of the world. It is occasionally found in the wild with its parent species.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:15:08.882946"
+        },
+        "wikipedia": {
+          "title": "Peppermint",
+          "url": "https://en.wikipedia.org/wiki/Peppermint",
+          "collected_at": "2025-09-09T18:15:08.948056"
+        },
+        "plantnet": {
+          "family": "Lamiaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:15:08.948391"
+        },
+        "openplantbook": {
+          "pid": "mentha_×_piperita",
+          "collected_at": "2025-09-09T18:15:08.948612"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Pfefferminze_natur_peppermint.jpg/330px-Pfefferminze_natur_peppermint.jpg"
+      ],
+      "categories": [
+        "aromates:fines herbes"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 80,
+      "scientific_name": "Ocimum basilicum",
+      "common_names": [
+        "Ocimum (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Ocimum",
+      "species": null,
+      "description": "Basil, also called great basil, is a culinary herb of the family Lamiaceae (mints). It is a tender plant, and is used in cuisines worldwide. In Western cuisine, the generic term \"basil\" refers to the variety also known as Genovese basil or sweet basil. Basil is native to tropical regions from Central Africa to Southeast Asia. In temperate climates basil is treated as an annual plant, but it can be grown as a short-lived perennial or biennial in warmer horticultural zones with tropical or Mediterranean climates.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:15:13.740374"
+        },
+        "wikipedia": {
+          "title": "Basil",
+          "url": "https://en.wikipedia.org/wiki/Basil",
+          "collected_at": "2025-09-09T18:15:13.804185"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:15:13.804526"
+        },
+        "openplantbook": {
+          "pid": "ocimum_basilicum",
+          "collected_at": "2025-09-09T18:15:13.804725"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Basil-Basilico-Ocimum_basilicum-albahaca.jpg/330px-Basil-Basilico-Ocimum_basilicum-albahaca.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 81,
+      "scientific_name": "Ocimum tenuiflorum",
+      "common_names": [
+        "Ocimum (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Ocimum",
+      "species": null,
+      "description": "Ocimum tenuiflorum, commonly known as tulasi, tulsi, or holy basil, is an aromatic perennial plant in the family Lamiaceae. It is widely cultivated throughout the Southeast Asian tropics. It is native to tropical and subtropical regions of Asia, Australia and the western Pacific. This plant has escaped from cultivation and has naturalized in many tropical regions of the Americas. It is an agricultural and environmental weed.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:15:19.819826"
+        },
+        "wikipedia": {
+          "title": "Ocimum tenuiflorum",
+          "url": "https://en.wikipedia.org/wiki/Ocimum_tenuiflorum",
+          "collected_at": "2025-09-09T18:15:20.837783"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:15:20.838118"
+        },
+        "openplantbook": {
+          "pid": "ocimum_tenuiflorum",
+          "collected_at": "2025-09-09T18:15:20.838287"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Tulsi_or_Tulasi_Holy_basil.jpg/330px-Tulsi_or_Tulasi_Holy_basil.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 87,
+      "scientific_name": "Origanum majorana",
+      "common_names": [
+        "Origanum (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Origanum",
+      "species": null,
+      "description": "Marjoram is a cold-sensitive perennial herb or undershrub with sweet pine and citrus flavours. In some Middle Eastern countries, marjoram is synonymous with oregano, and there the names sweet marjoram and knotted marjoram are used to distinguish it from other plants of the genus Origanum. It is also called pot marjoram, although this name is also used for other cultivated species of Origanum.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:15:32.713611"
+        },
+        "wikipedia": {
+          "title": "Marjoram",
+          "url": "https://en.wikipedia.org/wiki/Marjoram",
+          "collected_at": "2025-09-09T18:15:32.777710"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:15:32.777990"
+        },
+        "openplantbook": {
+          "pid": "origanum_majorana",
+          "collected_at": "2025-09-09T18:15:32.778188"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Origanum_majorana_002.JPG/330px-Origanum_majorana_002.JPG"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 86,
+      "scientific_name": "Origanum vulgare",
+      "common_names": [
+        "Origanum (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Origanum",
+      "species": null,
+      "description": "Oregano is a species of flowering plant in the mint family, Lamiaceae. It was native to the Mediterranean region, but widely naturalised elsewhere in the temperate Northern Hemisphere.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:15:31.381863"
+        },
+        "wikipedia": {
+          "title": "Oregano",
+          "url": "https://en.wikipedia.org/wiki/Oregano",
+          "collected_at": "2025-09-09T18:15:31.459900"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:15:31.460244"
+        },
+        "openplantbook": {
+          "pid": "origanum_vulgare",
+          "collected_at": "2025-09-09T18:15:31.460899"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Origanum_vulgare_-_harilik_pune.jpg/330px-Origanum_vulgare_-_harilik_pune.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 82,
+      "scientific_name": "Petroselinum crispum",
+      "common_names": [
+        "Petroselinum (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Petroselinum",
+      "species": null,
+      "description": "Parsley, or garden parsley, is a species of flowering plant in the family Apiaceae that is native to Greece, Morocco and the former Yugoslavia. It has been introduced and naturalized in Europe and elsewhere in the world with suitable climates, and is widely cultivated as a herb and a vegetable.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:15:21.855239"
+        },
+        "wikipedia": {
+          "title": "Parsley",
+          "url": "https://en.wikipedia.org/wiki/Parsley",
+          "collected_at": "2025-09-09T18:15:21.921866"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:15:21.922371"
+        },
+        "openplantbook": {
+          "pid": "petroselinum_crispum",
+          "collected_at": "2025-09-09T18:15:21.922578"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Petroselinum.jpg/330px-Petroselinum.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 38,
+      "scientific_name": "Picea abies",
+      "common_names": [
+        "Picea (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Picea",
+      "species": null,
+      "description": "Picea abies, the Norway spruce or European spruce, is a species of spruce native to Northern, Central and Eastern Europe.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:47.042111"
+        },
+        "wikipedia": {
+          "title": "Picea abies",
+          "url": "https://en.wikipedia.org/wiki/Picea_abies",
+          "collected_at": "2025-09-09T18:13:47.102910"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:47.103462"
+        },
+        "openplantbook": {
+          "pid": "picea_abies",
+          "collected_at": "2025-09-09T18:13:47.103969"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/GemeineFichte.jpg/330px-GemeineFichte.jpg"
+      ],
+      "categories": [
+        "arbres:conifères"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 39,
+      "scientific_name": "Picea pungens",
+      "common_names": [
+        "Picea (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Picea",
+      "species": null,
+      "description": "The blue spruce, also commonly known as Colorado spruce or Colorado blue spruce, is a species of spruce tree native to North America in Arizona, Colorado, Idaho, New Mexico, Utah and Wyoming. It is noted for its blue-green colored needles, and has therefore been used as an ornamental tree in many places far beyond its native range.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:48.125138"
+        },
+        "wikipedia": {
+          "title": "Blue spruce",
+          "url": "https://en.wikipedia.org/wiki/Blue_spruce",
+          "collected_at": "2025-09-09T18:13:48.195019"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:48.195300"
+        },
+        "openplantbook": {
+          "pid": "picea_pungens",
+          "collected_at": "2025-09-09T18:13:48.195476"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Picea_pungens_tree.jpg/330px-Picea_pungens_tree.jpg"
+      ],
+      "categories": [
+        "arbres:conifères"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 35,
+      "scientific_name": "Pinus halepensis",
+      "common_names": [
+        "Pin"
+      ],
+      "family": "Pinaceae",
+      "genus": "Pinus",
+      "species": null,
+      "description": "Pinus halepensis, commonly known as the Aleppo pine, also known as the Jerusalem pine, is a pine native to the Mediterranean region. It was officially named by the botanist Philip Miller in his 1768 book The Gardener's Dictionary; he probably never went to Aleppo but mentions seeing large specimens at Goodwood in the garden of the Duke of Richmond, which were transplanted in 1739.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:38.238638"
+        },
+        "wikipedia": {
+          "title": "Pinus halepensis",
+          "url": "https://en.wikipedia.org/wiki/Pinus_halepensis",
+          "collected_at": "2025-09-09T18:13:38.302603"
+        },
+        "plantnet": {
+          "family": "Pinaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:38.303078"
+        },
+        "openplantbook": {
+          "pid": "pinus_halepensis",
+          "collected_at": "2025-09-09T18:13:38.303738"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/%CE%A7%CE%B1%CE%BB%CE%AD%CF%80%CE%B9%CE%BF%CF%82_%CF%80%CE%B5%CF%8D%CE%BA%CE%B7_%CE%A3%CE%BF%CF%8D%CE%BD%CE%B9%CE%BF_1963.jpg/330px-%CE%A7%CE%B1%CE%BB%CE%AD%CF%80%CE%B9%CE%BF%CF%82_%CF%80%CE%B5%CF%8D%CE%BA%CE%B7_%CE%A3%CE%BF%CF%8D%CE%BD%CE%B9%CE%BF_1963.jpg"
+      ],
+      "categories": [
+        "arbres:conifères"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 34,
+      "scientific_name": "Pinus nigra",
+      "common_names": [
+        "Pin"
+      ],
+      "family": "Pinaceae",
+      "genus": "Pinus",
+      "species": null,
+      "description": "Pinus nigra, the Austrian pine or black pine, is a moderately variable species of pine, occurring across Southern Europe from the Iberian Peninsula and Lower Austria to the eastern Mediterranean, on the Anatolian peninsula of Turkey, Corsica and Cyprus, as well as Crimea and in the high mountains of Northwest Africa.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:37.148228"
+        },
+        "wikipedia": {
+          "title": "Pinus nigra",
+          "url": "https://en.wikipedia.org/wiki/Pinus_nigra",
+          "collected_at": "2025-09-09T18:13:37.214454"
+        },
+        "plantnet": {
+          "family": "Pinaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:37.214756"
+        },
+        "openplantbook": {
+          "pid": "pinus_nigra",
+          "collected_at": "2025-09-09T18:13:37.214996"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/%C5%9Awierklaniec_pinus_nigra_12.06.2010_p.jpg/330px-%C5%9Awierklaniec_pinus_nigra_12.06.2010_p.jpg"
+      ],
+      "categories": [
+        "arbres:conifères"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 33,
+      "scientific_name": "Pinus sylvestris",
+      "common_names": [
+        "Pin"
+      ],
+      "family": "Pinaceae",
+      "genus": "Pinus",
+      "species": null,
+      "description": "Pinus sylvestris, the Scots pine (UK), Scotch pine (US), Baltic pine, or European red pine is a species of tree in the pine family Pinaceae that is native to Eurasia. It can readily be identified by its combination of fairly short, blue-green leaves and orange-red bark.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:36.055591"
+        },
+        "wikipedia": {
+          "title": "Pinus sylvestris",
+          "url": "https://en.wikipedia.org/wiki/Pinus_sylvestris",
+          "collected_at": "2025-09-09T18:13:36.123724"
+        },
+        "plantnet": {
+          "family": "Pinaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:36.124232"
+        },
+        "openplantbook": {
+          "pid": "pinus_sylvestris",
+          "collected_at": "2025-09-09T18:13:36.124806"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Skuleskogen_pine.jpg/330px-Skuleskogen_pine.jpg"
+      ],
+      "categories": [
+        "arbres:conifères"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 65,
+      "scientific_name": "Prunus avium",
+      "common_names": [
+        "Prunus (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Prunus",
+      "species": null,
+      "description": "Prunus avium, commonly called wild cherry, sweet cherry or gean is a species of cherry, a flowering plant in the rose family, Rosaceae. It is native to Eurasia and naturalized elsewhere. It is an ancestor of P. cerasus.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:14:41.945762"
+        },
+        "wikipedia": {
+          "title": "Prunus avium",
+          "url": "https://en.wikipedia.org/wiki/Prunus_avium",
+          "collected_at": "2025-09-09T18:14:42.010572"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:14:42.010862"
+        },
+        "openplantbook": {
+          "pid": "prunus_avium",
+          "collected_at": "2025-09-09T18:14:42.011047"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Prunus_avium_fruit.jpg/330px-Prunus_avium_fruit.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 63,
+      "scientific_name": "Prunus domestica",
+      "common_names": [
+        "Prunus (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Prunus",
+      "species": null,
+      "description": "Prunus domestica is a species of flowering plant in the family Rosaceae. A deciduous tree, it includes many varieties of the fruit trees known as plums in English, though not all plums belong to this species. The greengages and damsons also belong to subspecies of P. domestica.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:14:39.758023"
+        },
+        "wikipedia": {
+          "title": "Prunus domestica",
+          "url": "https://en.wikipedia.org/wiki/Prunus_domestica",
+          "collected_at": "2025-09-09T18:14:39.823551"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:14:39.823922"
+        },
+        "openplantbook": {
+          "pid": "prunus_domestica",
+          "collected_at": "2025-09-09T18:14:39.824360"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Fruits_Prunus_domestica.jpg/330px-Fruits_Prunus_domestica.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 64,
+      "scientific_name": "Prunus persica",
+      "common_names": [
+        "Prunus (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Prunus",
+      "species": null,
+      "description": "The peach is a deciduous tree that bears edible juicy fruits with various characteristics. Most are simply called peaches, while the glossy-skinned, non-fuzzy varieties are called nectarines. Though from the same species, they are regarded commercially as different fruits.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:14:40.852702"
+        },
+        "wikipedia": {
+          "title": "Peach",
+          "url": "https://en.wikipedia.org/wiki/Peach",
+          "collected_at": "2025-09-09T18:14:40.917656"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:14:40.920145"
+        },
+        "openplantbook": {
+          "pid": "prunus_persica",
+          "collected_at": "2025-09-09T18:14:40.920701"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Illustration_Prunus_persica_clean_no_descr.jpg/330px-Illustration_Prunus_persica_clean_no_descr.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 61,
+      "scientific_name": "Pyrus communis",
+      "common_names": [
+        "Pyrus (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Pyrus",
+      "species": null,
+      "description": "Pyrus communis, the common pear, is a species of pear native to central and eastern Europe, and western Asia.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:14:37.531519"
+        },
+        "wikipedia": {
+          "title": "Pyrus communis",
+          "url": "https://en.wikipedia.org/wiki/Pyrus_communis",
+          "collected_at": "2025-09-09T18:14:37.610043"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:14:37.611344"
+        },
+        "openplantbook": {
+          "pid": "pyrus_communis",
+          "collected_at": "2025-09-09T18:14:37.612163"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Pears.jpg/330px-Pears.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 62,
+      "scientific_name": "Pyrus pyrifolia",
+      "common_names": [
+        "Pyrus (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Pyrus",
+      "species": null,
+      "description": "Pyrus pyrifolia is a species of pear tree native to southern China and northern Indochina that has been introduced to Korea, Japan and other parts of the world. The tree's edible fruit is known by many names, including Asian pear, Persian pear, Japanese pear, Chinese pear, Korean pear, Taiwanese pear, apple pear, zodiac pear, three-halves pear, papple, naspati and sand pear. Along with cultivars of P. × bretschneideri and Pyrus ussuriensis, the fruit is also called the nashi pear. Cultivars derived from Pyrus pyrifolia are grown throughout East Asia, and in other countries such Pakistan, Nepal, Australia, New Zealand, and America. Traditionally in East Asia the tree's flowers are a popular symbol of early spring, and it is a common sight in gardens and the countryside.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:14:38.680898"
+        },
+        "wikipedia": {
+          "title": "Pyrus pyrifolia",
+          "url": "https://en.wikipedia.org/wiki/Pyrus_pyrifolia",
+          "collected_at": "2025-09-09T18:14:38.741205"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:14:38.741496"
+        },
+        "openplantbook": {
+          "pid": "pyrus_pyrifolia",
+          "collected_at": "2025-09-09T18:14:38.741724"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Nashi_pear.jpg/330px-Nashi_pear.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 25,
+      "scientific_name": "Quercus ilex",
+      "common_names": [
+        "Chêne"
+      ],
+      "family": "Fagaceae",
+      "genus": "Quercus",
+      "species": null,
+      "description": "Quercus ilex, the holly oak, also evergreen oak, is a large evergreen oak native to the Mediterranean region. It is a member of the section Ilex of the genus, with acorns that mature in a single summer.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:17.298505"
+        },
+        "wikipedia": {
+          "title": "Quercus ilex",
+          "url": "https://en.wikipedia.org/wiki/Quercus_ilex",
+          "collected_at": "2025-09-09T18:13:17.362185"
+        },
+        "plantnet": {
+          "family": "Fagaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:17.362445"
+        },
+        "openplantbook": {
+          "pid": "quercus_ilex",
+          "collected_at": "2025-09-09T18:13:17.362636"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Quercus_ilex_JPG1.jpg/330px-Quercus_ilex_JPG1.jpg"
+      ],
+      "categories": [
+        "arbres:feuillus"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 24,
+      "scientific_name": "Quercus petraea",
+      "common_names": [
+        "Chêne"
+      ],
+      "family": "Fagaceae",
+      "genus": "Quercus",
+      "species": null,
+      "description": "Quercus petraea, commonly known as the sessile oak, Welsh oak, Cornish oak, Irish oak or durmast oak, is a species of oak tree native to most of Europe and into Anatolia and Iran. The sessile oak is the national tree of Ireland, and an unofficial emblem in Wales and Cornwall.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:16.190788"
+        },
+        "wikipedia": {
+          "title": "Quercus petraea",
+          "url": "https://en.wikipedia.org/wiki/Quercus_petraea",
+          "collected_at": "2025-09-09T18:13:16.252608"
+        },
+        "plantnet": {
+          "family": "Fagaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:16.252974"
+        },
+        "openplantbook": {
+          "pid": "quercus_petraea",
+          "collected_at": "2025-09-09T18:13:16.253202"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Quercus_petraea_06.jpg/330px-Quercus_petraea_06.jpg"
+      ],
+      "categories": [
+        "arbres:feuillus"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 23,
+      "scientific_name": "Quercus robur",
+      "common_names": [
+        "Chêne"
+      ],
+      "family": "Fagaceae",
+      "genus": "Quercus",
+      "species": null,
+      "description": "Quercus robur, the pedunculate (or \"English\") oak, is a species of flowering plant in the beech and oak family, Fagaceae. It is a large tree, native to most of Europe and western Asia, and is widely cultivated in other temperate regions. It grows on soils of near neutral acidity in the lowlands and is notable for its value to natural ecosystems, supporting a very wide diversity of herbivorous insects and other pests, predators and pathogens.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:15.115324"
+        },
+        "wikipedia": {
+          "title": "Quercus robur",
+          "url": "https://en.wikipedia.org/wiki/Quercus_robur",
+          "collected_at": "2025-09-09T18:13:15.170413"
+        },
+        "plantnet": {
+          "family": "Fagaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:15.170874"
+        },
+        "openplantbook": {
+          "pid": "quercus_robur",
+          "collected_at": "2025-09-09T18:13:15.171056"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Quercus_robur.jpg/330px-Quercus_robur.jpg"
+      ],
+      "categories": [
+        "arbres:feuillus"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 9,
+      "scientific_name": "Rosa centifolia",
+      "common_names": [
+        "Rose"
+      ],
+      "family": "Rosaceae",
+      "genus": "Rosa",
+      "species": null,
+      "description": "Rosa × centifolia, the Provence rose, cabbage rose, May rose or Rose de Mai, is a hybrid rose developed by Dutch breeders in the period between the 17th century and the 19th century, possibly earlier.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:12:43.193135"
+        },
+        "wikipedia": {
+          "title": "Rosa × centifolia",
+          "url": "https://en.wikipedia.org/wiki/Rosa_%C3%97_centifolia",
+          "collected_at": "2025-09-09T18:12:43.268128"
+        },
+        "plantnet": {
+          "family": "Rosaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:12:43.270559"
+        },
+        "openplantbook": {
+          "pid": "rosa_centifolia",
+          "collected_at": "2025-09-09T18:12:43.271086"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Rosa_centifolia_foliacea_17.jpg/330px-Rosa_centifolia_foliacea_17.jpg"
+      ],
+      "categories": [
+        "fleurs:fleurs à bulbe"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 7,
+      "scientific_name": "Rosa damascena",
+      "common_names": [
+        "Rose"
+      ],
+      "family": "Rosaceae",
+      "genus": "Rosa",
+      "species": null,
+      "description": "Rosa × damascena, more commonly known as the Damask rose, or sometimes as the Iranian Rose, Bulgarian rose, Taif rose, Emirati rose, Ispahan rose, Castile rose, and Đulbešećerka is a rose hybrid derived from Rosa gallica and Rosa moschata. DNA analysis has shown that a third species, Rosa fedtschenkoana, made some genetic contributions to the Damask rose.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:12:41.008243"
+        },
+        "wikipedia": {
+          "title": "Rosa × damascena",
+          "url": "https://en.wikipedia.org/wiki/Rosa_%C3%97_damascena",
+          "collected_at": "2025-09-09T18:12:41.085665"
+        },
+        "plantnet": {
+          "family": "Rosaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:12:41.086078"
+        },
+        "openplantbook": {
+          "pid": "rosa_damascena",
+          "collected_at": "2025-09-09T18:12:41.086585"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Damask_rose_pink.jpg/330px-Damask_rose_pink.jpg"
+      ],
+      "categories": [
+        "fleurs:fleurs à bulbe"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 8,
+      "scientific_name": "Rosa gallica",
+      "common_names": [
+        "Rose"
+      ],
+      "family": "Rosaceae",
+      "genus": "Rosa",
+      "species": null,
+      "description": "Rosa gallica, the Gallic rose, French rose, or rose of Provins, is a species of flowering plant in the rose family, native to southern and central Europe eastwards to Turkey and the Caucasus. Rosa gallica was one of the first species of rose to be cultivated in central Europe. It is a parent of several important cultivars.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:12:42.111348"
+        },
+        "wikipedia": {
+          "title": "Rosa gallica",
+          "url": "https://en.wikipedia.org/wiki/Rosa_gallica",
+          "collected_at": "2025-09-09T18:12:42.174443"
+        },
+        "plantnet": {
+          "family": "Rosaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:12:42.174710"
+        },
+        "openplantbook": {
+          "pid": "rosa_gallica",
+          "collected_at": "2025-09-09T18:12:42.174855"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Wild_Rosa_gallica_Romania.jpg/330px-Wild_Rosa_gallica_Romania.jpg"
+      ],
+      "categories": [
+        "fleurs:fleurs à bulbe"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 6,
+      "scientific_name": "Rosa rugosa",
+      "common_names": [
+        "Rose"
+      ],
+      "family": "Rosaceae",
+      "genus": "Rosa",
+      "species": null,
+      "description": "Rosa rugosa is a species of rose native to eastern Asia, in northeastern China, Japan, Korea and southeastern Siberia, where it grows on beach coasts, often on sand dunes. It is naturalized in much of Europe and parts of the United States and Canada. It should not be confused with Rosa multiflora, which is also known as \"Japanese rose\". The Latin word \"rugosa\" means \"wrinkled\", referring to the wrinkled leaves. Often used as an ornamental plant, it has become invasive in parts of Europe, North America and South America.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:12:39.258392"
+        },
+        "wikipedia": {
+          "title": "Rosa rugosa",
+          "url": "https://en.wikipedia.org/wiki/Rosa_rugosa",
+          "collected_at": "2025-09-09T18:12:39.982164"
+        },
+        "plantnet": {
+          "family": "Rosaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:12:39.988453"
+        },
+        "openplantbook": {
+          "pid": "rosa_rugosa",
+          "collected_at": "2025-09-09T18:12:39.989068"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Rosa_rugosa_Tokyo.JPG/330px-Rosa_rugosa_Tokyo.JPG"
+      ],
+      "categories": [
+        "fleurs:fleurs à bulbe"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 77,
+      "scientific_name": "Rosmarinus officinalis",
+      "common_names": [
+        "Romarin"
+      ],
+      "family": "Lamiaceae",
+      "genus": "Rosmarinus",
+      "species": null,
+      "description": "Salvia rosmarinus, commonly known as rosemary, is a shrub with fragrant, evergreen, needle-like leaves and purple or sometimes white, pink, or blue flowers. It is a member of the sage family, Lamiaceae.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:15:09.973377"
+        },
+        "wikipedia": {
+          "title": "Rosemary",
+          "url": "https://en.wikipedia.org/wiki/Rosemary",
+          "collected_at": "2025-09-09T18:15:10.040028"
+        },
+        "plantnet": {
+          "family": "Lamiaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:15:10.040367"
+        },
+        "openplantbook": {
+          "pid": "rosmarinus_officinalis",
+          "collected_at": "2025-09-09T18:15:10.040547"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Rosemary_in_bloom.JPG/330px-Rosemary_in_bloom.JPG"
+      ],
+      "categories": [
+        "aromates:fines herbes"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 73,
+      "scientific_name": "Rubus fruticosus",
+      "common_names": [
+        "Rubus (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Rubus",
+      "species": null,
+      "description": "Rubus fruticosus L. is the ambiguous name of a European blackberry species in the genus Rubus. The name has been interpreted in several ways:The species represented by the type specimen of Rubus fruticosus L., which is also the type specimen of the genus Rubus. This specimen is considered to match the species R. plicatus, in Rubus subgenus Rubus, section Rubus.\nVarious species consistent with Carl Linnaeus' original description of the species, which was based on a mixture of specimens now considered to match Rubus ulmifolius and R. plicatus\na species aggregate Rubus fruticosus agg. that includes most of a group called Rubus subgenus Rubus :\nin a narrow sense, sometimes separated as the section Glandulosus, with about 289 microspecies. In this sense the species aggregate does not include the type of the genus Rubus.\nin a broad sense: (1) (i) sections Glandulosus and Rubus [sensu stricto] or (ii) \"most of\" these sections; or (2) sections Glandulosus, Rubus [sensu stricto] and Corylifolii",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:15:00.635948"
+        },
+        "wikipedia": {
+          "title": "Rubus fruticosus",
+          "url": "https://en.wikipedia.org/wiki/Rubus_fruticosus",
+          "collected_at": "2025-09-09T18:15:00.697250"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:15:00.697570"
+        },
+        "openplantbook": {
+          "pid": "rubus_fruticosus",
+          "collected_at": "2025-09-09T18:15:00.697810"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Blackberry_%28Rubus_fruticosus%29.jpg/330px-Blackberry_%28Rubus_fruticosus%29.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 72,
+      "scientific_name": "Rubus idaeus",
+      "common_names": [
+        "Rubus (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Rubus",
+      "species": null,
+      "description": "Rubus idaeus is a red-fruited species of Rubus native to Europe and northern Asia and commonly cultivated in other temperate regions.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:14:59.544815"
+        },
+        "wikipedia": {
+          "title": "Rubus idaeus",
+          "url": "https://en.wikipedia.org/wiki/Rubus_idaeus",
+          "collected_at": "2025-09-09T18:14:59.607198"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:14:59.607504"
+        },
+        "openplantbook": {
+          "pid": "rubus_idaeus",
+          "collected_at": "2025-09-09T18:14:59.607689"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Fert%C5%91di_k%C3%A1rmin_m%C3%A1lna.JPG/330px-Fert%C5%91di_k%C3%A1rmin_m%C3%A1lna.JPG"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 84,
+      "scientific_name": "Salvia officinalis",
+      "common_names": [
+        "Salvia (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Salvia",
+      "species": null,
+      "description": "Salvia officinalis, common sage or sage, is a perennial, evergreen subshrub, with woody stems, grayish leaves, and blue to purplish flowers. It is a member of the mint family (Lamiaceae) and native to the Mediterranean region, though it has been naturalized in many places throughout the world. It has a long history of medicinal and culinary use, and in modern times it has been used as an ornamental garden plant. The common name \"sage\" is also used for closely related species and cultivars.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:15:24.205703"
+        },
+        "wikipedia": {
+          "title": "Salvia officinalis",
+          "url": "https://en.wikipedia.org/wiki/Salvia_officinalis",
+          "collected_at": "2025-09-09T18:15:24.269365"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:15:24.269711"
+        },
+        "openplantbook": {
+          "pid": "salvia_officinalis",
+          "collected_at": "2025-09-09T18:15:24.269955"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Salvia_officinalis0.jpg/330px-Salvia_officinalis0.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 85,
+      "scientific_name": "Salvia sclarea",
+      "common_names": [
+        "Salvia (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Salvia",
+      "species": null,
+      "description": "Salvia sclarea, the clary or clary sage, is a biennial (short-lived) herbaceous perennial in the genus Salvia. It is native to the northern Mediterranean Basin and to some areas in north Africa and Central Asia. The plant has long been cultivated as an herb and is currently grown for its essential oil.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:15:25.285965"
+        },
+        "wikipedia": {
+          "title": "Salvia sclarea",
+          "url": "https://en.wikipedia.org/wiki/Salvia_sclarea",
+          "collected_at": "2025-09-09T18:15:25.348489"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:15:25.348809"
+        },
+        "openplantbook": {
+          "pid": "salvia_sclarea",
+          "collected_at": "2025-09-09T18:15:25.349019"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Salvia_sclarea3.jpg/330px-Salvia_sclarea3.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 40,
+      "scientific_name": "Solanum lycopersicum",
+      "common_names": [
+        "Tomate"
+      ],
+      "family": "Solanaceae",
+      "genus": "Solanum",
+      "species": null,
+      "description": "The tomato is a plant whose fruit is an edible berry that is eaten as a vegetable. The tomato is a member of the nightshade family that includes tobacco, potato, and chili peppers. It originated from western South America, and may have been domesticated there or in Mexico. It was introduced to the Old World by the Spanish in the Columbian exchange in the 16th century.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:49.212020"
+        },
+        "wikipedia": {
+          "title": "Tomato",
+          "url": "https://en.wikipedia.org/wiki/Tomato",
+          "collected_at": "2025-09-09T18:13:49.273536"
+        },
+        "plantnet": {
+          "family": "Solanaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:49.273818"
+        },
+        "openplantbook": {
+          "pid": "solanum_lycopersicum",
+          "collected_at": "2025-09-09T18:13:49.274008"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tomato_je.jpg/330px-Tomato_je.jpg"
+      ],
+      "categories": [
+        "fruits:légumes-fruits"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 41,
+      "scientific_name": "Solanum melongena",
+      "common_names": [
+        "Tomate"
+      ],
+      "family": "Solanaceae",
+      "genus": "Solanum",
+      "species": null,
+      "description": "Eggplant, aubergine, brinjal, or baigan is a plant species in the nightshade family Solanaceae. Solanum melongena is grown worldwide for its edible fruit, typically used as a vegetable in cooking.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:55.291707"
+        },
+        "wikipedia": {
+          "title": "Eggplant",
+          "url": "https://en.wikipedia.org/wiki/Eggplant",
+          "collected_at": "2025-09-09T18:13:55.372333"
+        },
+        "plantnet": {
+          "family": "Solanaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:55.372767"
+        },
+        "openplantbook": {
+          "pid": "solanum_melongena",
+          "collected_at": "2025-09-09T18:13:55.373153"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Solanum_melongena_24_08_2012_%281%29.JPG/330px-Solanum_melongena_24_08_2012_%281%29.JPG"
+      ],
+      "categories": [
+        "fruits:légumes-fruits"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 42,
+      "scientific_name": "Solanum tuberosum",
+      "common_names": [
+        "Tomate"
+      ],
+      "family": "Solanaceae",
+      "genus": "Solanum",
+      "species": null,
+      "description": "The potato is a starchy tuberous vegetable native to the Americas that is consumed as a staple food in many parts of the world. Potatoes are underground stem tubers of the plant Solanum tuberosum, a perennial in the nightshade family Solanaceae.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:56.395821"
+        },
+        "wikipedia": {
+          "title": "Potato",
+          "url": "https://en.wikipedia.org/wiki/Potato",
+          "collected_at": "2025-09-09T18:13:56.460422"
+        },
+        "plantnet": {
+          "family": "Solanaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:56.460689"
+        },
+        "openplantbook": {
+          "pid": "solanum_tuberosum",
+          "collected_at": "2025-09-09T18:13:56.460862"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Patates.jpg/330px-Patates.jpg"
+      ],
+      "categories": [
+        "fruits:légumes-fruits"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 50,
+      "scientific_name": "Spinacia oleracea",
+      "common_names": [
+        "Spinacia (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Spinacia",
+      "species": null,
+      "description": "Spinach is a leafy green flowering plant native to Central and Western Asia. It is of the order Caryophyllales, family Amaranthaceae, subfamily Chenopodioideae. Its leaves are a common vegetable consumed either fresh or after storage, using preservation techniques by canning, freezing, or dehydration. It may be eaten cooked or raw, and the taste differs considerably; the high oxalate content may be reduced by steaming.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:14:10.219107"
+        },
+        "wikipedia": {
+          "title": "Spinach",
+          "url": "https://en.wikipedia.org/wiki/Spinach",
+          "collected_at": "2025-09-09T18:14:10.279084"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:14:10.279374"
+        },
+        "openplantbook": {
+          "pid": "spinacia_oleracea",
+          "collected_at": "2025-09-09T18:14:10.279552"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Spinacia_oleracea_Spinazie_bloeiend.jpg/330px-Spinacia_oleracea_Spinazie_bloeiend.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 79,
+      "scientific_name": "Thymus serpyllum",
+      "common_names": [
+        "Thym"
+      ],
+      "family": "Lamiaceae",
+      "genus": "Thymus",
+      "species": null,
+      "description": "Thymus serpyllum, known by the common names of Breckland thyme, Breckland wild thyme, wild thyme, creeping thyme, or elfin thyme, is a species of flowering plant in the mint family, Lamiaceae. It is a low, usually prostrate subshrub forming creeping stems up to 10 cm (4 in) tall. The oval evergreen leaves are up to 8 mm. The strongly scented flowers are either lilac, pink-purple, magenta, up to 6 mm long and produced in clusters.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:15:12.166555"
+        },
+        "wikipedia": {
+          "title": "Thymus serpyllum",
+          "url": "https://en.wikipedia.org/wiki/Thymus_serpyllum",
+          "collected_at": "2025-09-09T18:15:12.720594"
+        },
+        "plantnet": {
+          "family": "Lamiaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:15:12.721790"
+        },
+        "openplantbook": {
+          "pid": "thymus_serpyllum",
+          "collected_at": "2025-09-09T18:15:12.722215"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Thymus_serpyllum1.jpg/330px-Thymus_serpyllum1.jpg"
+      ],
+      "categories": [
+        "aromates:fines herbes"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 78,
+      "scientific_name": "Thymus vulgaris",
+      "common_names": [
+        "Thym"
+      ],
+      "family": "Lamiaceae",
+      "genus": "Thymus",
+      "species": null,
+      "description": "Thymus vulgaris is a species of flowering plant in the mint family Lamiaceae, native to southern Europe from the western Mediterranean to southern Italy. Growing to 15–30 cm (6–12 in) tall by 40 cm (16 in) wide, it is a bushy, woody-based evergreen subshrub with small, highly aromatic, grey-green leaves and clusters of purple or pink flowers in early summer.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:15:11.060763"
+        },
+        "wikipedia": {
+          "title": "Thymus vulgaris",
+          "url": "https://en.wikipedia.org/wiki/Thymus_vulgaris",
+          "collected_at": "2025-09-09T18:15:11.144550"
+        },
+        "plantnet": {
+          "family": "Lamiaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:15:11.144882"
+        },
+        "openplantbook": {
+          "pid": "thymus_vulgaris",
+          "collected_at": "2025-09-09T18:15:11.145164"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Thymus_vulgaris1.JPG/330px-Thymus_vulgaris1.JPG"
+      ],
+      "categories": [
+        "aromates:fines herbes"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 11,
+      "scientific_name": "Tulipa clusiana",
+      "common_names": [
+        "Tulipe"
+      ],
+      "family": "Liliaceae",
+      "genus": "Tulipa",
+      "species": null,
+      "description": "Tulipa clusiana, the lady tulip, is an Asian species of tulip native to Afghanistan, Iran, Iraq, Pakistan and the western Himalayas. It is widely cultivated as an ornamental and is reportedly naturalized in France, Spain, Portugal, Italy, Tunisia, Greece, and Turkey.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:12:50.426696"
+        },
+        "wikipedia": {
+          "title": "Tulipa clusiana",
+          "url": "https://en.wikipedia.org/wiki/Tulipa_clusiana",
+          "collected_at": "2025-09-09T18:12:50.499348"
+        },
+        "plantnet": {
+          "family": "Liliaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:12:50.503667"
+        },
+        "openplantbook": {
+          "pid": "tulipa_clusiana",
+          "collected_at": "2025-09-09T18:12:50.504043"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Tulip_Tulipa_clusiana_%27Lady_Jane%27_Rock_Ledge_Flower_2000px.jpg/330px-Tulip_Tulipa_clusiana_%27Lady_Jane%27_Rock_Ledge_Flower_2000px.jpg"
+      ],
+      "categories": [
+        "fleurs:fleurs à bulbe"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 10,
+      "scientific_name": "Tulipa gesneriana",
+      "common_names": [
+        "Tulipe"
+      ],
+      "family": "Liliaceae",
+      "genus": "Tulipa",
+      "species": null,
+      "description": "Tulipa gesneriana, the Didier's tulip or garden tulip, is a species of plant in the lily family, cultivated as an ornamental in many countries because of its large, showy flowers. This tall, late-blooming species has a single blooming flower and linear or broadly lanceolate leaves. This is a complex hybridized neo-species, and can also be called Tulipa × gesneriana. Most of the cultivars of tulip are derived from Tulipa gesneriana. It has become naturalised in parts of central and southern Europe and scattered locations in North America.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:12:44.308822"
+        },
+        "wikipedia": {
+          "title": "Tulipa gesneriana",
+          "url": "https://en.wikipedia.org/wiki/Tulipa_gesneriana",
+          "collected_at": "2025-09-09T18:12:44.380404"
+        },
+        "plantnet": {
+          "family": "Liliaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:12:44.386778"
+        },
+        "openplantbook": {
+          "pid": "tulipa_gesneriana",
+          "collected_at": "2025-09-09T18:12:44.390796"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/%D7%A6%D7%91%D7%A2%D7%95%D7%A0%D7%99%D7%9D.JPG/330px-%D7%A6%D7%91%D7%A2%D7%95%D7%A0%D7%99%D7%9D.JPG"
+      ],
+      "categories": [
+        "fleurs:fleurs à bulbe"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 12,
+      "scientific_name": "Tulipa tarda",
+      "common_names": [
+        "Tulipe"
+      ],
+      "family": "Liliaceae",
+      "genus": "Tulipa",
+      "species": null,
+      "description": "Tulipa urumiensis, the late tulip or tardy tulip, is a species of flowering plant in the family Liliaceae. It is a perennial growing from a bulb. By some sources the accepted name is Tulipa tarda. It has a leathery tunic that is glabrous on the inside. It has up to seven linear green leaves that can be up to 20 cm long. The stem is between 4 and 20 cm long. The yellow flowers have white tips, anthers and stamen are yellow.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:12:51.524899"
+        },
+        "wikipedia": {
+          "title": "Tulipa urumiensis",
+          "url": "https://en.wikipedia.org/wiki/Tulipa_urumiensis",
+          "collected_at": "2025-09-09T18:12:51.704015"
+        },
+        "plantnet": {
+          "family": "Liliaceae",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:12:51.728933"
+        },
+        "openplantbook": {
+          "pid": "tulipa_tarda",
+          "collected_at": "2025-09-09T18:12:51.754525"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Tulipa_tarda_6.jpg/330px-Tulipa_tarda_6.jpg"
+      ],
+      "categories": [
+        "fleurs:fleurs à bulbe"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 22,
+      "scientific_name": "Viola odorata",
+      "common_names": [
+        "Viola (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Viola",
+      "species": null,
+      "description": "Viola odorata is a species of flowering plant in the family Violaceae native to Eurasia. The small hardy herbaceous perennial is commonly known as wood violet, sweet violet, English violet, common violet, florist's violet, or garden violet.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:14.012773"
+        },
+        "wikipedia": {
+          "title": "Viola odorata",
+          "url": "https://en.wikipedia.org/wiki/Viola_odorata",
+          "collected_at": "2025-09-09T18:13:14.075767"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:14.076154"
+        },
+        "openplantbook": {
+          "pid": "viola_odorata",
+          "collected_at": "2025-09-09T18:13:14.076647"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Viola_odorata_fg01.JPG/330px-Viola_odorata_fg01.JPG"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 21,
+      "scientific_name": "Viola tricolor",
+      "common_names": [
+        "Viola (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Viola",
+      "species": null,
+      "description": "Viola tricolor is a common European wild flower, growing as an annual or short-lived perennial. The species is also known as wild pansy, Johnny Jump up, heartsease, heart's ease, heart's delight, tickle-my-fancy, Jack-jump-up-and-kiss-me, come-and-cuddle-me, three faces in a hood, love-in-idleness, and pink of my john.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:13:12.919552"
+        },
+        "wikipedia": {
+          "title": "Viola tricolor",
+          "url": "https://en.wikipedia.org/wiki/Viola_tricolor",
+          "collected_at": "2025-09-09T18:13:12.986768"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:13:12.987147"
+        },
+        "openplantbook": {
+          "pid": "viola_tricolor",
+          "collected_at": "2025-09-09T18:13:12.987344"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Violatricolorarvensis.jpg/330px-Violatricolorarvensis.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 67,
+      "scientific_name": "Vitis labrusca",
+      "common_names": [
+        "Vitis (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Vitis",
+      "species": null,
+      "description": "Vitis labrusca, the fox grape, is a species of grapevines belonging to the Vitis genus in the flowering plant family Vitaceae. The vines are native to eastern North America and are the source of many grape cultivars, including Catawba, Concord, Delaware, Isabella, Niagara, and many hybrid grape varieties such as Agawam, Alexander and Onaka. Among the characteristics of this vine species in contrast to the European wine grape Vitis vinifera are its \"slip-skin\" that allows the skin of the grape berries to easily slip off when squeezed, instead of crushing the pulp, and the presence of tendrils on every node of the cane. Another contrast with European vinifera is the characteristic \"foxy\" musk of V. labrusca, best known to most people through the Concord grape. The term \"foxy\" became a sort of catchall for the wine tasting descriptors used for these American wines that were distinct from the familiar flavors of the European viniferous wines.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:14:49.123837"
+        },
+        "wikipedia": {
+          "title": "Vitis labrusca",
+          "url": "https://en.wikipedia.org/wiki/Vitis_labrusca",
+          "collected_at": "2025-09-09T18:14:49.186454"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:14:49.187347"
+        },
+        "openplantbook": {
+          "pid": "vitis_labrusca",
+          "collected_at": "2025-09-09T18:14:49.187578"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Vitis_labrusca_154618896.jpg/330px-Vitis_labrusca_154618896.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    },
+    {
+      "id": 66,
+      "scientific_name": "Vitis vinifera",
+      "common_names": [
+        "Vitis (nom commun inconnu)"
+      ],
+      "family": "Famille inconnue",
+      "genus": "Vitis",
+      "species": null,
+      "description": "Vitis vinifera, the common grape vine, is a species of flowering plant, native to the Mediterranean region, Central Europe, and southwestern Asia, from Morocco and Portugal north to southern Germany and east to northern Iran. As of 2012, there were between 5,000 and 10,000 varieties of Vitis vinifera grapes though only a few are of commercial significance for wine and table grape production.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "climate_data": {},
+      "sources": {
+        "trefle": {
+          "bibliography": "USDA Plants Database",
+          "author": "USDA",
+          "collected_at": "2025-09-09T18:14:48.036868"
+        },
+        "wikipedia": {
+          "title": "Vitis vinifera",
+          "url": "https://en.wikipedia.org/wiki/Vitis_vinifera",
+          "collected_at": "2025-09-09T18:14:48.105428"
+        },
+        "plantnet": {
+          "family": "Famille inconnue",
+          "distribution": "Europe, Amérique du Nord",
+          "habitat": "Jardins, parcs, milieux naturels",
+          "collected_at": "2025-09-09T18:14:48.105691"
+        },
+        "openplantbook": {
+          "pid": "vitis_vinifera",
+          "collected_at": "2025-09-09T18:14:48.105909"
+        }
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Cabernet_Sauvignon_Gaillac.jpg/330px-Cabernet_Sauvignon_Gaillac.jpg"
+      ],
+      "categories": [
+        "divers:autres"
+      ],
+      "weather_data": {
+        "temperature_min": 10.0,
+        "temperature_max": 30.0,
+        "humidity_min": 40.0,
+        "humidity_max": 70.0,
+        "sunlight_hours_min": 300,
+        "sunlight_hours_max": 1000
+      }
+    }
+  ]
+}

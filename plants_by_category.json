@@ -1,0 +1,625 @@
+{
+  "fleurs": [
+    {
+      "id": 16,
+      "scientific_name": "Iris germanica",
+      "common_name": "Iris",
+      "family": "Iridaceae",
+      "description": "Iris × germanica is the accepted name for a species of flowering plants in the family Iridaceae commonly known as the bearded iris or the German bearded iris. It is of hybrid origin. Varieties include...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Iris_Germanica_2012-2.jpg/330px-Iris_Germanica_2012-2.jpg"
+      ]
+    },
+    {
+      "id": 18,
+      "scientific_name": "Iris pseudacorus",
+      "common_name": "Iris",
+      "family": "Iridaceae",
+      "description": "Iris pseudacorus, the yellow flag, yellow iris, or water flag, is a species of flowering plant in the family Iridaceae. It is native to Europe, western Asia and northwest Africa. Its specific epithet ...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Iris_pseudacorus_iris_des_marais.jpg/330px-Iris_pseudacorus_iris_des_marais.jpg"
+      ]
+    },
+    {
+      "id": 17,
+      "scientific_name": "Iris sibirica",
+      "common_name": "Iris",
+      "family": "Iridaceae",
+      "description": "Iris sibirica, commonly known as Siberian iris or Siberian flag, is a species of flowering plant in the family Iridaceae. It is a rhizomatous herbaceous perennial, from Europe and Central Asia. It has...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Sibirische_Schwertlilie%2C_Iris_sibirica_06.JPG/330px-Sibirische_Schwertlilie%2C_Iris_sibirica_06.JPG"
+      ]
+    },
+    {
+      "id": 13,
+      "scientific_name": "Lilium candidum",
+      "common_name": "Lys",
+      "family": "Liliaceae",
+      "description": "Lilium candidum, the Madonna lily or white lily, is a plant in the true lily family. It is native to the Balkans and Middle East, and naturalized in other parts of Europe, including France, Italy, and...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/ShoshanTzachor-2-wiki-Zachi-Evenor.jpg/330px-ShoshanTzachor-2-wiki-Zachi-Evenor.jpg"
+      ]
+    },
+    {
+      "id": 15,
+      "scientific_name": "Lilium japonicum",
+      "common_name": "Lys",
+      "family": "Liliaceae",
+      "description": "Plante Lilium japonicum - Données PlantNet",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": []
+    },
+    {
+      "id": 14,
+      "scientific_name": "Lilium longiflorum",
+      "common_name": "Lys",
+      "family": "Liliaceae",
+      "description": "Lilium longiflorum, often called the Easter lily, is a species of plant endemic to both Taiwan and Ryukyu Islands (Japan). Lilium formosanum, a closely related species from Taiwan, has been treated as...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Lilium_longiflorum_%28Easter_Lily%29.JPG/330px-Lilium_longiflorum_%28Easter_Lily%29.JPG"
+      ]
+    },
+    {
+      "id": 9,
+      "scientific_name": "Rosa centifolia",
+      "common_name": "Rose",
+      "family": "Rosaceae",
+      "description": "Rosa × centifolia, the Provence rose, cabbage rose, May rose or Rose de Mai, is a hybrid rose developed by Dutch breeders in the period between the 17th century and the 19th century, possibly earlier.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Rosa_centifolia_foliacea_17.jpg/330px-Rosa_centifolia_foliacea_17.jpg"
+      ]
+    },
+    {
+      "id": 7,
+      "scientific_name": "Rosa damascena",
+      "common_name": "Rose",
+      "family": "Rosaceae",
+      "description": "Rosa × damascena, more commonly known as the Damask rose, or sometimes as the Iranian Rose, Bulgarian rose, Taif rose, Emirati rose, Ispahan rose, Castile rose, and Đulbešećerka is a rose hybrid deriv...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Damask_rose_pink.jpg/330px-Damask_rose_pink.jpg"
+      ]
+    },
+    {
+      "id": 8,
+      "scientific_name": "Rosa gallica",
+      "common_name": "Rose",
+      "family": "Rosaceae",
+      "description": "Rosa gallica, the Gallic rose, French rose, or rose of Provins, is a species of flowering plant in the rose family, native to southern and central Europe eastwards to Turkey and the Caucasus. Rosa gal...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Wild_Rosa_gallica_Romania.jpg/330px-Wild_Rosa_gallica_Romania.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "scientific_name": "Rosa rugosa",
+      "common_name": "Rose",
+      "family": "Rosaceae",
+      "description": "Rosa rugosa is a species of rose native to eastern Asia, in northeastern China, Japan, Korea and southeastern Siberia, where it grows on beach coasts, often on sand dunes. It is naturalized in much of...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Rosa_rugosa_Tokyo.JPG/330px-Rosa_rugosa_Tokyo.JPG"
+      ]
+    },
+    {
+      "id": 11,
+      "scientific_name": "Tulipa clusiana",
+      "common_name": "Tulipe",
+      "family": "Liliaceae",
+      "description": "Tulipa clusiana, the lady tulip, is an Asian species of tulip native to Afghanistan, Iran, Iraq, Pakistan and the western Himalayas. It is widely cultivated as an ornamental and is reportedly naturali...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Tulip_Tulipa_clusiana_%27Lady_Jane%27_Rock_Ledge_Flower_2000px.jpg/330px-Tulip_Tulipa_clusiana_%27Lady_Jane%27_Rock_Ledge_Flower_2000px.jpg"
+      ]
+    },
+    {
+      "id": 10,
+      "scientific_name": "Tulipa gesneriana",
+      "common_name": "Tulipe",
+      "family": "Liliaceae",
+      "description": "Tulipa gesneriana, the Didier's tulip or garden tulip, is a species of plant in the lily family, cultivated as an ornamental in many countries because of its large, showy flowers. This tall, late-bloo...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/%D7%A6%D7%91%D7%A2%D7%95%D7%A0%D7%99%D7%9D.JPG/330px-%D7%A6%D7%91%D7%A2%D7%95%D7%A0%D7%99%D7%9D.JPG"
+      ]
+    },
+    {
+      "id": 12,
+      "scientific_name": "Tulipa tarda",
+      "common_name": "Tulipe",
+      "family": "Liliaceae",
+      "description": "Tulipa urumiensis, the late tulip or tardy tulip, is a species of flowering plant in the family Liliaceae. It is a perennial growing from a bulb. By some sources the accepted name is Tulipa tarda. It ...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Tulipa_tarda_6.jpg/330px-Tulipa_tarda_6.jpg"
+      ]
+    }
+  ],
+  "arbres": [
+    {
+      "id": 36,
+      "scientific_name": "Abies alba",
+      "common_name": "Abies (nom commun inconnu)",
+      "family": "Famille inconnue",
+      "description": "Abies alba, the European silver fir or silver fir, is a fir native to the mountains of Europe, from the Pyrenees north to Normandy, east to the Alps and the Carpathians, Slovakia, Slovenia, Croatia, B...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Abies_alba_Wis%C5%82a_1.jpg/330px-Abies_alba_Wis%C5%82a_1.jpg"
+      ]
+    },
+    {
+      "id": 37,
+      "scientific_name": "Abies nordmanniana",
+      "common_name": "Abies (nom commun inconnu)",
+      "family": "Famille inconnue",
+      "description": "Abies nordmanniana, the Nordmann fir or Caucasian fir, is a fir indigenous to the mountains south and east of the Black Sea, in Turkey, Georgia and the Russian Caucasus. It occurs at altitudes of 900–...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/%C3%96r%C3%BCmcek_Orman%C4%B1_G%C3%B6knar%C4%B1_2_Tabiat_An%C4%B1t%C4%B1.jpg/330px-%C3%96r%C3%BCmcek_Orman%C4%B1_G%C3%B6knar%C4%B1_2_Tabiat_An%C4%B1t%C4%B1.jpg"
+      ]
+    },
+    {
+      "id": 27,
+      "scientific_name": "Acer palmatum",
+      "common_name": "Érable",
+      "family": "Sapindaceae",
+      "description": "Acer palmatum, commonly known as Japanese maple, palmate maple, or smooth Japanese maple, is a species of woody plant native to Korea, Japan, China, eastern Mongolia, and southeast Russia. Many differ...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Acer_palmatum0.jpg/330px-Acer_palmatum0.jpg"
+      ]
+    },
+    {
+      "id": 28,
+      "scientific_name": "Acer pseudoplatanus",
+      "common_name": "Érable",
+      "family": "Sapindaceae",
+      "description": "Acer pseudoplatanus, known as the sycamore in the British Isles and as the sycamore maple in the United States, is a species of maple native to Central Europe and Western Asia. It is a large deciduous...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Acer_pseudoplatanus_005.jpg/330px-Acer_pseudoplatanus_005.jpg"
+      ]
+    },
+    {
+      "id": 26,
+      "scientific_name": "Acer saccharum",
+      "common_name": "Érable",
+      "family": "Sapindaceae",
+      "description": "Acer saccharum, the sugar maple, is a species of flowering plant in the soapberry and lychee family Sapindaceae. It is native to the hardwood forests of eastern Canada and the eastern United States. S...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Acer_saccharum_1-jgreenlee_%285098070608%29.jpg/330px-Acer_saccharum_1-jgreenlee_%285098070608%29.jpg"
+      ]
+    },
+    {
+      "id": 29,
+      "scientific_name": "Betula pendula",
+      "common_name": "Betula (nom commun inconnu)",
+      "family": "Famille inconnue",
+      "description": "Betula pendula, commonly known as silver birch, warty birch, European white birch, or East Asian white birch, is a species of tree in the family Betulaceae, native to Europe and parts of Asia, though ...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Betula_pendula_Finland.jpg/330px-Betula_pendula_Finland.jpg"
+      ]
+    },
+    {
+      "id": 30,
+      "scientific_name": "Betula pubescens",
+      "common_name": "Betula (nom commun inconnu)",
+      "family": "Famille inconnue",
+      "description": "Betula pubescens, commonly known as downy birch and also as moor birch, white birch, European white birch or hairy birch, is a species of deciduous tree, native and abundant throughout northern Europe...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Betula_pubescens_-_Burgwald_002.jpg/330px-Betula_pubescens_-_Burgwald_002.jpg"
+      ]
+    },
+    {
+      "id": 32,
+      "scientific_name": "Fagus grandifolia",
+      "common_name": "Fagus (nom commun inconnu)",
+      "family": "Famille inconnue",
+      "description": "Fagus grandifolia, the American beech or North American beech, is a species of tree growing to 16–35 metres tall. It is the only beech native to North America. It flourished over most of the continent...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Beech_with_Branches.jpg/330px-Beech_with_Branches.jpg"
+      ]
+    },
+    {
+      "id": 31,
+      "scientific_name": "Fagus sylvatica",
+      "common_name": "Fagus (nom commun inconnu)",
+      "family": "Famille inconnue",
+      "description": "Fagus sylvatica, the European beech or common beech, is a large, graceful deciduous tree in the beech family with smooth silvery-grey bark, large leaf area, and a short trunk with low branches. It is ...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Fagus-sylvatica-cansiglio-forest-italy.jpg/330px-Fagus-sylvatica-cansiglio-forest-italy.jpg"
+      ]
+    },
+    {
+      "id": 38,
+      "scientific_name": "Picea abies",
+      "common_name": "Picea (nom commun inconnu)",
+      "family": "Famille inconnue",
+      "description": "Picea abies, the Norway spruce or European spruce, is a species of spruce native to Northern, Central and Eastern Europe.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/GemeineFichte.jpg/330px-GemeineFichte.jpg"
+      ]
+    },
+    {
+      "id": 39,
+      "scientific_name": "Picea pungens",
+      "common_name": "Picea (nom commun inconnu)",
+      "family": "Famille inconnue",
+      "description": "The blue spruce, also commonly known as Colorado spruce or Colorado blue spruce, is a species of spruce tree native to North America in Arizona, Colorado, Idaho, New Mexico, Utah and Wyoming. It is no...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Picea_pungens_tree.jpg/330px-Picea_pungens_tree.jpg"
+      ]
+    },
+    {
+      "id": 35,
+      "scientific_name": "Pinus halepensis",
+      "common_name": "Pin",
+      "family": "Pinaceae",
+      "description": "Pinus halepensis, commonly known as the Aleppo pine, also known as the Jerusalem pine, is a pine native to the Mediterranean region. It was officially named by the botanist Philip Miller in his 1768 b...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/%CE%A7%CE%B1%CE%BB%CE%AD%CF%80%CE%B9%CE%BF%CF%82_%CF%80%CE%B5%CF%8D%CE%BA%CE%B7_%CE%A3%CE%BF%CF%8D%CE%BD%CE%B9%CE%BF_1963.jpg/330px-%CE%A7%CE%B1%CE%BB%CE%AD%CF%80%CE%B9%CE%BF%CF%82_%CF%80%CE%B5%CF%8D%CE%BA%CE%B7_%CE%A3%CE%BF%CF%8D%CE%BD%CE%B9%CE%BF_1963.jpg"
+      ]
+    },
+    {
+      "id": 34,
+      "scientific_name": "Pinus nigra",
+      "common_name": "Pin",
+      "family": "Pinaceae",
+      "description": "Pinus nigra, the Austrian pine or black pine, is a moderately variable species of pine, occurring across Southern Europe from the Iberian Peninsula and Lower Austria to the eastern Mediterranean, on t...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/%C5%9Awierklaniec_pinus_nigra_12.06.2010_p.jpg/330px-%C5%9Awierklaniec_pinus_nigra_12.06.2010_p.jpg"
+      ]
+    },
+    {
+      "id": 33,
+      "scientific_name": "Pinus sylvestris",
+      "common_name": "Pin",
+      "family": "Pinaceae",
+      "description": "Pinus sylvestris, the Scots pine (UK), Scotch pine (US), Baltic pine, or European red pine is a species of tree in the pine family Pinaceae that is native to Eurasia. It can readily be identified by i...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Skuleskogen_pine.jpg/330px-Skuleskogen_pine.jpg"
+      ]
+    },
+    {
+      "id": 25,
+      "scientific_name": "Quercus ilex",
+      "common_name": "Chêne",
+      "family": "Fagaceae",
+      "description": "Quercus ilex, the holly oak, also evergreen oak, is a large evergreen oak native to the Mediterranean region. It is a member of the section Ilex of the genus, with acorns that mature in a single summe...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Quercus_ilex_JPG1.jpg/330px-Quercus_ilex_JPG1.jpg"
+      ]
+    },
+    {
+      "id": 24,
+      "scientific_name": "Quercus petraea",
+      "common_name": "Chêne",
+      "family": "Fagaceae",
+      "description": "Quercus petraea, commonly known as the sessile oak, Welsh oak, Cornish oak, Irish oak or durmast oak, is a species of oak tree native to most of Europe and into Anatolia and Iran. The sessile oak is t...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Quercus_petraea_06.jpg/330px-Quercus_petraea_06.jpg"
+      ]
+    },
+    {
+      "id": 23,
+      "scientific_name": "Quercus robur",
+      "common_name": "Chêne",
+      "family": "Fagaceae",
+      "description": "Quercus robur, the pedunculate (or \"English\") oak, is a species of flowering plant in the beech and oak family, Fagaceae. It is a large tree, native to most of Europe and western Asia, and is widely c...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Quercus_robur.jpg/330px-Quercus_robur.jpg"
+      ]
+    }
+  ],
+  "legumes": [
+    {
+      "id": 43,
+      "scientific_name": "Daucus carota",
+      "common_name": "Carotte",
+      "family": "Apiaceae",
+      "description": "Daucus carota, whose common names include wild carrot, European wild carrot, bird's nest, bishop's lace, carrot flower, and Queen Anne's lace, is a flowering plant in the family Apiaceae. It is native...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Daucus_carota_May_2008-1_edit.jpg/330px-Daucus_carota_May_2008-1_edit.jpg"
+      ]
+    },
+    {
+      "id": 44,
+      "scientific_name": "Daucus carota subsp. sativus",
+      "common_name": "Carotte",
+      "family": "Apiaceae",
+      "description": "The carrot is a root vegetable, typically orange in colour, though heirloom variants including purple, black, red, white, and yellow cultivars exist, all of which are domesticated forms of the wild ca...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Vegetable-Carrot-Bundle-wStalks.jpg/330px-Vegetable-Carrot-Bundle-wStalks.jpg"
+      ]
+    }
+  ],
+  "fruits": [
+    {
+      "id": 40,
+      "scientific_name": "Solanum lycopersicum",
+      "common_name": "Tomate",
+      "family": "Solanaceae",
+      "description": "The tomato is a plant whose fruit is an edible berry that is eaten as a vegetable. The tomato is a member of the nightshade family that includes tobacco, potato, and chili peppers. It originated from ...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tomato_je.jpg/330px-Tomato_je.jpg"
+      ]
+    },
+    {
+      "id": 41,
+      "scientific_name": "Solanum melongena",
+      "common_name": "Tomate",
+      "family": "Solanaceae",
+      "description": "Eggplant, aubergine, brinjal, or baigan is a plant species in the nightshade family Solanaceae. Solanum melongena is grown worldwide for its edible fruit, typically used as a vegetable in cooking.",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Solanum_melongena_24_08_2012_%281%29.JPG/330px-Solanum_melongena_24_08_2012_%281%29.JPG"
+      ]
+    },
+    {
+      "id": 42,
+      "scientific_name": "Solanum tuberosum",
+      "common_name": "Tomate",
+      "family": "Solanaceae",
+      "description": "The potato is a starchy tuberous vegetable native to the Americas that is consumed as a staple food in many parts of the world. Potatoes are underground stem tubers of the plant Solanum tuberosum, a p...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Patates.jpg/330px-Patates.jpg"
+      ]
+    }
+  ],
+  "aromates": [
+    {
+      "id": 74,
+      "scientific_name": "Mentha piperita",
+      "common_name": "Menthe",
+      "family": "Lamiaceae",
+      "description": "Peppermint is a hybrid species of mint, a cross between watermint and spearmint. Indigenous to Europe and the Middle East, the plant is now widely spread and cultivated in many regions of the world. I...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Pfefferminze_natur_peppermint.jpg/330px-Pfefferminze_natur_peppermint.jpg"
+      ]
+    },
+    {
+      "id": 75,
+      "scientific_name": "Mentha spicata",
+      "common_name": "Menthe",
+      "family": "Lamiaceae",
+      "description": "Spearmint, also known as garden mint, common mint, lamb mint and mackerel mint, is native to Europe and southern temperate Asia, extending from Ireland in the west to southern China in the east. It is...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Minze.jpg/330px-Minze.jpg"
+      ]
+    },
+    {
+      "id": 76,
+      "scientific_name": "Mentha × piperita",
+      "common_name": "Menthe",
+      "family": "Lamiaceae",
+      "description": "Peppermint is a hybrid species of mint, a cross between watermint and spearmint. Indigenous to Europe and the Middle East, the plant is now widely spread and cultivated in many regions of the world. I...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Pfefferminze_natur_peppermint.jpg/330px-Pfefferminze_natur_peppermint.jpg"
+      ]
+    },
+    {
+      "id": 77,
+      "scientific_name": "Rosmarinus officinalis",
+      "common_name": "Romarin",
+      "family": "Lamiaceae",
+      "description": "Salvia rosmarinus, commonly known as rosemary, is a shrub with fragrant, evergreen, needle-like leaves and purple or sometimes white, pink, or blue flowers. It is a member of the sage family, Lamiacea...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Rosemary_in_bloom.JPG/330px-Rosemary_in_bloom.JPG"
+      ]
+    },
+    {
+      "id": 79,
+      "scientific_name": "Thymus serpyllum",
+      "common_name": "Thym",
+      "family": "Lamiaceae",
+      "description": "Thymus serpyllum, known by the common names of Breckland thyme, Breckland wild thyme, wild thyme, creeping thyme, or elfin thyme, is a species of flowering plant in the mint family, Lamiaceae. It is a...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Thymus_serpyllum1.jpg/330px-Thymus_serpyllum1.jpg"
+      ]
+    },
+    {
+      "id": 78,
+      "scientific_name": "Thymus vulgaris",
+      "common_name": "Thym",
+      "family": "Lamiaceae",
+      "description": "Thymus vulgaris is a species of flowering plant in the mint family Lamiaceae, native to southern Europe from the western Mediterranean to southern Italy. Growing to 15–30 cm (6–12 in) tall by 40 cm (1...",
+      "care_instructions": {
+        "watering_frequency": "weekly",
+        "difficulty": "medium",
+        "ph_range": "6.0-7.5"
+      },
+      "image_urls": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Thymus_vulgaris1.JPG/330px-Thymus_vulgaris1.JPG"
+      ]
+    }
+  ]
+}
